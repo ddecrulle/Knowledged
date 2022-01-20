@@ -2,7 +2,7 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import knowledgeLogo from "/img/knowledge.svg";
+import knowledgeLogo from "img/knowledge.svg";
 const Header = () => {
   return (
     <header className="App-header">
