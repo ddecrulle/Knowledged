@@ -1,12 +1,27 @@
 import Header from "components/header/component";
-import "App.css";
+import Button from "@mui/material/Button";
+import { makeStyles } from "tss-react/mui";
+
+const useStyles = makeStyles()((theme) => {
+  return {
+    root: {
+      backgroundColor: "pink",
+    },
+    button: {
+      backgroundColor: "red",
+      marginLeft: "",
+    },
+  };
+});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header>
-        <Header />
-      </header>
+    <div className={classes.root}>
+      <Header />
+      <Button variant="outlined" className={classes.button}>
+        Text
+      </Button>
     </div>
   );
 }
