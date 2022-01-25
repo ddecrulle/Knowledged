@@ -17,8 +17,8 @@ export const muiCache = createCache({
 ReactDOM.render(
   <React.StrictMode>
     <CacheProvider value={muiCache}>
+      <CssBaseline />
       <ThemeProvider theme={theme}>
-        <CssBaseline />
         <App />
       </ThemeProvider>
     </CacheProvider>

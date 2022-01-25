@@ -1,8 +1,10 @@
 import Root from "components/root";
 import "./App.css";
 
-function App() {
-  return <Root />;
-}
+const App = () => (
+  <div className="">
+    <Root />
+  </div>
+);
 
 export default App;
