@@ -21,15 +21,15 @@ const useStyles = makeStyles()((theme) => {
       },
     },
     title: {
-      marginBottom: `${theme.spacing(20)} !important`,
+      marginBottom: `${theme.spacing(5)} !important`,
       [theme.breakpoints.down("md")]: {
-        marginBottom: `${theme.spacing(9)} !important`,
+        marginBottom: `${theme.spacing(5)} !important`,
       },
       [theme.breakpoints.down("sm")]: {
-        marginBottom: `${theme.spacing(8)} !important`,
+        marginBottom: `${theme.spacing(4)} !important`,
       },
       [theme.breakpoints.down("xs")]: {
-        marginBottom: `${theme.spacing(7)} !important`,
+        marginBottom: `${theme.spacing(3)} !important`,
       },
     },
     container: {
@@ -72,14 +72,15 @@ const InformationSysteme = () => {
   const { classes } = useStyles();
   return (
     <>
-      <div className={classes.lgPTop}>
+      <div className={classes.lgPTop} >
         <Typography variant="h3" align="center" className={classes.title}>
           Le Système d'information
         </Typography>
         <div className={classes.container}>
           <Box className={classes.box}>
-            <div className={"container"}>
+            <div className={"container"} >
               <img
+                data-aos="zoom-in"
                 alt={"Le système d'information"}
                 src={si}
                 className={classes.image}
