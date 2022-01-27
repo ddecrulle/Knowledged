@@ -6,7 +6,7 @@ const Menu = [
   },
   {
     label: "Offre de service",
-    pathname: "services",
+    pathname: "/services",
     external: false,
   },
 ];

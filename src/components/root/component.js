@@ -9,15 +9,17 @@ import TopBar from "components/shared/topbar";
 
 AOS.init({ once: true });
 
-const Root = () => (
-  <Router>
-    <TopBar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="services" element={<Service />} />
-    </Routes>
-    <Footer />
-  </Router>
-);
+const Root = () => {
+  return (
+    <Router>
+      <TopBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="services" element={<Service />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
 
 export default Root;

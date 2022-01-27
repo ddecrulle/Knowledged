@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "tss-react/mui";
-
+import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -8,8 +8,7 @@ import Hidden from "@mui/material/Hidden";
 import Box from "@mui/system/Box";
 import picture from "img/funny-portrait-of-a-businessman-with-many-arms-picture.jpg";
 import WaveBorder from "components/shared/waveBorder/component";
-
-// TODO Delete Hidden and use theme.breackpoints
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles()((theme) => {
   return {
@@ -167,10 +166,21 @@ const Metallica = () => {
                             elitr, sed diam nonumy eirmod tempor invidunt
                           </Typography>
                         </Box>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          fullWidth
+                          className={classes.extraLargeButton}
+                          classes={classes.extraLargeButtonLabel}
+                          component={Link}
+                          to="services"
+                        >
+                          Parcourir l'offre de service{" "}
+                        </Button>
                       </div>
                     </Box>
                   </Grid>
-                  <Hidden smDown>
+                  <Hidden mdDown>
                     <Grid item md={6}>
                       <img
                         alt={"programme Metallica"}

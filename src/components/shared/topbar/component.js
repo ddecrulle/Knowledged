@@ -17,7 +17,7 @@ import ListItemText from "@mui/material/ListItemText";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import logo from "img/image.svg";
 import { Menu, SecondaryMenu } from "dictionary/menu";
-import { Link } from "react-router-dom";
+import { Link ,useLocation} from "react-router-dom";
 import { Link as MaterialLink } from "@mui/material";
 
 const useStyles = makeStyles()((theme) => {
@@ -90,11 +90,7 @@ const useStyles = makeStyles()((theme) => {
 });
 
 const Header = () => {
-  const [value, setValue] = useState(0);
-
-  const handleChange = (_, newValue) => {
-    setValue(newValue);
-  };
+  const location = useLocation()
 
   const [open, setOpen] = useState(false);
   const { classes } = useStyles();
@@ -165,14 +161,15 @@ const Header = () => {
                   </List>
                 </SwipeableDrawer>
                 <Tabs
-                  value={value}
+                  value={location.pathname}
                   indicatorColor="primary"
                   textColor="primary"
-                  onChange={handleChange}
+                  // onChange={handleChange}
                 >
                   {Menu.map((item, index) => (
                     <Tab
                       key={`primary-${index}`}
+                      value={item.pathname}
                       component={item.external ? MaterialLink : Link}
                       href={item.external ? item.pathname : null}
                       to={item.external ? null : item.pathname}
