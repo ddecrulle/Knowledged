@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import { makeStyles } from "tss-react/mui";
 import Box from "@mui/system/Box";
 import si from "img/siMetallica.png";
-import WaveBorder from "components/shared/waveBorder/component";
 
 const useStyles = makeStyles()((theme) => {
   return {

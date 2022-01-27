@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { makeStyles, withStyles } from "tss-react/mui";
+import { makeStyles } from "tss-react/mui";
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
