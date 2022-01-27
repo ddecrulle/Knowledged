@@ -3,16 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "components/pages/home";
 import Service from "components/pages/service";
-
-import TopBar from "components/topbar";
+import Footer from "components/shared/footer";
+import TopBar from "components/shared/topbar";
 
 const Root = () => (
   <Router>
     <TopBar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="offre-de-service" element={<Service />} />
+      <Route path="services" element={<Service />} />
     </Routes>
+    <Footer />
   </Router>
 );
 
