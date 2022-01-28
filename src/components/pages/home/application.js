@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import { application } from "dictionary/application";
+import { application } from "utils/dictionary/application";
 import ApplicationCard from "./applicationCard";
 import { makeStyles } from "tss-react/mui";
 
