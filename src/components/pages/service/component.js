@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useAPI } from "utils/hooks";
+import dataFunctions from "utils/mockData/functions";
+// import dataProducts from "utils/mockData/products";
+
+// import { useAPI } from "utils/hooks";
 
 const Service = () => {
-  const { getProducts } = useAPI();
-
-  const [products, setProducts] = useState({});
+  const [functions, setFunctions] = useState([]);
 
   useEffect(() => {
-    getProducts().then((r) => setProducts(r));
-  }, [getProducts]);
+    setFunctions(dataFunctions);
+  }, []);
 
-  return <div>Les Produits : {JSON.stringify(products)}</div>;
+  return <div>Les Services : {JSON.stringify(functions)}</div>;
 };
 
 export default Service;
