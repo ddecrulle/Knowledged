@@ -10,7 +10,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const iconSize = 30;
 
-const application = [
+const applications = [
   {
     color: "#00C853",
     headline: "Application 1",
@@ -85,4 +85,4 @@ const application = [
   },
 ];
 
-export { application };
+export { applications };

@@ -133,7 +133,7 @@ const useStyles = makeStyles()((theme) => {
   };
 });
 
-const Metallica = () => {
+const HeadSection = () => {
   const { classes } = useStyles();
   // const { globalClasses } = globalStyles();
 
@@ -157,7 +157,9 @@ const Metallica = () => {
                       height="100%"
                     >
                       <Box mb={4}>
-                        <Typography variant={"h4"}>Metallica</Typography>
+                        <Typography variant={"h4"}>
+                          Bienvenue sur Knowledge
+                        </Typography>
                       </Box>
                       <div>
                         <Box mb={2}>
@@ -204,4 +206,4 @@ const Metallica = () => {
   );
 };
 
-export default Metallica;
+export default HeadSection;

@@ -1,9 +1,11 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import { application } from "utils/dictionary/application";
+import { applications } from "utils/dictionary/application";
 import ApplicationCard from "./applicationCard";
 import { makeStyles } from "tss-react/mui";
+// import MockProducts from "utils/mockData/products";
+import { useIsWidthUp } from "utils/hooks";
 
 const useStyles = makeStyles()((theme) => {
   return {
@@ -43,6 +45,8 @@ const useStyles = makeStyles()((theme) => {
 });
 const Application = () => {
   const { classes, cx } = useStyles();
+  // const [products, setProducts] = useState(MockProducts);
+  const isMdUp = useIsWidthUp("md");
   return (
     <div style={{ backgroundColor: "#FFFFFF" }}>
       <div className={cx(classes.containerFluid, classes.lgPTop)}>
@@ -51,13 +55,15 @@ const Application = () => {
         </Typography>
         <div className={classes.containerFluid}>
           <Grid container spacing={4}>
-            {application.map((element) => (
+            {applications.map((element) => (
               <Grid
                 item
                 xs={6}
                 md={4}
                 data-aos="zoom-in-up"
-                data-aos-delay={element.mdDelay}
+                data-aos-delay={
+                  isMdUp ? element.mdDelay : element.smDelay
+                }
                 key={element.headline}
               >
                 <ApplicationCard

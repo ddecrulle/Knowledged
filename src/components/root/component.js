@@ -17,7 +17,6 @@ const Root = () => {
         <Route path="/" element={<Home />} />
         <Route path="services" element={<Service />} />
       </Routes>
-      <Footer />
     </Router>
   );
 };

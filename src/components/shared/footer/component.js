@@ -3,19 +3,10 @@ import WaveBorder from "components/shared/waveBorder";
 import { makeStyles } from "tss-react/mui";
 import Typography from "@mui/material/Typography";
 
-const useStyles = makeStyles()((theme) => {
+const useStyles = makeStyles()((theme, { upperColor }) => {
   return {
     footer: {
-      paddingTop: `${theme.spacing(20)} !important`,
-      [theme.breakpoints.down("md")]: {
-        paddingTop: `${theme.spacing(18)} !important`,
-      },
-      [theme.breakpoints.down("sm")]: {
-        paddingTop: `${theme.spacing(16)} !important`,
-      },
-      [theme.breakpoints.down("xs")]: {
-        paddingTop: `${theme.spacing(14)} !important`,
-      },
+      backgroundColor: upperColor,
     },
     waveBorder: {},
     footerInner: {
@@ -44,12 +35,12 @@ const useStyles = makeStyles()((theme) => {
   };
 });
 
-const Footer = () => {
-  const { classes, theme } = useStyles();
+const Footer = ({ upperColor = "#FFFFFF" }) => {
+  const { classes, theme } = useStyles(upperColor);
   return (
     <footer className={classes.footer}>
       <WaveBorder
-        upperColor="#FFFFFF"
+        upperColor={upperColor}
         lowerColor={theme.palette.common.darkBlack}
         animationNegativeDelay={4}
       />
