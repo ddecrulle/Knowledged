@@ -84,7 +84,7 @@ const BlocFilter = () => {
           )}
           value={value}
           onChange={(event, newValue) => {
-            setValue(newValue.title);
+            setValue(newValue);
           }}
         />
         <TreeView
