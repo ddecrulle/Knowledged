@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { applications } from "utils/dictionary/application";
-import ApplicationCard from "./applicationCard";
+import ApplicationCard from "./productsCard";
 import { makeStyles } from "tss-react/mui";
 // import MockProducts from "utils/mockData/products";
 import { useIsWidthUp } from "utils/hooks";
@@ -10,15 +10,15 @@ import { useIsWidthUp } from "utils/hooks";
 const useStyles = makeStyles()((theme) => {
   return {
     lgPTop: {
-      paddingTop: `${theme.spacing(20)} !important`,
+      paddingTop: `${theme.spacing(10)} !important`,
       [theme.breakpoints.down("md")]: {
-        paddingTop: `${theme.spacing(18)} !important`,
+        paddingTop: `${theme.spacing(9)} !important`,
       },
       [theme.breakpoints.down("sm")]: {
-        paddingTop: `${theme.spacing(16)} !important`,
+        paddingTop: `${theme.spacing(8)} !important`,
       },
       [theme.breakpoints.down("xs")]: {
-        paddingTop: `${theme.spacing(14)} !important`,
+        paddingTop: `${theme.spacing(7)} !important`,
       },
     },
     containerFluid: {
@@ -30,15 +30,15 @@ const useStyles = makeStyles()((theme) => {
       maxWidth: 1370,
     },
     LgMgBottom: {
-      marginBottom: `${theme.spacing(20)} !important`,
+      marginBottom: `${theme.spacing(10)} !important`,
       [theme.breakpoints.down("md")]: {
-        marginBottom: `${theme.spacing(18)} !important`,
+        marginBottom: `${theme.spacing(9)} !important`,
       },
       [theme.breakpoints.down("sm")]: {
-        marginBottom: `${theme.spacing(16)} !important`,
+        marginBottom: `${theme.spacing(8)} !important`,
       },
       [theme.breakpoints.down("xs")]: {
-        marginBottom: `${theme.spacing(14)} !important`,
+        marginBottom: `${theme.spacing(7)} !important`,
       },
     },
   };
@@ -51,7 +51,7 @@ const Application = () => {
     <div style={{ backgroundColor: "#FFFFFF" }}>
       <div className={cx(classes.containerFluid, classes.lgPTop)}>
         <Typography variant="h3" align="center" className={classes.LgMgBottom}>
-          Les différentes Applications
+          Les différents Produits
         </Typography>
         <div className={classes.containerFluid}>
           <Grid container spacing={4}>

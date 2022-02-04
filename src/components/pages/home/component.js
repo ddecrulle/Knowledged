@@ -1,6 +1,6 @@
 import React from "react";
 import Metallica from "./headSection";
-import Application from "./application";
+import Application from "./products";
 import InformationSysteme from "./informationSysteme";
 import Footer from "components/shared/footer/component";
 

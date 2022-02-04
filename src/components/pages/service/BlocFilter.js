@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { useSearchParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import { makeStyles } from "tss-react/mui";
@@ -7,6 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import TreeItem from "@mui/lab/TreeItem";
 import Autocomplete from "@mui/material/Autocomplete";
+import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import { top100Films } from "./top100films";
@@ -78,11 +79,30 @@ const buildNode = (obj, key) => {
 
 const BlocFilter = () => {
   // const [search, setSearch] = useSearchParams();
+  const [expanded, setExpanded] = useState([]);
+  const [selected, setSelected] = useState([]);
+
+  const handleToggle = (event, nodeIds) => {
+    setExpanded(nodeIds);
+  };
+
+  const handleSelect = (event, nodeIds) => {
+    setSelected(nodeIds);
+  };
+
+  const handleCollapseClick = () => {
+    setExpanded([]);
+  };
+
+  const handleUnselectClick = () => {
+    setSelected([]);
+  };
+
   const [value, setValue] = useState([]);
 
-  // useEffect(() => {
-  //   console.log(value);
-  // }, [value]);
+  useEffect(() => {
+    console.log(value);
+  }, [value]);
 
   const { classes } = useStyles();
   return (
@@ -106,10 +126,21 @@ const BlocFilter = () => {
             setValue(newValue);
           }}
         />
+        <Button onClick={handleCollapseClick} disabled={expanded.length === 0}>
+          Tout réduire
+        </Button>
+        <Button onClick={handleUnselectClick} disabled={selected.length === 0}>
+          Tout désélectionner
+        </Button>
         <TreeView
           aria-label="services navigator"
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ChevronRightIcon />}
+          expanded={expanded}
+          selected={selected}
+          onNodeToggle={handleToggle}
+          onNodeSelect={handleSelect}
+          multiSelect
         >
           {buildNode(gsbpm, gsbpm.nodeKey)}
           {buildNode(produits, produits.nodeKey)}
