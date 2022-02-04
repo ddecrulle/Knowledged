@@ -10,9 +10,16 @@ import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import { top100Films } from "./top100films";
+import {
+  gsbpm,
+  produits,
+  services,
+  statuts,
+  utilisateurs,
+} from "utils/mockData/treeData";
 
-const useStyles = makeStyles()((theme) => {
-  return {
+const useStyles = makeStyles()((theme) => (
+  {
     box: {
       display: "flex",
       flexDirection: "column",
@@ -54,16 +61,30 @@ const useStyles = makeStyles()((theme) => {
       paddingBottom: theme.spacing(1),
       minWidth: theme.spacing(10),
     },
-  };
-});
+  }
+));
+
+const buildNode = (obj, key) => {
+  if (!obj[key]) {
+    return <TreeItem nodeId={obj.id} label={obj.label} />;
+  } else {
+    return (
+      <TreeItem nodeId={obj.id} label={obj.label}>
+        {obj[key].map((element) => {
+          return buildNode(element, key);
+        })}
+      </TreeItem>
+    );
+  }
+};
 
 const BlocFilter = () => {
   // const [search, setSearch] = useSearchParams();
   const [value, setValue] = useState([]);
 
-  useEffect(() => {
-    console.log(value);
-  }, [value]);
+  // useEffect(() => {
+  //   console.log(value);
+  // }, [value]);
 
   const { classes } = useStyles();
   return (
@@ -92,23 +113,12 @@ const BlocFilter = () => {
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ChevronRightIcon />}
         >
-          <TreeItem nodeId="1" label="GSBPM">
-            <TreeItem nodeId="1.1" label="Qualite" />
-          </TreeItem>
-          <TreeItem nodeId="2" label="Jalon">
-            <TreeItem nodeId="2.1" label="Jalon 1" />
-            <TreeItem nodeId="2.2" label="Jalon 2" />
-          </TreeItem>
-          <TreeItem nodeId="3" label="Outils">
-            <TreeItem nodeId="3.1" label="Pogues" />
-            <TreeItem nodeId="3.2" label="Eno" />
-            <TreeItem nodeId="3.3" label="Lunatic" />
-            <TreeItem nodeId="3.4" label="Stromae" />
-          </TreeItem>
-          <TreeItem nodeId="4" label="Produits">
-            <TreeItem nodeId="4.1" label="Produit 1" />
-            <TreeItem nodeId="4.2" label="Produit 2" />
-          </TreeItem>
+          {buildNode(gsbpm, gsbpm.nodeKey)}
+          {buildNode(produits, produits.nodeKey)}
+          {buildNode(services, services.nodeKey)}
+          {buildNode(statuts, statuts.nodeKey)}
+          {buildNode(utilisateurs, utilisateurs.nodeKey)}
+          
         </TreeView>
       </Card>
     </Box>
