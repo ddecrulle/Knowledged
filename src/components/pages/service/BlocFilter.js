@@ -28,8 +28,6 @@ const useStyles = makeStyles()((theme) => ({
   },
   card: {
     boxShadow: theme.shadows[4],
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
     [theme.breakpoints.up("xs")]: {
       paddingTop: theme.spacing(1),
       paddingBottom: theme.spacing(1),
@@ -63,24 +61,19 @@ const useStyles = makeStyles()((theme) => ({
   },
 }));
 
-const buildNode = (obj, key) => {
-  if (!obj[key]) {
-    return <TreeItem nodeId={obj.id} label={obj.label} />;
-  } else {
-    return (
-      <TreeItem nodeId={obj.id} label={obj.label}>
-        {obj[key].map((element) => {
-          return buildNode(element, key);
-        })}
-      </TreeItem>
-    );
-  }
-};
+const renderTree = (nodes, nodeKey) => (
+  <TreeItem key={nodes.id} nodeId={nodes.id} label={nodes.label}>
+    {Array.isArray(nodes[nodeKey])
+      ? nodes[nodeKey].map((node) => renderTree(node, nodeKey))
+      : null}
+  </TreeItem>
+);
 
 const BlocFilter = () => {
   // const [search, setSearch] = useSearchParams();
   const [expanded, setExpanded] = useState([]);
   const [selected, setSelected] = useState([]);
+  const [value, setValue] = useState([]);
 
   const handleToggle = (event, nodeIds) => {
     setExpanded(nodeIds);
@@ -97,8 +90,6 @@ const BlocFilter = () => {
   const handleUnselectClick = () => {
     setSelected([]);
   };
-
-  const [value, setValue] = useState([]);
 
   useEffect(() => {
     console.log(value);
@@ -142,11 +133,11 @@ const BlocFilter = () => {
           onNodeSelect={handleSelect}
           multiSelect
         >
-          {buildNode(gsbpm, gsbpm.nodeKey)}
-          {buildNode(produits, produits.nodeKey)}
-          {buildNode(services, services.nodeKey)}
-          {buildNode(statuts, statuts.nodeKey)}
-          {buildNode(utilisateurs, utilisateurs.nodeKey)}
+          {renderTree(gsbpm, gsbpm.nodeKey)}
+          {renderTree(produits, produits.nodeKey)}
+          {renderTree(services, services.nodeKey)}
+          {renderTree(statuts, statuts.nodeKey)}
+          {renderTree(utilisateurs, utilisateurs.nodeKey)}
         </TreeView>
       </Card>
     </Box>

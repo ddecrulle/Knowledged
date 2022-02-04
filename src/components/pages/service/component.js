@@ -32,7 +32,7 @@ const useStyles = makeStyles()((theme) => {
       marginLeft: "auto",
       minWidth: 500,
       marginTop: theme.spacing(6),
-      marginBottom: theme.spacing(12),
+      marginBottom: theme.spacing(6),
       [theme.breakpoints.down("md")]: {
         marginBottom: theme.spacing(9),
       },
@@ -46,8 +46,6 @@ const useStyles = makeStyles()((theme) => {
     row: {
       display: "flex",
       flexWrap: "wrap",
-      marginRight: -theme.spacing(2),
-      marginLeft: -theme.spacing(2),
     },
     card: {
       boxShadow: theme.shadows[4],
