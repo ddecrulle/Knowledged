@@ -71,16 +71,16 @@ const InformationSysteme = () => {
   const { classes } = useStyles();
   return (
     <>
-      <div className={classes.lgPTop} >
+      <div className={classes.lgPTop}>
         <Typography variant="h3" align="center" className={classes.title}>
-          Le Système d'information
+          Le Système d'informations de collecte
         </Typography>
         <div className={classes.container}>
           <Box className={classes.box}>
-            <div className={"container"} >
+            <div className={"container"}>
               <img
                 data-aos="zoom-in"
-                alt={"Le système d'information"}
+                alt={"Le système d'informations de collecte"}
                 src={si}
                 className={classes.image}
               />

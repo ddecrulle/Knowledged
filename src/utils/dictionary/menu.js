@@ -13,6 +13,12 @@ const Menu = [
 
 const SecondaryMenu = [
   {
+    label: "Se connecter",
+    pathname: "/signin",
+    external: false,
+    disabled: true
+  },
+  {
     label: "Github",
     pathname: "https://github.com/ddecrulle/knowledge",
     icon: "github",

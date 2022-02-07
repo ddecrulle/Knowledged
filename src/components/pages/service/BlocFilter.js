@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useQueryParam } from "utils/hooks";
 // import { useSearchParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import { makeStyles } from "tss-react/mui";
@@ -10,6 +11,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
+
 import { top100Films } from "./top100films";
 import {
   gsbpm,
@@ -70,18 +72,33 @@ const renderTree = (nodes, nodeKey) => (
 );
 
 const BlocFilter = () => {
-  // const [search, setSearch] = useSearchParams();
-  const [expanded, setExpanded] = useState([]);
-  const [selected, setSelected] = useState([]);
-  const [value, setValue] = useState([]);
+  const { classes } = useStyles();
 
-  const handleToggle = (event, nodeIds) => {
+  const [, setFilter] = useQueryParam("filter");
+  const [expanded, setExpanded] = useQueryParam("expanded");
+  const [selected, setSelected] = useQueryParam("selected");
+  const [value, setValue] = useState([]); // TODO Init value (when filter isnt empy at start)
+
+  const handleAutocomplete = (_, newValue) => {
+    setValue(newValue);
+    setFilter(newValue.map((e) => e.title));
+  };
+
+  const handleToggle = (_, nodeIds) => {
     setExpanded(nodeIds);
   };
 
-  const handleSelect = (event, nodeIds) => {
+  const handleSelect = (_, nodeIds) => {
     setSelected(nodeIds);
   };
+
+  useEffect(() => {
+    console.log(`expanded : ${expanded}`);
+  }, [expanded]);
+
+  useEffect(() => {
+    console.log(`selected : ${selected}`);
+  }, [selected]);
 
   const handleCollapseClick = () => {
     setExpanded([]);
@@ -91,11 +108,6 @@ const BlocFilter = () => {
     setSelected([]);
   };
 
-  useEffect(() => {
-    console.log(value);
-  }, [value]);
-
-  const { classes } = useStyles();
   return (
     <Box className={classes.box}>
       <Card className={classes.card}>
@@ -113,9 +125,7 @@ const BlocFilter = () => {
             />
           )}
           value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
+          onChange={handleAutocomplete}
         />
         <Button onClick={handleCollapseClick} disabled={expanded.length === 0}>
           Tout réduire

@@ -12,12 +12,13 @@ import Tab from "@mui/material/Tab";
 import MenuIcon from "@mui/icons-material/Menu";
 import GithubIcon from "@mui/icons-material/GitHub";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import Box from "@mui/material/Box";
 import ListItemText from "@mui/material/ListItemText";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import logo from "img/image.svg";
 import { Menu, SecondaryMenu } from "utils/dictionary/menu";
-import { Link ,useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Link as MaterialLink } from "@mui/material";
 
 const useStyles = makeStyles()((theme) => {
@@ -38,10 +39,6 @@ const useStyles = makeStyles()((theme) => {
     flex: {
       display: "flex",
       alignItems: "center",
-      [theme.breakpoints.down("sm")]: {
-        display: "flex",
-        justifyContent: "space-evenly",
-      },
     },
     link: {
       textDecoration: "none",
@@ -52,21 +49,17 @@ const useStyles = makeStyles()((theme) => {
       borderLeft: `1px solid ${theme.palette.grey["A400"]}`,
       marginLeft: 32,
       paddingLeft: 24,
-      // [theme.breakpoints.up("md")]: {
-      //   paddingTop: "1.5em",
-      // },
     },
     tagline: {
       display: "inline-block",
       marginLeft: 10,
-      // [theme.breakpoints.up("md")]: {
-      //   paddingTop: "0.8em",
-      // },
     },
     iconContainer: {
       display: "none",
-      [theme.breakpoints.down("sm")]: {
-        display: "block",
+      [theme.breakpoints.down("md")]: {
+        display: "flex",
+        justifyContent: "flex-end",
+        flexGrow: 1,
       },
     },
     iconButton: {
@@ -77,7 +70,7 @@ const useStyles = makeStyles()((theme) => {
       display: "flex",
       flexGrow: 1,
       justifyContent: "space-between",
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("md")]: {
         display: "none",
       },
     },
@@ -90,7 +83,7 @@ const useStyles = makeStyles()((theme) => {
 });
 
 const Header = () => {
-  const location = useLocation()
+  const location = useLocation();
 
   const [open, setOpen] = useState(false);
   const { classes } = useStyles();
@@ -112,7 +105,7 @@ const Header = () => {
               <div className={classes.productLogo}>
                 <Typography>Métallica</Typography>
               </div>
-              <div className={classes.iconContainer}>
+              <Box className={classes.iconContainer}>
                 <IconButton
                   onClick={() => setOpen(true)}
                   className={classes.iconButton}
@@ -121,7 +114,7 @@ const Header = () => {
                 >
                   <MenuIcon />
                 </IconButton>
-              </div>
+              </Box>
               <div className={classes.tabContainer}>
                 <SwipeableDrawer
                   anchor="right"
@@ -132,7 +125,7 @@ const Header = () => {
                   <AppBar title="Menu" />
                   <List>
                     {Menu.map((item, index) => (
-                      <ListItem
+                      <ListItemButton
                         component={item.external ? MaterialLink : Link}
                         href={item.external ? item.pathname : null}
                         to={item.external ? null : item.pathname}
@@ -141,21 +134,22 @@ const Header = () => {
                         key={item.label}
                       >
                         <ListItemText primary={item.label} />
-                      </ListItem>
+                      </ListItemButton>
                     ))}
                     <Divider />
                   </List>
                   <List>
                     {SecondaryMenu.map((item, index) => (
-                      <ListItem
+                      <ListItemButton
                         component={item.external ? MaterialLink : Link}
                         href={item.external ? item.pathname : null}
                         to={item.external ? null : item.pathname}
                         button
+                        disabled={item.disabled}
                         key={item.label}
                       >
                         <ListItemText primary={item.label} />
-                      </ListItem>
+                      </ListItemButton>
                     ))}
                     <Divider />
                   </List>
@@ -164,7 +158,6 @@ const Header = () => {
                   value={location.pathname}
                   indicatorColor="primary"
                   textColor="primary"
-                  // onChange={handleChange}
                 >
                   {Menu.map((item, index) => (
                     <Tab
@@ -181,16 +174,21 @@ const Header = () => {
                 <Tabs
                   indicatorColor="primary"
                   textColor="primary"
-                  // onChange={this.handleChangeSecondary}
+                  value={0}
+                  TabIndicatorProps={{
+                    style: {
+                      display: "none",
+                    },
+                  }}
                 >
                   {SecondaryMenu.map((item, index) => (
                     <Tab
-                      iconContainer
                       key={`secondary-${index}`}
                       component={item.external ? MaterialLink : Link}
                       href={item.external ? item.pathname : null}
                       to={item.external ? null : item.pathname}
                       classes={classes.tabItem}
+                      disabled={item.disabled}
                       label={
                         <div>
                           {item.label}{" "}

@@ -1,7 +1,7 @@
 import React from "react";
 import Metallica from "./headSection";
 import Application from "./products";
-import InformationSysteme from "./informationSysteme";
+import InformationSysteme from "./informationSystem";
 import Footer from "components/shared/footer/component";
 
 const Home = () => {
