@@ -1,5 +1,5 @@
 // import * as JSURL from "jsurl";
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 export const useQueryParam = () => {
