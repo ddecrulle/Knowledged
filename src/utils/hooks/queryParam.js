@@ -1,21 +1,26 @@
-import { useMemo, useCallback } from "react";
-import * as JSURL from "jsurl";
+// import * as JSURL from "jsurl";
+import { useCallback, useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
-export const useQueryParam = (key) => {
+export const useQueryParam = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const paramValue = searchParams.get(key);
+  // We assume that searchParam is fresh only at init
+  const [freshSearchParams, setFreshSearchParams] = useState(() => {
+    return Object.entries([...searchParams]).reduce(
+      (acc, [k, v]) => ({ ...acc, [k]: v }),
+      {}
+    );
+  });
 
-  const value = useMemo(() => JSURL.parse(paramValue) || [], [paramValue]);
+  const get = (key) => freshSearchParams[key] || [];
 
-  const setValue = useCallback(
-    (newValue) => {
-      const newSearchParams = new URLSearchParams(searchParams);
-      newSearchParams.set(key, JSURL.stringify(newValue));
-      setSearchParams(newSearchParams);
+  const post = useCallback(
+    (key) => (value) => {
+      setSearchParams({ ...freshSearchParams, [key]: value });
+      setFreshSearchParams((t) => ({ ...t, [key]: value }));
     },
-    [key, searchParams, setSearchParams]
+    [freshSearchParams, setSearchParams]
   );
 
-  return [value, setValue];
+  return { get, post };
 };

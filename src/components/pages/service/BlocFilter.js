@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useQueryParam } from "utils/hooks";
-// import { useSearchParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import { makeStyles } from "tss-react/mui";
 import TreeView from "@mui/lab/TreeView";
@@ -74,38 +73,33 @@ const renderTree = (nodes, nodeKey) => (
 const BlocFilter = () => {
   const { classes } = useStyles();
 
-  const [, setFilter] = useQueryParam("filter");
-  const [expanded, setExpanded] = useQueryParam("expanded");
-  const [selected, setSelected] = useQueryParam("selected");
+  const { get, post } = useQueryParam();
+  const expanded = get("expanded");
+  const selected = get("selected");
+
   const [value, setValue] = useState([]); // TODO Init value (when filter isnt empy at start)
 
   const handleAutocomplete = (_, newValue) => {
     setValue(newValue);
-    setFilter(newValue.map((e) => e.title));
+    post("filter")(newValue.map((e) => e.title));
   };
 
   const handleToggle = (_, nodeIds) => {
-    setExpanded(nodeIds);
+    console.log("handleToggle");
+    post("expanded")(nodeIds);
   };
 
   const handleSelect = (_, nodeIds) => {
-    setSelected(nodeIds);
+    console.log("handleSelect");
+    post("selected")(nodeIds);
   };
 
-  useEffect(() => {
-    console.log(`expanded : ${expanded}`);
-  }, [expanded]);
-
-  useEffect(() => {
-    console.log(`selected : ${selected}`);
-  }, [selected]);
-
   const handleCollapseClick = () => {
-    setExpanded([]);
+    post("expanded")([]);
   };
 
   const handleUnselectClick = () => {
-    setSelected([]);
+    post("selected")([]);
   };
 
   return (
