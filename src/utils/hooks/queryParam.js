@@ -1,38 +1,37 @@
-import { useCallback, useState } from "react";
+import { useMemo } from "react";
+import { useConstCallback } from "powerhooks/useConstCallback";
 import { useSearchParams } from "react-router-dom";
 
+const groupParamsByKey = (params) =>
+  [...params.entries()].reduce((acc, tuple) => {
+    // getting the key and value from each tuple
+    const [key, val] = tuple;
+    if (acc.hasOwnProperty(key)) {
+      // if the current key is already an array, we'll add the value to it
+      if (Array.isArray(acc[key])) {
+        acc[key] = [...acc[key], val];
+      }
+    } else {
+      acc[key] = [val];
+    }
+
+    return acc;
+  }, {});
 export const useQueryParam = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  // We assume that searchParam is fresh only at init
-  const [freshSearchParams, setFreshSearchParams] = useState(() => {
-    console.log(`searchParams : ${searchParams}`);
-    console.log(
-      `searchParamsWithDecode : ${JSON.stringify(
-        Object.fromEntries(searchParams)
-      )}`
-    );
-    return Object.fromEntries(searchParams);
-  });
 
-  const get = (key) => {
-    return freshSearchParams[key] || [];
-  };
-
-  const post = useCallback(
-    (key) => (value) => {
-      // const newSearchParams = new URLSearchParams(freshSearchParams);
-      // newSearchParams.set(key, value);
-      console.log(`freshPost ${JSON.stringify(freshSearchParams)}`);
-      console.log(`searchParams ${searchParams.getAll(key)}`);
-      console.log(`key : ${key} value : ${value}`);
-      console.log(
-        `things set ${JSON.stringify({ ...freshSearchParams, [key]: value })}`
-      );
-      setSearchParams({ ...freshSearchParams, [key]: value });
-      setFreshSearchParams((t) => ({ ...t, [key]: value }));
-    },
-    [freshSearchParams, searchParams, setSearchParams, setFreshSearchParams]
+  const freshSearchParams = useMemo(
+    () => groupParamsByKey(searchParams),
+    [searchParams]
   );
+
+  const get = useConstCallback((key) => freshSearchParams[key] ?? []);
+
+  const post = useConstCallback((key, value) => {
+    //debugger;
+    console.log(JSON.stringify({ ...freshSearchParams, [key]: value }));
+    return setSearchParams({ ...freshSearchParams, [key]: value });
+  });
 
   return { get, post };
 };

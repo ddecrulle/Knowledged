@@ -75,36 +75,42 @@ const BlocFilter = () => {
 
   const { get, post } = useQueryParam();
   const expanded = get("expanded");
-  const selected = get("selected");
+  const [selected, setSelected] = useState([]);
+  // const selected = get("selected");
 
-  // useEffect(() => {
-  //   console.log(`expanded ${expanded} and ${typeof expanded}`);
-  //   console.log(`selected ${selected} and ${typeof expanded}`);
-  // }, [selected, expanded]);
+  useEffect(() => {
+    console.log(`expanded ${expanded} and ${typeof expanded}`);
+    console.log(`selected ${selected} and ${typeof expanded}`);
+  }, [selected, expanded]);
 
   const [value, setValue] = useState([]); // TODO Init value (when filter isnt empy at start)
 
   const handleAutocomplete = (_, newValue) => {
     setValue(newValue);
-    post("filter")(newValue.map((e) => e.title));
+    post(
+      "filter",
+      newValue.map((e) => e.title)
+    );
   };
 
   const handleToggle = (_, nodeIds) => {
-    // console.log(`Handle Toggle nodeIds : ${nodeIds}`);
-    post("expanded")(nodeIds);
+    console.log(`Handle Toggle nodeIds : ${nodeIds}`);
+    post("expanded", nodeIds);
   };
 
   const handleSelect = (_, nodeIds) => {
-    // console.log(`Handle select nodeIds : ${nodeIds}`);
-    post("selected")(nodeIds);
+    console.log(`Handle select nodeIds : ${nodeIds}`);
+    setSelected(nodeIds);
+    // post("selected", nodeIds);
   };
 
   const handleCollapseClick = () => {
-    post("expanded")([]);
+    post("expanded",[]);
   };
 
   const handleUnselectClick = () => {
-    post("selected")([]);
+    // post("selected")([]);
+    setSelected([]);
   };
 
   return (
