@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useQueryParam } from "utils/hooks";
 import Card from "@mui/material/Card";
 import { makeStyles } from "tss-react/mui";
@@ -77,6 +77,11 @@ const BlocFilter = () => {
   const expanded = get("expanded");
   const selected = get("selected");
 
+  // useEffect(() => {
+  //   console.log(`expanded ${expanded} and ${typeof expanded}`);
+  //   console.log(`selected ${selected} and ${typeof expanded}`);
+  // }, [selected, expanded]);
+
   const [value, setValue] = useState([]); // TODO Init value (when filter isnt empy at start)
 
   const handleAutocomplete = (_, newValue) => {
@@ -85,12 +90,12 @@ const BlocFilter = () => {
   };
 
   const handleToggle = (_, nodeIds) => {
-    console.log("handleToggle");
+    // console.log(`Handle Toggle nodeIds : ${nodeIds}`);
     post("expanded")(nodeIds);
   };
 
   const handleSelect = (_, nodeIds) => {
-    console.log("handleSelect");
+    // console.log(`Handle select nodeIds : ${nodeIds}`);
     post("selected")(nodeIds);
   };
 
