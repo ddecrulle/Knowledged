@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { useMemo, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const useTreeUrlStatus = () => {
   const [searchParams, setSearchParams] = useSearchParams();

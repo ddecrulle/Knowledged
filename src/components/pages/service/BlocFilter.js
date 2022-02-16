@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTreeUrlStatus } from "utils/hooks";
-import { useQueryParam } from "utils/hooks";
 import Card from "@mui/material/Card";
 import { makeStyles } from "tss-react/mui";
 import TreeView from "@mui/lab/TreeView";
