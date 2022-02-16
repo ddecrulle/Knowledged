@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useTreeUrlStatus } from "utils/hooks";
 import { useQueryParam } from "utils/hooks";
 import Card from "@mui/material/Card";
 import { makeStyles } from "tss-react/mui";
@@ -73,44 +74,32 @@ const renderTree = (nodes, nodeKey) => (
 const BlocFilter = () => {
   const { classes } = useStyles();
 
-  const { get, post } = useQueryParam();
-  const expanded = get("expanded");
-  const [selected, setSelected] = useState([]);
-  // const selected = get("selected");
+  const [treeState, setTreeState] = useTreeUrlStatus();
 
-  useEffect(() => {
-    console.log(`expanded ${expanded} and ${typeof expanded}`);
-    console.log(`selected ${selected} and ${typeof expanded}`);
-  }, [selected, expanded]);
+  // const [selected, setSelected] = useState([]);
 
-  const [value, setValue] = useState([]); // TODO Init value (when filter isnt empy at start)
+  // const [value, setValue] = useState([]); // TODO Init value (when filter isnt empy at start)
 
   const handleAutocomplete = (_, newValue) => {
-    setValue(newValue);
-    post(
-      "filter",
-      newValue.map((e) => e.title)
-    );
+    console.log(newValue);
+    setTreeState("filter", newValue);
   };
 
   const handleToggle = (_, nodeIds) => {
-    console.log(`Handle Toggle nodeIds : ${nodeIds}`);
-    post("expanded", nodeIds);
+    setTreeState("expanded", nodeIds);
   };
 
   const handleSelect = (_, nodeIds) => {
-    console.log(`Handle select nodeIds : ${nodeIds}`);
-    setSelected(nodeIds);
-    // post("selected", nodeIds);
+    setTreeState("selected", nodeIds);
   };
 
   const handleCollapseClick = () => {
-    post("expanded",[]);
+    setTreeState("expanded", []);
   };
 
   const handleUnselectClick = () => {
-    // post("selected")([]);
-    setSelected([]);
+    setTreeState("selected", []);
+    // setSelected([]);
   };
 
   return (
@@ -129,21 +118,27 @@ const BlocFilter = () => {
               label="Produits, SGBPM, Jalons ..."
             />
           )}
-          value={value}
+          value={treeState.filter}
           onChange={handleAutocomplete}
         />
-        <Button onClick={handleCollapseClick} disabled={expanded.length === 0}>
+        <Button
+          onClick={handleCollapseClick}
+          disabled={treeState.expanded.length === 0}
+        >
           Tout réduire
         </Button>
-        <Button onClick={handleUnselectClick} disabled={selected.length === 0}>
+        <Button
+          onClick={handleUnselectClick}
+          disabled={treeState.selected.length === 0}
+        >
           Tout désélectionner
         </Button>
         <TreeView
           aria-label="services navigator"
           defaultCollapseIcon={<ExpandMoreIcon />}
           defaultExpandIcon={<ChevronRightIcon />}
-          expanded={expanded}
-          selected={selected}
+          expanded={treeState.expanded}
+          selected={treeState.selected}
           onNodeToggle={handleToggle}
           onNodeSelect={handleSelect}
           multiSelect
