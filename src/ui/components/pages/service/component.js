@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "tss-react/mui";
-import Footer from "components/shared/footer/component";
+import Footer from "ui/components/shared/footer/component";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-import atelierConception from "img/atelierConception.png";
+import atelierConception from "ui/components/assets/img/atelierConception.png";
 import BlocFilter from "./BlocFilter";
 
 const useStyles = makeStyles()((theme) => {

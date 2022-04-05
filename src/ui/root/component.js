@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos/dist/aos";
 import "aos/dist/aos.css";
-import Home from "components/pages/home";
-import Service from "components/pages/service";
-import TopBar from "components/shared/topbar";
+import Home from "ui/components/pages/home";
+import Service from "ui/components/pages/service";
+import TopBar from "ui/components/shared/topbar";
 
 AOS.init({ once: true });
 

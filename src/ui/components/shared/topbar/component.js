@@ -16,7 +16,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import Box from "@mui/material/Box";
 import ListItemText from "@mui/material/ListItemText";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import logo from "img/image.svg";
+import logo from "ui/components/assets/img/image.svg";
 import { Menu, SecondaryMenu } from "utils/dictionary/menu";
 import { Link, useLocation } from "react-router-dom";
 import { Link as MaterialLink } from "@mui/material";
