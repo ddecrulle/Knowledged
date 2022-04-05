@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import Hidden from "@mui/material/Hidden";
 import Box from "@mui/system/Box";
-import picture from "img/funny-portrait-of-a-businessman-with-many-arms-picture.jpg";
-import WaveBorder from "components/shared/waveBorder/component";
+import picture from "ui/components/assets/img/funny-portrait-of-a-businessman-with-many-arms-picture.jpg";
+import WaveBorder from "ui/components/shared/waveBorder/component";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles()((theme) => {

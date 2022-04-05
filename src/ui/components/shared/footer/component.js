@@ -1,5 +1,5 @@
 import React from "react";
-import WaveBorder from "components/shared/waveBorder";
+import WaveBorder from "ui/components/shared/waveBorder";
 import { makeStyles } from "tss-react/mui";
 import Typography from "@mui/material/Typography";
 

@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "tss-react/mui";
 import Box from "@mui/system/Box";
-import si from "img/siMetallica.png";
+import si from "ui/components/assets/img/siMetallica.png";
 
 const useStyles = makeStyles()((theme) => {
   return {

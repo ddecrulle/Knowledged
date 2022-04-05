@@ -1,6 +1,8 @@
 {
   "name": "knowledge",
   "version": "0.1.11",
+  "description": "The user interface that presents the service offer of the INSEE survey information system",
+  "author": "u/ddecrulle",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.7.1",

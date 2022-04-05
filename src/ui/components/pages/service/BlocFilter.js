@@ -114,7 +114,7 @@ const BlocFilter = () => {
             <TextField
               {...params}
               variant="outlined"
-              label="Produits, SGBPM, Jalons ..."
+              label="Produits, GSBPM, Jalons ..."
             />
           )}
           value={treeState.filter}
