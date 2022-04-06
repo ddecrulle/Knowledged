@@ -2,8 +2,16 @@ name: Changelog CI
 
 on:
   pull_request:
-    types: [ opened ]
+    branches:
+      - main
+    types: [opened]
 
+  # Optionally you can use `workflow_dispatch` to run Changelog CI Manually
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: "Set Release Version"
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,16 +30,10 @@ jobs:
           # e.g: group your changelog by labels with custom titles,
           # different version prefix, pull request title and version number regex etc.
           # config file can be in JSON or YAML format.
-          # config_file: changelog-ci-config.json
-          # Optional, This will be used to configure git
-          # defaults to `github-actions[bot]` if not provided.
-          # committer_username: 'test'
-          # committer_email: 'test@test.com'
-          # Optional, only required when you want to run Changelog CI 
+          config_file: changelog-ci-config.json
+          # Optional, only required when you want to run Changelog CI
           # on an event other than `pull_request` event.
           # In this example `release_version` is fetched from `workflow_dispatch` events input.
           # You can use any other method to fetch the release version
           # such as environment variable or from output of another action
           release_version: ${{ github.event.inputs.release_version }}
-          # Optional
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
