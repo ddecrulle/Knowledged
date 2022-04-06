@@ -11,7 +11,7 @@ Knowledge is built with React. It was initialized with a classic Create React Ap
 
 ## Getting started
 
-Clone this project and navigate to the `Knowledge` directory
+Clone this project and navigate to the `Knowledge` directory.
 
 ```bash
 git clone git@github.com:ddecrulle/Knowledge.git
