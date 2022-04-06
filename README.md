@@ -1,6 +1,9 @@
 <h1 align="center">Welcome to Knowledge 👋</h1>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Changelog CI Status](https://github.com/<username>/<repository>/workflows/Changelog%20CI/badge.svg)
+
+<img src="https://socialify.git.ci/ddecrulle/knowledge/image?description=1&descriptionEditable=The%20application%20that%20presents%20INSEE%27s%20data%20collecting%20services&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&theme=Light" alt="Knowledge" width="640" height="320" />
 
 ![Knowledge](https://socialify.git.ci/ddecrulle/knowledge/image?description=1&descriptionEditable=The%20application%20that%20presents%20INSEE%27s%20data%20collecting%20services&font=Inter&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
 
