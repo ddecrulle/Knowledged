@@ -84,7 +84,7 @@ jobs:
           push: true
           context: .
           tags: ${{ steps.step1.outputs.docker_tags }}
-          file: Dockerfile.ci
+          file: Dockerfile
 
   update_changelog:
     runs-on: ubuntu-latest
