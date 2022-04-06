@@ -1,6 +1,6 @@
 {
   "name": "knowledge",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The user interface that presents the service offer of the INSEE survey information system",
   "author": "u/ddecrulle",
   "license": "MIT",
