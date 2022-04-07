@@ -4,14 +4,7 @@ on:
   pull_request:
     branches:
         - main
-    types: [ opened ]
-
-  # Optionally you can use `workflow_dispatch` to run Changelog CI Manually
-  workflow_dispatch:
-    inputs:
-      release_version:
-        description: 'Set Release Version'
-        required: true
+    types: [ opened, reopened ]
 
 jobs:
   build:
@@ -34,4 +27,4 @@ jobs:
           # In this example `release_version` is fetched from `workflow_dispatch` events input.
           # You can use any other method to fetch the release version
           # such as environment variable or from output of another action
-          release_version: ${{ github.event.inputs.release_version }}
+          # release_version: ${{ github.event.inputs.release_version }}
