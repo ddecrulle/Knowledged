@@ -5,8 +5,8 @@
   "comment_changelog": true,
   "include_unlabeled_changes": true,
   "unlabeled_group_title": "Unlabeled Changes",
-  "pull_request_title_regex": "^Release",
-  "version_regex": "",
+  "pull_request_title_regex": ".*",
+  "version_regex": ".*",
   "group_config": [
     {
       "title": ":bug: Bug Fixes",
