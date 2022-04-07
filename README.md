@@ -1,11 +1,11 @@
 <h1 align="center">Welcome to Knowledge 👋</h1>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Changelog CI Status](https://github.com/<username>/<repository>/workflows/Changelog%20CI/badge.svg)
+![Changelog CI Status](https://github.com/ddecrulle/knowledge/workflows/Changelog%20CI/badge.svg)
 
-<img src="https://socialify.git.ci/ddecrulle/knowledge/image?description=1&descriptionEditable=The%20application%20that%20presents%20INSEE%27s%20data%20collecting%20services&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&theme=Light" alt="Knowledge" width="640" height="320" />
-
-![Knowledge](https://socialify.git.ci/ddecrulle/knowledge/image?description=1&descriptionEditable=The%20application%20that%20presents%20INSEE%27s%20data%20collecting%20services&font=Inter&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+<a href="https://socialify.git.ci/ddecrulle/knowledge?description=1&descriptionEditable=The%20application%20that%20presents%20service%20offer%20of%20the%20INSEE%20survey%20information%20system%20&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&theme=Light">
+<img  alt="socialify image" src="https://socialify.git.ci/ddecrulle/knowledge/image?description=1&descriptionEditable=The%20application%20that%20presents%20service%20offer%20of%20the%20INSEE%20survey%20information%20system%20&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&theme=Light" alt="Knowledge" width="640" height="320" />
+</a>
 
 Knowledge is built with React. It was initialized with a classic Create React App and is deisgned thanks to Material UI
 
