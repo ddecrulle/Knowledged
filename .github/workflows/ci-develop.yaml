@@ -75,6 +75,22 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Computing Docker image tags
+        id: step1
+        env:
+          IS_UPGRADED_VERSION: ${{ needs.check_if_version_upgraded.outputs.is_upgraded_version }}
+          TO_VERSION: ${{ needs.check_if_version_upgraded.outputs.to_version }}
+        run: |
+          OUT=$GITHUB_REPOSITORY:$(
+          [ "$GITHUB_EVENT_NAME" == "pull_request" ] &&
+            echo "$GITHUB_HEAD_REF" ||
+            echo "${GITHUB_REF#refs/*/}"
+          )
+          if [ "$IS_UPGRADED_VERSION" = "true" ]; then
+            OUT=$OUT,$GITHUB_REPOSITORY:$TO_VERSION,$GITHUB_REPOSITORY:latest
+          fi
+          OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
+          echo ::set-output name=docker_tags::$OUT
       - uses: actions/download-artifact@v2
         with:
           name: build
@@ -84,5 +100,5 @@ jobs:
         with:
           push: true
           context: .
-          tags: v${{ needs.check_if_version_upgraded.outputs.to_version }}-rc
+          tags: ${{ steps.step1.outputs.docker_tags }}
           file: Dockerfile
