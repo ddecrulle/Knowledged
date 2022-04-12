@@ -46,12 +46,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-      - uses: garronej/action-gh-release@v0.2.0
+      - uses: softprops/action-gh-release@v1
         with:
           name: Release Candidate v${{ needs.check_if_version_upgraded.outputs.to_version }}
-          tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}-rc-
+          tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}-rc
           target_commitish: ${{ github.ref }}
-          draft: false
+          draft: true
           prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
