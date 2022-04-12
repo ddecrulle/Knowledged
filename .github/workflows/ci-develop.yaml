@@ -50,8 +50,8 @@ jobs:
         with:
           name: Release Candidate v${{ needs.check_if_version_upgraded.outputs.to_version }}
           tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}-rc
-          #target_commitish: ${{ github.ref }}
-          draft: true
+          target_commitish: ${{ github.sha }}
+          draft: false
           prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -87,7 +87,7 @@ jobs:
             echo "${GITHUB_REF#refs/*/}"
           )
           if [ "$IS_UPGRADED_VERSION" = "true" ]; then
-            OUT=$OUT,$GITHUB_REPOSITORY:$TO_VERSION,$GITHUB_REPOSITORY:latest
+            OUT=$OUT,$GITHUB_REPOSITORY:$TO_VERSION-rc
           fi
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
           echo ::set-output name=docker_tags::$OUT
