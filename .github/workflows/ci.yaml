@@ -8,7 +8,6 @@ on:
       - main
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     if: github.event.head_commit.author.name != 'actions'

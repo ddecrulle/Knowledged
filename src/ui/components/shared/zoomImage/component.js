@@ -1,5 +1,5 @@
 const ZoomImage = () => {
-  return null;
+	return null;
 };
 
 export default ZoomImage;
