@@ -53,12 +53,12 @@ jobs:
         env:
           IS_UPGRADED_VERSION: ${{ needs.check_if_version_upgraded.outputs.is_upgraded_version }}
           TO_VERSION: ${{ needs.check_if_version_upgraded.outputs.to_version }}
-      - uses: 'marvinpinto/action-automatic-releases@latest'
+      - uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: '${{ secrets.GITHUB_TOKEN }}'
-          automatic_release_tag: 'latest'
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: latest
           prerelease: true
-          title: 'Development Build'
+          title: Development Build
           files: |
             CHANGELOG.md
 
