@@ -47,13 +47,11 @@ jobs:
         with:
           ref: ${{ github.ref }}
       - uses: garronej/action-gh-release@v0.2.0
-        if: startsWith(github.ref, 'refs/tags/')
         with:
-          name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
+          name: Release Candidate v${{ needs.check_if_version_upgraded.outputs.to_version }}
           tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}-rc-
           target_commitish: ${{ github.ref }}
-          body: ${{ steps.step1.outputs.body }}
-          draft: true
+          draft: false
           prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
