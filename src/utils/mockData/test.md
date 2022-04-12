@@ -1,6 +1,5 @@
 # Hierrarchie d'une "Fontion"
 
-
 ```json
 {
   "taches": [
@@ -30,10 +29,10 @@
 
 # Breadcrumbs
 
-## Par Outil/Produit 
+## Par Outil/Produit
 
-## Par Service  
+## Par Service
 
 ## Par Phase du GSBPM
 
-## Par Jalon 
+## Par Jalon
