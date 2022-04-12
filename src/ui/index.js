@@ -1,28 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Root from "./root/component";
-import reportWebVitals from "./reportWebVitals";
-import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme";
-import { CacheProvider } from "@emotion/react";
-import createCache from "@emotion/cache";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Root from './root/component';
+import reportWebVitals from './reportWebVitals';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
+import { CacheProvider } from '@emotion/react';
+import createCache from '@emotion/cache';
 
 export const muiCache = createCache({
-  key: "mui",
-  prepend: true,
+	key: 'mui',
+	prepend: true,
 });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <CacheProvider value={muiCache}>
-      <CssBaseline />
-      <ThemeProvider theme={theme}>
-        <Root />
-      </ThemeProvider>
-    </CacheProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+	<React.StrictMode>
+		<CacheProvider value={muiCache}>
+			<CssBaseline />
+			<ThemeProvider theme={theme}>
+				<Root />
+			</ThemeProvider>
+		</CacheProvider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

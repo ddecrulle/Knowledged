@@ -1,16 +1,16 @@
-import { fetcher } from "utils/fetch/fetcher";
-import { getEnvVar } from "utils/env";
+import { fetcher } from 'utils/fetch/fetcher';
+import { getEnvVar } from 'utils/env';
 
 // const postRequest = (url) => (body) => fetcher(url, "POST", body);
-const getRequest = (url) => fetcher(url, "GET", null);
+const getRequest = (url) => fetcher(url, 'GET', null);
 
 export const createApiClient = () => {
-  const apiUrl = getEnvVar("API_URL");
+	const apiUrl = getEnvVar('API_URL');
 
-  return {
-    getFunctions: async () => getRequest(`${apiUrl}/function/all`),
-    getFunctionById: async (id) => getRequest(`${apiUrl}/function/${id}`),
-    getHierarchies: async () => getRequest(`${apiUrl}/hierarchy/all`),
-    getHierarchyById: async (id) => getRequest(`${apiUrl}/hierarchy/${id}`),
-  };
+	return {
+		getFunctions: async () => getRequest(`${apiUrl}/function/all`),
+		getFunctionById: async (id) => getRequest(`${apiUrl}/function/${id}`),
+		getHierarchies: async () => getRequest(`${apiUrl}/hierarchy/all`),
+		getHierarchyById: async (id) => getRequest(`${apiUrl}/hierarchy/${id}`),
+	};
 };

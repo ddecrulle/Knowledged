@@ -1,1 +1,1 @@
-export { useStyles } from "./globalStyles";
+export { useStyles } from './globalStyles';
