@@ -39,28 +39,35 @@ jobs:
           action_name: is_package_json_version_upgraded
 
   release-snapshot:
+    runs-on: ubuntu-latest
     needs:
       - check_if_version_upgraded
       - build
-    name: Create Release snapshot
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
-      - name: Build release snapshot tag
+      - name: Build GitHub release body
         id: step1
+        run: |
+          if [ "$FROM_VERSION" = "0.0.0" ]; then
+              echo "::set-output name=body::🚀"
+          else
+              echo "::set-output name=body::📋 [CHANGELOG](https://github.com/$GITHUB_REPOSITORY/blob/v$TO_VERSION/CHANGELOG.md)"
+          fi
         env:
-          IS_UPGRADED_VERSION: ${{ needs.check_if_version_upgraded.outputs.is_upgraded_version }}
+          FROM_VERSION: ${{ needs.check_if_version_upgraded.outputs.from_version }}
           TO_VERSION: ${{ needs.check_if_version_upgraded.outputs.to_version }}
-      - uses: marvinpinto/action-automatic-releases@latest
+      - uses: garronej/action-gh-release@v0.2.0
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          automatic_release_tag: latest
+          name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
+          tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
+          target_commitish: ${{ github.ref }}
+          body: ${{ steps.step1.outputs.body }}
+          draft: false
           prerelease: true
-          title: Development Build
-          files: |
-            CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   docker:
     needs:
