@@ -1,5 +1,5 @@
 import React from 'react';
-import Metallica from './headSection';
+import HeadSection from './headSection';
 import Application from './products';
 import InformationSysteme from './informationSystem';
 import Footer from 'ui/components/shared/footer/component';
@@ -7,7 +7,7 @@ import Footer from 'ui/components/shared/footer/component';
 const Home = () => {
 	return (
 		<>
-			<Metallica />
+			<HeadSection />
 			<Application />
 			<InformationSysteme />
 			<Footer />
