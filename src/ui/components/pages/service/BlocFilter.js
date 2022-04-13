@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTreeUrlStatus } from 'utils/hooks';
+import { useTreeUrlStatus } from 'ui/utils/searchParams';
 import Card from '@mui/material/Card';
 import { makeStyles } from 'tss-react/mui';
 import TreeView from '@mui/lab/TreeView';
@@ -18,7 +18,7 @@ import {
 	services,
 	statuts,
 	utilisateurs,
-} from 'utils/mockData/treeData';
+} from 'core/mockData/treeData';
 
 const useStyles = makeStyles()((theme) => ({
 	box: {

@@ -1,11 +1,11 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { applications } from 'utils/dictionary/application';
+import { applications } from 'ui/components/dictionary/application';
 import ApplicationCard from './productsCard';
 import { makeStyles } from 'tss-react/mui';
 // import MockProducts from "utils/mockData/products";
-import { useIsWidthUp } from 'utils/hooks';
+import { useIsWidthUp } from 'ui/utils/hookStyle';
 
 const useStyles = makeStyles()((theme) => {
 	return {
