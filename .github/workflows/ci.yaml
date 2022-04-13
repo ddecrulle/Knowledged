@@ -100,7 +100,7 @@ jobs:
         with:
           name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
           tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
-          target_commitish: ${{ github.sha }}
+          target_commitish: ${{ github.ref }}
           generate_release_notes: true
           draft: false
           prerelease: false
