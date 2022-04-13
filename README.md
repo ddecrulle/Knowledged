@@ -43,3 +43,7 @@ In development mode, you can create a file `.env.local` and add values like in t
 This project follows [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/). To enforce that convention we have a [commitlint](https://github.com/conventional-changelog/commitlint) which lint commits before they are created thanks to [husky](https://typicode.github.io/husky/#/)
 
 The commitlint configuration can be change is [`commitlint.config.js`](/commitlint.config.js)
+
+Commits messages are use to build a released notes
+
+
