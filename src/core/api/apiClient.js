@@ -1,5 +1,5 @@
-import { fetcher } from 'utils/fetch/fetcher';
-import { getEnvVar } from 'utils/env';
+import { fetcher } from 'core/fetch/fetcher';
+import { getEnvVar } from 'core/env';
 
 // const postRequest = (url) => (body) => fetcher(url, "POST", body);
 const getRequest = (url) => fetcher(url, 'GET', null);

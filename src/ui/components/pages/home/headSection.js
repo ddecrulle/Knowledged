@@ -147,52 +147,50 @@ const HeadSection = () => {
 							data-aos-delay='200'
 							data-aos='zoom-in'
 						>
-							<div className={'container'}>
-								<Box justifyContent='space-between' className={classes.row}>
-									<Grid item xs={12} md={5}>
-										<Box
-											display='flex'
-											flexDirection='column'
-											justifyContent='space-between'
-											height='100%'
-										>
-											<Box mb={4}>
-												<Typography variant={'h4'}>
-													Bienvenue sur Knowledge
+							<Box justifyContent='space-between' className={classes.row}>
+								<Grid item xs={12} md={5}>
+									<Box
+										display='flex'
+										flexDirection='column'
+										justifyContent='space-between'
+										height='100%'
+									>
+										<Box mb={4}>
+											<Typography variant={'h4'}>
+												Bienvenue sur Knowledge
+											</Typography>
+										</Box>
+										<div>
+											<Box mb={2}>
+												<Typography variant={'body1'} color='textSecondary'>
+													Lorem ipsum dolor sit amet, consetetur sadipscing
+													elitr, sed diam nonumy eirmod tempor invidunt
 												</Typography>
 											</Box>
-											<div>
-												<Box mb={2}>
-													<Typography variant={'body1'} color='textSecondary'>
-														Lorem ipsum dolor sit amet, consetetur sadipscing
-														elitr, sed diam nonumy eirmod tempor invidunt
-													</Typography>
-												</Box>
-												<Button
-													variant='contained'
-													color='secondary'
-													fullWidth
-													className={classes.extraLargeButton}
-													classes={classes.extraLargeButtonLabel}
-													component={Link}
-													to='services'
-												>
-													Parcourir l'offre de service{' '}
-												</Button>
-											</div>
-										</Box>
+											<Button
+												variant='contained'
+												color='secondary'
+												fullWidth
+												className={classes.extraLargeButton}
+												classes={classes.extraLargeButtonLabel}
+												component={Link}
+												to='services'
+											>
+												Parcourir l'offre de service{' '}
+											</Button>
+										</div>
+									</Box>
+								</Grid>
+								<Hidden mdDown>
+									<Grid item md={6}>
+										<img
+											alt={'programme Metallica'}
+											src={picture}
+											className={classes.image}
+										/>
 									</Grid>
-									<Hidden mdDown>
-										<Grid item md={6}>
-											<img
-												alt={'programme Metallica'}
-												src={picture}
-												className={classes.image}
-											/>
-										</Grid>
-									</Hidden>
-								</Box>
-							</div>
+								</Hidden>
+							</Box>
 						</Card>
 					</Box>
 				</div>
