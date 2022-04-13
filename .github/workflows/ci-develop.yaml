@@ -41,6 +41,7 @@ jobs:
   release-snapshot:
     runs-on: ubuntu-latest
     needs:
+      - build
       - check_if_version_upgraded
     steps:
       - uses: actions/checkout@v2

@@ -89,6 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - check_if_version_upgraded
+      - build
     if: |
       needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&
       github.event_name == 'push'
