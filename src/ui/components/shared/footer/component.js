@@ -2,6 +2,7 @@ import React from 'react';
 import WaveBorder from 'ui/components/shared/waveBorder';
 import { makeStyles } from 'tss-react/mui';
 import Typography from '@mui/material/Typography';
+import version from 'core/version';
 
 const useStyles = makeStyles()((theme, { upperColor }) => {
 	return {
@@ -46,7 +47,7 @@ const Footer = ({ upperColor = '#FFFFFF' }) => {
 			/>
 			<div className={classes.footerInner}>
 				<Typography variant='h6' paragraph className={classes.text}>
-					Insee - Knowledge
+					Insee - Knowledge v{version}
 				</Typography>
 			</div>
 		</footer>
