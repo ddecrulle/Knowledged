@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.head_commit.author.name != 'actions'
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2.1.3
-      with:
-        node-version: '14'
-    - uses: bahmutov/npm-install@v1
-    #- run: yarn test
-    - run: yarn build
-    - uses: actions/upload-artifact@v2
-      with:
-        name: build
-        path: build
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.3
+        with:
+          node-version: '14'
+      - uses: bahmutov/npm-install@v1
+      #- run: yarn test
+      - run: yarn build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build
 
   check_if_version_upgraded:
     name: Check if version upgrade
@@ -33,22 +33,22 @@ jobs:
       to_version: ${{ steps.step1.outputs.to_version }}
       is_upgraded_version: ${{ steps.step1.outputs.is_upgraded_version }}
     steps:
-    - uses: garronej/github_actions_toolkit@v2.2
-      id: step1
-      with: 
-        action_name: is_package_json_version_upgraded
+      - uses: garronej/github_actions_toolkit@v2.2
+        id: step1
+        with:
+          action_name: is_package_json_version_upgraded
 
   docker:
-    needs: 
+    needs:
       - check_if_version_upgraded
       - build
     runs-on: ubuntu-latest
-    # We publish the the docker image only if it's a push on the default branch or if it's a PR from a 
-    # branch (meaning not a PR from a fork). It would be more straightforward to test if secrets.DOCKERHUB_TOKEN is 
+    # We publish the the docker image only if it's a push on the default branch or if it's a PR from a
+    # branch (meaning not a PR from a fork). It would be more straightforward to test if secrets.DOCKERHUB_TOKEN is
     # defined but GitHub Action don't allow it.
     if: |
-      github.event_name == 'push' || 
-      github.event.pull_request.head.repo.owner.login == github.event.pull_request.base.repo.owner.login 
+      needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&
+      github.event_name == 'push'
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
@@ -59,7 +59,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Computing Docker image tags
         id: step1
-        env: 
+        env:
           IS_UPGRADED_VERSION: ${{ needs.check_if_version_upgraded.outputs.is_upgraded_version }}
           TO_VERSION: ${{ needs.check_if_version_upgraded.outputs.to_version }}
         run: |
@@ -85,34 +85,24 @@ jobs:
           tags: ${{ steps.step1.outputs.docker_tags }}
           file: Dockerfile
 
-  update_changelog:
-    runs-on: ubuntu-latest
-    if: |
-      github.event_name == 'push' &&
-      needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
-    needs:
-      - docker
-    steps:
-    - uses: garronej/github_actions_toolkit@v2.4
-      with:
-        action_name: update_changelog
-        branch: ${{ github.ref }}
-
   release:
     runs-on: ubuntu-latest
-    needs: 
+    needs:
       - check_if_version_upgraded
+    if: |
+      needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&
+      github.event_name == 'push'
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.ref }}
-    - uses: softprops/action-gh-release@v1
-      with:
-        name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
-        tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
-        target_commitish: ${{ github.ref }}
-        generate_release_notes: true
-        draft: false
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - uses: softprops/action-gh-release@v1
+        with:
+          name: Release v${{ needs.check_if_version_upgraded.outputs.to_version }}
+          tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
+          target_commitish: ${{ github.ref }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
