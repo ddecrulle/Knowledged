@@ -8,9 +8,6 @@ changelog:
     - title: Breaking Changes 🛠
       labels:
         - breaking
-    - title: Bug 🐛
-      labels:
-        - bug
     - title: Exciting New Features 🎉
       labels:
         - feature
@@ -20,6 +17,9 @@ changelog:
     - title: Documentation 🔧
       labels:
         - docs
+    - title: CI 👷
+      labels:
+        - ci
     - title: Other Changes
       labels:
         - '*'
