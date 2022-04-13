@@ -44,4 +44,3 @@ This project follows [Conventional Commits 1.0.0](https://www.conventionalcommit
 
 The commitlint configuration can be change is [`commitlint.config.js`](/commitlint.config.js)
 
-
