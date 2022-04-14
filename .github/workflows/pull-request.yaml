@@ -1,6 +1,6 @@
 name: pull-request-main
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
     types: [opened, edited, synchronize]
@@ -45,12 +45,13 @@ jobs:
     needs:
       - check_if_version_upgraded
       - build
-    if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
+    #if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: echo ${{needs.check_if_version_upgraded.outputs.is_upgraded_version}}
       - run: yarn changelog
       - run: |
           git config user.name github-actions
