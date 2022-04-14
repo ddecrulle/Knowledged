@@ -38,6 +38,22 @@ jobs:
         with:
           action_name: is_package_json_version_upgraded
 
+  update_changelog:
+    runs-on: ubuntu-latest
+    needs:
+      - check_if_version_upgraded
+      - build
+    if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&  github.event_name == 'pull'
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          yarn changelog
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "docs(changelog) update changelog"
+          git push
+
   docker:
     needs:
       - check_if_version_upgraded
