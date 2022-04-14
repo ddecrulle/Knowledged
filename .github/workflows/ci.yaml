@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: yarn
       #- run: yarn test
       - run: yarn build
       - uses: actions/upload-artifact@v2
