@@ -102,6 +102,7 @@ jobs:
           generate_release_notes: true
           draft: false
           prerelease: false
-          body_path: ${{ github.workspace }}-CHANGELOG.md
+          body_path: https://github.com/${{github.repository}}/blob/v${{ needs.check_if_version_upgraded.outputs.to_version }}/CHANGELOG.md
+          append_body: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
