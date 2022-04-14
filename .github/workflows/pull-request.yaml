@@ -3,7 +3,7 @@ on:
   pull_request_target:
     branches:
       - main
-    types: [opened, edited]
+    types: [opened, edited, synchronize]
 jobs:
   label:
     runs-on: ubuntu-latest
@@ -45,12 +45,13 @@ jobs:
     needs:
       - check_if_version_upgraded
       - build
+    if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run : yarn changelog
+      - run: yarn changelog
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
