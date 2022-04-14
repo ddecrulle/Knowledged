@@ -51,7 +51,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: echo ${{needs.check_if_version_upgraded.outputs.is_upgraded_version}}
+      - run: yarn global add conventional-changelog-cli
       - run: yarn
       - run: yarn changelog
       - run: |
