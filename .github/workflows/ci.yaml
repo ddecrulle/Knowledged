@@ -5,16 +5,62 @@ on:
       - main
 
 jobs:
-  build:
+  bump-version:
+    name: 'Bump Version on master on merge commit'
     runs-on: ubuntu-latest
-    if: github.event.head_commit.author.name != 'actions'
+    if: ${{ github.event.pull_request.merged }}
+    steps:
+      - name: 'Checkout source code'
+        uses: 'actions/checkout@v2'
+        with:
+          ref: ${{ github.ref }}
+      - name: 'cat package.json'
+        run: cat ./package.json
+      - name: 'Automated Version Bump'
+        id: version-bump
+        uses: 'phips28/gh-action-bump-version@master'
+        with:
+          tag-prefix: 'v'
+          commit-message: 'ci: bumps version to {{version}} [skip ci]'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 'cat package.json'
+        run: cat ./package.json
+      - name: 'Output Step'
+        env:
+          NEW_TAG: ${{ steps.version-bump.outputs.newTag }}
+        run: echo "new tag $NEW_TAG"
+
+  update_changelog:
+    name: Update Changelog
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.merged }}
+    needs:
+      - bump-version
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: yarn global add conventional-changelog-cli
       - run: yarn
-      #- run: yarn test
+      - run: yarn changelog
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit --allow-empty -m "docs(changelog): [skip ci] update changelog"
+          git push
+
+  build:
+    needs: 
+      - bump-version
+      - update_changelog
+    runs-on: ubuntu-latest
+    if: github.event.head_commit.author.name != 'github-actions[bot]'
+    steps:
       - run: yarn build
       - uses: actions/upload-artifact@v2
         with:
@@ -29,6 +75,7 @@ jobs:
       from_version: ${{ steps.step1.outputs.from_version }}
       to_version: ${{ steps.step1.outputs.to_version }}
       is_upgraded_version: ${{ steps.step1.outputs.is_upgraded_version }}
+      is_release_beta: ${{steps.step1.outputs.is_release_beta }}
     steps:
       - uses: garronej/github_actions_toolkit@v2.2
         id: step1
@@ -37,17 +84,11 @@ jobs:
 
   docker:
     needs:
-      - check_if_version_upgraded
       - build
+      - check_if_version_upgraded
     runs-on: ubuntu-latest
-    # We publish the the docker image only if it's a push on the default branch or if it's a PR from a
-    # branch (meaning not a PR from a fork). It would be more straightforward to test if secrets.DOCKERHUB_TOKEN is
-    # defined but GitHub Action don't allow it.
-    if: |
-      needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&
-      github.event_name == 'push'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: docker/setup-qemu-action@v1
       - uses: docker/setup-buildx-action@v1
       - uses: docker/login-action@v1
@@ -89,7 +130,7 @@ jobs:
       - build
     if: |
       needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&
-      github.event_name == 'push'
+      github.event_name == 'push' && needs.check_if_version_upgraded.outputs.is_release_beta == 'false'
     steps:
       - uses: actions/checkout@v3
         with:

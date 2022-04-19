@@ -32,6 +32,7 @@ jobs:
       from_version: ${{ steps.step1.outputs.from_version }}
       to_version: ${{ steps.step1.outputs.to_version }}
       is_upgraded_version: ${{ steps.step1.outputs.is_upgraded_version }}
+      is_release_beta: ${{steps.step1.outputs.is_release_beta }}
     steps:
       - uses: garronej/github_actions_toolkit@v2.2
         id: step1
@@ -43,6 +44,7 @@ jobs:
     needs:
       - build
       - check_if_version_upgraded
+    if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' && needs.check_if_version_upgraded.outputs.is_release_beta == 'true'
     steps:
       - uses: actions/checkout@v2
         with:
@@ -50,8 +52,9 @@ jobs:
       - uses: softprops/action-gh-release@v1
         with:
           name: Release Candidate v${{ needs.check_if_version_upgraded.outputs.to_version }}
-          tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}-rc
+          tag_name: v${{ needs.check_if_version_upgraded.outputs.to_version }}
           target_commitish: ${{ github.sha }}
+          generate_release_notes: true
           draft: false
           prerelease: true
         env:
