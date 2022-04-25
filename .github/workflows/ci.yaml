@@ -10,6 +10,7 @@ jobs:
     if: github.event.head_commit.author.name != 'github-actions[bot]'
     steps:
       - run: yarn build
+      - uses: actions/checkout@v3
       - uses: actions/upload-artifact@v2
         with:
           name: build
