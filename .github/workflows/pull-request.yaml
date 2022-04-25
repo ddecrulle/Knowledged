@@ -3,62 +3,9 @@ on:
   pull_request:
     branches:
       - main
-    types: [opened, edited, synchronize]
+    types: [opened, edited]
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
       - uses: bcoe/conventional-release-labels@v1
-  build:
-    runs-on: ubuntu-latest
-    if: github.event.head_commit.author.name != 'actions'
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: yarn
-      #- run: yarn test
-      - run: yarn build
-      - uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: build
-
-  check_if_version_upgraded:
-    name: Check if version upgrade
-    runs-on: ubuntu-latest
-    needs: build
-    outputs:
-      from_version: ${{ steps.step1.outputs.from_version }}
-      to_version: ${{ steps.step1.outputs.to_version }}
-      is_upgraded_version: ${{ steps.step1.outputs.is_upgraded_version }}
-    steps:
-      - uses: garronej/github_actions_toolkit@v2.2
-        id: step1
-        with:
-          action_name: is_package_json_version_upgraded
-
-  update_changelog:
-    name: Update Changelog
-    runs-on: ubuntu-latest
-    needs:
-      - check_if_version_upgraded
-      - build
-    #if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: yarn global add conventional-changelog-cli
-      - run: yarn
-      - run: yarn changelog
-      - run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit --allow-empty -m "docs(changelog): update changelog"
-          git push
