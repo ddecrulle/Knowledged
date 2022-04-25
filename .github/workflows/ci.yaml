@@ -8,7 +8,7 @@ jobs:
   bump-version:
     name: 'Bump Version on master on merge commit'
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
+    if: github.event.pull_request.merged == true
     steps:
       - name: 'Checkout source code'
         uses: 'actions/checkout@v2'
