@@ -11,6 +11,8 @@ jobs:
     steps:
       - run: yarn build
       - uses: actions/checkout@v3
+      - run: yarn
+      - run: yarn build
       - uses: actions/upload-artifact@v2
         with:
           name: build
