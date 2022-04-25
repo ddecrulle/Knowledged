@@ -63,6 +63,7 @@ jobs:
     needs:
       - build
       - check_if_version_upgraded
+      - update_changelog
     if: |
       github.event_name == 'push'  && 
       needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
@@ -108,6 +109,7 @@ jobs:
     needs:
       - check_if_version_upgraded
       - build
+      - docker
     if: |
       needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' &&
       github.event_name == 'push' && needs.check_if_version_upgraded.outputs.is_release_beta == 'false'
