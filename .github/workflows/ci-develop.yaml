@@ -38,7 +38,7 @@ jobs:
         id: step1
         with:
           action_name: is_package_json_version_upgraded
-  
+
   echo_check_version:
     runs-on: ubuntu-latest
     needs: check_if_version_upgraded
@@ -83,7 +83,7 @@ jobs:
     # defined but GitHub Action don't allow it.
     if: |
       github.event_name == 'push'  && 
-      needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' && needs.check_if_version_upgraded.outputs.is_release_beta == 'true'
+      needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
