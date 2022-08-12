@@ -9,6 +9,82 @@ import Box from '@mui/system/Box';
 import picture from 'ui/components/assets/img/funny-portrait-of-a-businessman-with-many-arms-picture.jpg';
 import WaveBorder from 'ui/components/shared/waveBorder/component';
 import { Link } from 'react-router-dom';
+import homePage from 'ui/components/constants/page/homePage';
+
+const HeadSection = () => {
+	const { classes } = useStyles();
+	// const { globalClasses } = globalStyles();
+	const { headSection } = homePage;
+	return (
+		<>
+			<div className={classes.wrapper}>
+				<div className={classes.container}>
+					<Box display='flex' justifyContent='center' className={classes.row}>
+						<Card
+							className={classes.card}
+							data-aos-delay='200'
+							data-aos='zoom-in'
+						>
+							<Grid
+								container
+								justifyContent='space-between'
+								className={classes.row}
+							>
+								<Grid item xs={12} md={5}>
+									<Box
+										display='flex'
+										flexDirection='column'
+										//justifyContent='space-between'
+										verticalAlign='middle'
+										height='100%'
+									>
+										<Box mb={4}>
+											<Typography variant={'h4'}>Knowledge,</Typography>
+										</Box>
+										<div>
+											<Box mb={2}>
+												<Typography variant={'body1'} color='textSecondary'>
+													{headSection.text}
+												</Typography>
+											</Box>
+											<Button
+												variant='contained'
+												color='secondary'
+												fullWidth
+												className={classes.extraLargeButton}
+												classes={classes.extraLargeButtonLabel}
+												component={Link}
+												to='services'
+											>
+												Accèder à l’offre de services
+											</Button>
+										</div>
+									</Box>
+								</Grid>
+								<Hidden mdDown>
+									<Grid item md={6}>
+										<img
+											alt={'programme Metallica'}
+											src={picture}
+											className={classes.image}
+										/>
+									</Grid>
+								</Hidden>
+							</Grid>
+						</Card>
+					</Box>
+				</div>
+			</div>
+			<WaveBorder
+				lowerColor='#FFFFFF'
+				className={classes.waveBorder}
+				animationNegativeDelay={2}
+			/>
+		</>
+	);
+};
+
+export default HeadSection;
 
 const useStyles = makeStyles()((theme) => {
 	return {
@@ -132,76 +208,3 @@ const useStyles = makeStyles()((theme) => {
 		},
 	};
 });
-
-const HeadSection = () => {
-	const { classes } = useStyles();
-	// const { globalClasses } = globalStyles();
-
-	return (
-		<>
-			<div className={classes.wrapper}>
-				<div className={classes.container}>
-					<Box display='flex' justifyContent='center' className={classes.row}>
-						<Card
-							className={classes.card}
-							data-aos-delay='200'
-							data-aos='zoom-in'
-						>
-							<Box justifyContent='space-between' className={classes.row}>
-								<Grid item xs={12} md={5}>
-									<Box
-										display='flex'
-										flexDirection='column'
-										justifyContent='space-between'
-										height='100%'
-									>
-										<Box mb={4}>
-											<Typography variant={'h4'}>
-												Bienvenue sur Knowledge
-											</Typography>
-										</Box>
-										<div>
-											<Box mb={2}>
-												<Typography variant={'body1'} color='textSecondary'>
-													Lorem ipsum dolor sit amet, consetetur sadipscing
-													elitr, sed diam nonumy eirmod tempor invidunt
-												</Typography>
-											</Box>
-											<Button
-												variant='contained'
-												color='secondary'
-												fullWidth
-												className={classes.extraLargeButton}
-												classes={classes.extraLargeButtonLabel}
-												component={Link}
-												to='services'
-											>
-												Parcourir l'offre de service{' '}
-											</Button>
-										</div>
-									</Box>
-								</Grid>
-								<Hidden mdDown>
-									<Grid item md={6}>
-										<img
-											alt={'programme Metallica'}
-											src={picture}
-											className={classes.image}
-										/>
-									</Grid>
-								</Hidden>
-							</Box>
-						</Card>
-					</Box>
-				</div>
-			</div>
-			<WaveBorder
-				lowerColor='#FFFFFF'
-				className={classes.waveBorder}
-				animationNegativeDelay={2}
-			/>
-		</>
-	);
-};
-
-export default HeadSection;

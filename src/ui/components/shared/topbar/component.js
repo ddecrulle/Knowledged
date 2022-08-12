@@ -17,7 +17,7 @@ import Box from '@mui/material/Box';
 import ListItemText from '@mui/material/ListItemText';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import logo from 'ui/components/assets/img/image.svg';
-import { Menu, SecondaryMenu } from 'ui/components/dictionary/menu';
+import { Menu, SecondaryMenu } from 'ui/components/constants/menu';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as MaterialLink } from '@mui/material';
 

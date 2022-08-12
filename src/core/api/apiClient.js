@@ -6,7 +6,6 @@ const getRequest = (url) => fetcher(url, 'GET', null);
 
 export const createApiClient = () => {
 	const apiUrl = getEnvVar('API_URL');
-
 	return {
 		getFunctions: async () => getRequest(`${apiUrl}/function/all`),
 		getFunctionById: async (id) => getRequest(`${apiUrl}/function/${id}`),

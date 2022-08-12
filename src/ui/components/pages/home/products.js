@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { applications } from 'ui/components/dictionary/application';
+import { applications } from 'ui/components/constants/application';
 import ApplicationCard from './productsCard';
 import { makeStyles } from 'tss-react/mui';
 // import MockProducts from "utils/mockData/products";
@@ -43,6 +43,7 @@ const useStyles = makeStyles()((theme) => {
 		},
 	};
 });
+
 const Application = () => {
 	const { classes, cx } = useStyles();
 	// const [products, setProducts] = useState(MockProducts);
