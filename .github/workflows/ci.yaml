@@ -36,17 +36,6 @@ jobs:
         with:
           action_name: is_package_json_version_upgraded
 
-  echo_check_version:
-    runs-on: ubuntu-latest
-    needs: check_if_version_upgraded
-    steps:
-      - name: echo outputs
-        run: |
-          echo "from_version: ${{  needs.check_if_version_upgraded.outputs.from_version }}"
-          echo "to_version: ${{  needs.check_if_version_upgraded.outputs.to_version }}"
-          echo "is_upgraded_version: ${{  needs.check_if_version_upgraded.outputs.is_upgraded_version }}"
-          echo "is_release_beta: ${{  needs.check_if_version_upgraded.outputs.is_release_beta }}"
-
   update_changelog:
     name: Update Changelog
     runs-on: ubuntu-latest
