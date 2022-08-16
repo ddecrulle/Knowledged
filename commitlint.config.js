@@ -6,6 +6,7 @@ module.exports = {
 			'always',
 			[
 				'build',
+				'chore',
 				'ci',
 				'docs',
 				'feat',
@@ -15,7 +16,7 @@ module.exports = {
 				'revert',
 				'style',
 				'test',
-				'upgrade',
+				'bump',
 			],
 		],
 	},
