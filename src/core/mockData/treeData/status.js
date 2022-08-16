@@ -1,8 +1,7 @@
-export const statuts = {
+export const status = {
 	id: 'st0',
 	label: 'Le statut',
-	nodeKey: 'statuts',
-	statuts: [
+	children: [
 		{
 			id: 'd',
 			label: 'Disponible',
