@@ -1,11 +1,6 @@
-import { fetcher } from 'core/fetch/fetcher';
-import { getEnvVar } from 'core/env';
+import { getRequest } from 'core/fetch';
 
-// const postRequest = (url) => (body) => fetcher(url, "POST", body);
-const getRequest = (url) => fetcher(url, 'GET', null);
-
-export const createApiClient = () => {
-	const apiUrl = getEnvVar('API_URL');
+export const createApiClient = (apiUrl) => {
 	return {
 		getFunctions: async () => getRequest(`${apiUrl}/function/all`),
 		getFunctionById: async (id) => getRequest(`${apiUrl}/function/${id}`),

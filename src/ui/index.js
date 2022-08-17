@@ -7,6 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
+import { CoreProvider } from './coreApi';
 
 export const muiCache = createCache({
 	key: 'mui',
@@ -21,7 +22,9 @@ root.render(
 		<CacheProvider value={muiCache}>
 			<CssBaseline />
 			<ThemeProvider theme={theme}>
-				<Root />
+				<CoreProvider>
+					<Root />
+				</CoreProvider>
 			</ThemeProvider>
 		</CacheProvider>
 	</React.StrictMode>

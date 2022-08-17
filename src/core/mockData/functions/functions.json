@@ -5,20 +5,20 @@
 		"description": "Un guide de présentation et d'utilisation de l'offre de services Métallica est mis à disposition et maintenu par l'équipe d'administration des outils Métallica. Il est destiné aux maîtrises d'œuvre d'enquête utilisatrices de la filière et aux équipes conceptrices.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-qualite",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P01",
+				"id": "products-P01",
 				"label": "Atelier de conception d'enquêtes",
 				"description": "L'atelier de conception d'enquêtes est un ensemble de documentation (formation à la conception de questionnaire, documentation sur l'offre de services du système d'information de collecte), de processus (spécification/recette, déploiement, etc.) et d'outils permettant aux acteurs de spécifier et configurer un processus de collecte d'enquête dans le système d'information de collecte."
 			}
@@ -31,13 +31,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S111",
+			"id": "services-S111",
 			"label": "Accompagnement à la conception du protocole de collecte",
 			"serviceBpmn": {
-				"id": "S110",
+				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -53,16 +53,16 @@
 		"description": "Pour les opérations techniques (format des fichiers à fournir aux outils, paramétrage disponible pour les courriers, etc.), une boîte à outils facilitant l'utilisation de l'offre de services est mise à disposition. Les outils en question pourraient à terme être pour partie remplacés par une application de gestion des métadonnées permettant de configurer les différents processus techniques (protocole de l'enquête, calendrier, type de courriers, etc.), le tout constituant un atelier de conception d'enquêtes avec les fonctions de conception de questionnaires.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P01",
+				"id": "products-P01",
 				"label": "Atelier de conception d'enquêtes",
 				"description": "L'atelier de conception d'enquêtes est un ensemble de documentation (formation à la conception de questionnaire, documentation sur l'offre de services du système d'information de collecte), de processus (spécification/recette, déploiement, etc.) et d'outils permettant aux acteurs de spécifier et configurer un processus de collecte d'enquête dans le système d'information de collecte."
 			}
@@ -85,13 +85,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S111",
+			"id": "services-S111",
 			"label": "Accompagnement à la conception du protocole de collecte",
 			"serviceBpmn": {
-				"id": "S110",
+				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -107,16 +107,16 @@
 		"description": "La DRTI maintient de la documentation sur la conception de questionnaires (bonnes pratiques, principes généraux) et assure des formations et/ou ateliers méthodologiques destinés aux concepteurs d'enquêtes comme à tout statisticien intéressé par la question.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-qualite",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			}
 		],
 		"tools": [
 			{
-				"id": "P01",
+				"id": "products-P01",
 				"label": "Atelier de conception d'enquêtes",
 				"description": "L'atelier de conception d'enquêtes est un ensemble de documentation (formation à la conception de questionnaire, documentation sur l'offre de services du système d'information de collecte), de processus (spécification/recette, déploiement, etc.) et d'outils permettant aux acteurs de spécifier et configurer un processus de collecte d'enquête dans le système d'information de collecte."
 			}
@@ -134,13 +134,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S112",
+			"id": "services-S112",
 			"label": "Accompagnement à la conception du questionnaire",
 			"serviceBpmn": {
-				"id": "S110",
+				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -156,20 +156,20 @@
 		"description": "L'unité Qualité maintient de la documentation sur les outils de conception de questionnaires et assurent des formations (programmées ou à la demande) sur ces mêmes outils à destination des équipes de conception de questionnaires et des maîtrises d'œuvre d'enquêtes.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-qualite",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0103",
+				"id": "products-P0103",
 				"label": "Pogues - Atelier de conception de questionnaire",
 				"description": null
 			}
@@ -182,13 +182,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S112",
+			"id": "services-S112",
 			"label": "Accompagnement à la conception du questionnaire",
 			"serviceBpmn": {
-				"id": "S110",
+				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -204,20 +204,20 @@
 		"description": "L'outil de spécification de questionnaires (Pogues) propose une interface permettant de spécifier un questionnaire à partir de ses métadonnées (questions, listes de codes, contrôles...). Il est maintenu par l'Unité Qualité.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0103",
+				"id": "products-P0103",
 				"label": "Pogues - Atelier de conception de questionnaire",
 				"description": null
 			}
@@ -255,13 +255,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S121",
+			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -277,20 +277,20 @@
 		"description": "Lors de la spécification d'un questionnaire, les utilisateurs peuvent configurer l'appel à des services externes ou des moteurs de codification (type Sicore).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0103",
+				"id": "products-P0103",
 				"label": "Pogues - Atelier de conception de questionnaire",
 				"description": null
 			}
@@ -313,13 +313,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S121",
+			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -335,16 +335,16 @@
 		"description": "L'outil de spécification de questionnaires (Pogues) propose des fonctionnalités permettant de visualiser le rendu issu du générateur de supports de collecte (Eno), dans le mode sélectionné, d'un questionnaire spécifié.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0103",
+				"id": "products-P0103",
 				"label": "Pogues - Atelier de conception de questionnaire",
 				"description": null
 			}
@@ -362,13 +362,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S121",
+			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -384,16 +384,16 @@
 		"description": "Associé à l'outil de spécification de questionnaires, un module applicatif permet de visualiser le rendu des questionnaires, selon le mode sélectionné, personnalisés à partir de données fournies.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0106",
+				"id": "products-P0106",
 				"label": "Public Enemy - Outil de personnalisation d'un instrument de collecte",
 				"description": null
 			}
@@ -406,13 +406,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S121",
+			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -428,21 +428,21 @@
 		"description": "L'outil de spécification de questionnaires propose un certain nombre de fonctionnalités permettant de valider une spécification : génération d'une spécification littérale, possibilité de tester filtres et contrôles spécifiés…",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0103",
+				"id": "products-P0103",
 				"label": "Pogues - Atelier de conception de questionnaire",
 				"description": null
 			},
 			{
-				"id": "P0105",
+				"id": "products-P0105",
 				"label": "Eno - Générateur d'instruments de collecte",
 				"description": null
 			}
@@ -465,13 +465,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S121",
+			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -487,21 +487,21 @@
 		"description": "L'outil de spécification, en s'appuyant sur le moteur de génération Eno, permet la production d'un dictionnaire des variables du questionnaire spécifié, utilisable tant à des fins de documentation que pour la configuration d'autres processus (chaîne aval par exemple).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0103",
+				"id": "products-P0103",
 				"label": "Pogues - Atelier de conception de questionnaire",
 				"description": null
 			},
 			{
-				"id": "P0105",
+				"id": "products-P0105",
 				"label": "Eno - Générateur d'instruments de collecte",
 				"description": null
 			}
@@ -514,13 +514,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S121",
+			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -531,21 +531,21 @@
 		}
 	},
 	{
-		"id": "S122-1",
+		"id": "services-S122-1",
 		"label": "Produire des supports de collecte sur la base de spécifications formelles de questionnaires (questionnaire web, papier, face à face, téléphonique, spécification de numérisation (code barre)…)",
 		"description": "Le moteur de génération Eno permet de produire des supports de collecte qui peuvent être techniques (questionnaires pour le web, le papier, les enquêteurs…) ou documentaires (spécification). N.B. : Lorsque le support technique produit ne constitue pas en lui-même le questionnaire, celui-ci s'appuie sur un service ad-hoc (cf. Service Collecte Web, Papier, Enquêteurs) pour rendre le questionnaire utilisable et personnalisable.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0105",
+				"id": "products-P0105",
 				"label": "Eno - Générateur d'instruments de collecte",
 				"description": null
 			}
@@ -583,13 +583,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S122",
+			"id": "services-S122",
 			"label": "Outil de génération de questionnaires",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -600,25 +600,25 @@
 		}
 	},
 	{
-		"id": "S123-1",
+		"id": "services-S123-1",
 		"label": "Spécifier les traitements de contrôle qualité à appliquer aux questionnaires collectés",
 		"description": "Un module applicatif dédié permet de spécifier les contrôles qualité à appliquer après la collecte aux variables collectées. Ces spécifications pilotent des traitements batchs qui exécutent effectivement ces contrôles.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-2-5",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U006",
+				"id": "users-U006",
 				"label": "Méthodologie"
 			}
 		],
 		"tools": [
 			{
-				"id": "P01",
+				"id": "products-P01",
 				"label": "Atelier de conception d'enquêtes",
 				"description": "L'atelier de conception d'enquêtes est un ensemble de documentation (formation à la conception de questionnaire, documentation sur l'offre de services du système d'information de collecte), de processus (spécification/recette, déploiement, etc.) et d'outils permettant aux acteurs de spécifier et configurer un processus de collecte d'enquête dans le système d'information de collecte."
 			}
@@ -631,13 +631,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S123",
+			"id": "services-S123",
 			"label": "Outil de spécification des contrôles qualité post-collecte",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -648,21 +648,21 @@
 		}
 	},
 	{
-		"id": "S123-2",
+		"id": "services-S123-2",
 		"label": "Produire des indicateurs de qualité du questionnaire",
 		"description": "Un module applicatif dédié permet de spécifier les indicateurs qualité mobilisés durant le processus de collecte (complétude, relecture nécessaire, etc.). Les possibilités en termes de choix et de configuration de l'indicateur sont sous la responsabilité de DRTI (questions d'ordre méthodologique) et de la DMOAE (accompagnement/formation des enquêteurs). Ces spécifications pilotent des traitements qui calculent effectivement l'indicateur qualité.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P04",
+		"idProduct": "products-P04",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0402",
+				"id": "products-P0402",
 				"label": "Genesis",
 				"description": null
 			}
@@ -685,13 +685,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S123",
+			"id": "services-S123",
 			"label": "Outil de spécification des contrôles qualité post-collecte",
 			"serviceBpmn": {
-				"id": "S120",
+				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -707,16 +707,16 @@
 		"description": "L'offre standard de courriers (modèles de lettre-avis, de relance, de remerciements...) offre un certain nombre de modèles de lettres correspondant aux différents protocoles proposés dans le cadre du programme multimode. A l'instar de ce qui existe déjà pour les enquêtes entreprises, ces lettres seront \"pré-labellisées\" (si les courriers de l'enquête s'appuient sur cette offre, ils feront l'objet d'un examen allégé lors du passage au comité du label).",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -744,13 +744,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S131",
+			"id": "services-S131",
 			"label": "Outil de paramétrage et visualisation des documents>",
 			"serviceBpmn": {
-				"id": "S130",
+				"id": "services-S130",
 				"label": "Atelier de constitution des opérations éditiques",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -766,16 +766,16 @@
 		"description": "Les outils de constitution des courriers s'appuient sur des métadonnées décrivant le protocole de l'enquête, fournies par les maîtrises d'œuvre d'enquêtes ou directement récupérées depuis le référentiel de métadonnées statistiques, afin de configurer les courriers visualisés ou imprimés/envoyés.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -788,13 +788,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S131",
+			"id": "services-S131",
 			"label": "Outil de paramétrage et visualisation des documents>",
 			"serviceBpmn": {
-				"id": "S130",
+				"id": "services-S130",
 				"label": "Atelier de constitution des opérations éditiques",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -810,20 +810,20 @@
 		"description": "Public Ennemy, en plus d'une visualisation contextualisée des questionnaires, offrira des services analogues sur les courriers permettant une visualisation du rendu pdf avec données personnalisées dans un courrier.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-2-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0106",
+				"id": "products-P0106",
 				"label": "Public Enemy - Outil de personnalisation d'un instrument de collecte",
 				"description": null
 			}
@@ -836,13 +836,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S131",
+			"id": "services-S131",
 			"label": "Outil de paramétrage et visualisation des documents>",
 			"serviceBpmn": {
-				"id": "S130",
+				"id": "services-S130",
 				"label": "Atelier de constitution des opérations éditiques",
 				"serviceBpmn": {
-					"id": "S100",
+					"id": "services-S100",
 					"label": "Conception d'enquêtes",
 					"serviceBpmn": null,
 					"description": null
@@ -858,16 +858,16 @@
 		"description": "Un portail de promotion contextualisé à chaque enquête (indépendamment de sa collecte par l'intermédiaire de la nouvelle filière) est mis à disposition sur internet. Il ne requiert aucune authentification et à pour vocation à fournir des informations générales sur l'enquête. Le public ciblé en priorité est celui des enquêtés, mais le grand public y a accès.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -900,10 +900,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S210",
+			"id": "services-S210",
 			"label": "Offrir une vitrine de l'enquête en phase avec insee.fr et qui respecte un cadre standardisé commun à toutes les enquêtes ménages >",
 			"serviceBpmn": {
-				"id": "S200",
+				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
 				"serviceBpmn": null,
 				"description": null
@@ -917,21 +917,21 @@
 		"description": "Des mécanismes d'authentification sont mis en œuvre pour sécuriser l'accès aux enquêtes. Sont également offerts des fonctions permettant de réinitialiser automatiquement un mot de passe perdu avec le niveau de sécurité iduane, ainsi que des fonctionnalités permettant une certaine personnalisation de l'ergonomie et des éléments affichés (charte graphique, logos, etc.) qui permet d'avoir des portails d'authentification contextualisés ménage ou entreprise.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -949,10 +949,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S210",
+			"id": "services-S210",
 			"label": "Offrir une vitrine de l'enquête en phase avec insee.fr et qui respecte un cadre standardisé commun à toutes les enquêtes ménages >",
 			"serviceBpmn": {
-				"id": "S200",
+				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
 				"serviceBpmn": null,
 				"description": null
@@ -966,16 +966,16 @@
 		"description": "Le portail de promotion des enquêtes ménages (portail Coleman promotion) dispose d'un espace authentifié pour permettre aux répondants d'enquêtes à panel de consulter les informations relatives à leurs futures interrogations ou leur permettre de mettre à jour leurs informations de contacts ou la composition du ménage.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -988,10 +988,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S220",
+			"id": "services-S220",
 			"label": "Espace dédié aux enquêtés >",
 			"serviceBpmn": {
-				"id": "S200",
+				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
 				"serviceBpmn": null,
 				"description": null
@@ -1005,16 +1005,16 @@
 		"description": "Le portail des enquêtes entreprise (portail Coltrane) propose un espace \"Mes Enquêtes\" permettant à un contact de visualiser les questionnaires qu'il a à remplir ou encore de mettre à jour ces informations personnelles.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -1027,10 +1027,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S220",
+			"id": "services-S220",
 			"label": "Espace dédié aux enquêtés >",
 			"serviceBpmn": {
-				"id": "S200",
+				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
 				"serviceBpmn": null,
 				"description": null
@@ -1044,16 +1044,16 @@
 		"description": "Une interface est mise à disposition des équipes de maîtrise d'œuvre et de conception d'enquête pour configurer, ou récupérer depuis le référentiel de métadonnées statistiques, les informations figurant sur le portail de promotion des enquêtes ménages.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -1076,10 +1076,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S230",
+			"id": "services-S230",
 			"label": "Outil de configuration du site de promotion des enquêtes >",
 			"serviceBpmn": {
-				"id": "S200",
+				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
 				"serviceBpmn": null,
 				"description": null
@@ -1093,16 +1093,16 @@
 		"description": "L'enquêté dispose de la liste des questionnaires auxquels il a déjà répondu, en cours de remplissage ou à renseigner. Fonctionnalité primordiale dans le cas des enquêtes entreprises, celle-ci ne serait utile que pour un panel multi thématique (instruction à mener)",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -1120,13 +1120,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S311",
+			"id": "services-S311",
 			"label": "Lister les questionnaires",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1142,16 +1142,16 @@
 		"description": "L'enquêté, à partir d'une liste de questionnaires qui lui sont associés, peut accéder, relire ou reprendre un questionnaire.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -1169,13 +1169,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S311",
+			"id": "services-S311",
 			"label": "Lister les questionnaires",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1191,16 +1191,16 @@
 		"description": "L'enquêté, une fois authentifié, peut visualiser son questionnaire ou les annexes associés.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1223,13 +1223,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S312",
+			"id": "services-S312",
 			"label": "Consulter un questionnaire web (ou des annexes)",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1245,16 +1245,16 @@
 		"description": "L'enquêté peut valider son questionnaire, ce qui a pour effet de clore définitivement la collecte. Le droit de rectification peut s'exercer par le biais du service d'assistance.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1267,13 +1267,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S312",
+			"id": "services-S312",
 			"label": "Consulter un questionnaire web (ou des annexes)",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1289,16 +1289,16 @@
 		"description": "L'enquêté dispose d'un accès aux réponses qu'il a fournies sous la forme d'un PDF récapitulatif.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1316,13 +1316,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S312",
+			"id": "services-S312",
 			"label": "Consulter un questionnaire web (ou des annexes)",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1338,16 +1338,16 @@
 		"description": "L'enquêté saisit les réponses à son questionnaire, soit partiellement, soit en totalité.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1365,13 +1365,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S313",
+			"id": "services-S313",
 			"label": "Saisir un questionnaire",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1387,16 +1387,16 @@
 		"description": "L'enquêté peut interrompre le remplissage du questionnaire pour le reprendre ultérieurement, les données collectées sont sauvegardées régulièrement pendant le questionnement et peuvent l'être formellement lorsque le répondant quitte le questionnaire",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1414,13 +1414,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S313",
+			"id": "services-S313",
 			"label": "Saisir un questionnaire",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1436,16 +1436,16 @@
 		"description": "Après une interruption, l'enquêté peut reprendre le remplissage du questionnaire à l'endroit où il s'était arrêté (ou au début du questionnaire au choix). Il peut accéder aux réponses qu'il a préalablement fournies par retours arrière successifs au sein de son questionnaire.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1463,13 +1463,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S313",
+			"id": "services-S313",
 			"label": "Saisir un questionnaire",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1485,16 +1485,16 @@
 		"description": "L'enquêté peut mobiliser des ressources externes type ressources multimédias (vidéo, sons) ou des services d'aides à la saisie (nomenclatures, navigation sur liste).",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1522,13 +1522,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S313",
+			"id": "services-S313",
 			"label": "Saisir un questionnaire",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1544,16 +1544,16 @@
 		"description": "Pour les questions ou les modalités nécessitant des consignes ou des précisions, l'enquêté bénéficie de textes sous forme d'infos-bulles ou de consignes affichées dans une forme distinctive par rapport au texte de la question, selon les préconisations portées par DRTI.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1571,13 +1571,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S313",
+			"id": "services-S313",
 			"label": "Saisir un questionnaire",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1593,16 +1593,16 @@
 		"description": "Des contrôles de format ou de cohérence sont exécutés en cours de collecte et permettent de signaler au répondant les réponses à corriger.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1620,13 +1620,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S313",
+			"id": "services-S313",
 			"label": "Saisir un questionnaire",
 			"serviceBpmn": {
-				"id": "S310",
+				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
 				"serviceBpmn": {
-					"id": "S300",
+					"id": "services-S300",
 					"label": "Macro service Collecte Web",
 					"serviceBpmn": null,
 					"description": null
@@ -1642,16 +1642,16 @@
 		"description": "Dès que le questionnaire est validé, une preuve de dépôt de celui-ci est générée.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1664,10 +1664,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S320",
+			"id": "services-S320",
 			"label": "Fournir une preuve de dépôt d'un questionnaire complété",
 			"serviceBpmn": {
-				"id": "S300",
+				"id": "services-S300",
 				"label": "Macro service Collecte Web",
 				"serviceBpmn": null,
 				"description": null
@@ -1681,16 +1681,16 @@
 		"description": "Le questionnaire validé, la preuve de dépôt générée, l'enquêté a la possibilité de la télécharger.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -1703,10 +1703,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S320",
+			"id": "services-S320",
 			"label": "Fournir une preuve de dépôt d'un questionnaire complété",
 			"serviceBpmn": {
-				"id": "S300",
+				"id": "services-S300",
 				"label": "Macro service Collecte Web",
 				"serviceBpmn": null,
 				"description": null
@@ -1720,16 +1720,16 @@
 		"description": "Le module de communication RadioHead prend en charge des modèles de document, type questionnaire papier, issus d'une génération depuis les outils de spécifications de questionnaire. Interfacé avec les services éditiques, le module de communication permet donc la personnalisation, de ces questionnaires papier, leur impression/mise sous pli et envoi.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-3-1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0204",
+				"id": "products-P0204",
 				"label": "RadioHead - module de communication",
 				"description": null
 			}
@@ -1742,10 +1742,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S410",
+			"id": "services-S410",
 			"label": "Mettre à disposition des questionnaires papier",
 			"serviceBpmn": {
-				"id": "S400",
+				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
 				"serviceBpmn": null,
 				"description": null
@@ -1759,16 +1759,16 @@
 		"description": "Le PENM, soit à partir des outils offerts par son atelier de numérisation, soit par le dialogue avec un prestataire, fournit aux maîtrises d'œuvre d'enquête, dans un format exploitable, la liste des questionnaires saisis.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-4-4",
-		"idProduct": "p02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0205",
+				"id": "products-P0205",
 				"label": "Atelier de numérisation",
 				"description": null
 			}
@@ -1791,10 +1791,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S420",
+			"id": "services-S420",
 			"label": "Numériser de manière standardisée",
 			"serviceBpmn": {
-				"id": "S400",
+				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
 				"serviceBpmn": null,
 				"description": null
@@ -1808,16 +1808,16 @@
 		"description": "Le PENM, soit à partir des outils offerts par son atelier de numérisation, soit par le dialogue avec un prestataire, fournit aux maîtrises d'œuvre d'enquête, dans un format exploitable, la liste des questionnaires saisis.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-4-4",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0205",
+				"id": "products-P0205",
 				"label": "Atelier de numérisation",
 				"description": null
 			}
@@ -1840,10 +1840,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S420",
+			"id": "services-S420",
 			"label": "Numériser de manière standardisée",
 			"serviceBpmn": {
-				"id": "S400",
+				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
 				"serviceBpmn": null,
 				"description": null
@@ -1857,16 +1857,16 @@
 		"description": "L'atelier numérisation, soit à partir de ses outils propres, soit par le recours à un prestataire, fournit aux maîtrises d'œuvre d'enquête, dans un format exploitable, les données de collecte issues de l'opération de saisie.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-4",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0205",
+				"id": "products-P0205",
 				"label": "Atelier de numérisation",
 				"description": null
 			}
@@ -1889,10 +1889,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S420",
+			"id": "services-S420",
 			"label": "Numériser de manière standardisée",
 			"serviceBpmn": {
-				"id": "S400",
+				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
 				"serviceBpmn": null,
 				"description": null
@@ -1906,20 +1906,20 @@
 		"description": "Les outils (brique Queen du poste enquêteur Sabiane collecte) permettent d'utiliser un questionnaire enquêteur dans un contexte de formation (sans fonctions de suivi/organisation notamment). Cela inclut la gestion de données de formation qui peuvent être conservées sans interférer avec les données de collecte.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-2",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -1932,13 +1932,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S511",
+			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -1954,20 +1954,20 @@
 		"description": "Les données de formation peuvent être réinitialisées par l'utilisateur du questionnaire de formation ou par un responsable local / national de la formation. A noter qu'elles peuvent également être conservées.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-2",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -1980,13 +1980,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S511",
+			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2002,20 +2002,20 @@
 		"description": "Les outils mis à disposition des intégrateurs et des équipes d'administration, traitements batchs notamment, permettent d'initialiser/supprimer massivement les données de formation « questionnaire enquêteur ».",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-2",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			},
 			{
-				"id": "U008",
+				"id": "users-U008",
 				"label": "Administrateur de la collecte"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			}
@@ -2028,13 +2028,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S511",
+			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2050,28 +2050,28 @@
 		"description": "Des outils facilitant la mise en œuvre des sessions de formation (initialisation des comptes et des données notamment) sont mis à disposition des équipes de formation (nationales ou locales) afin de faciliter leur autonomie dans la mise en œuvre de leur formation.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-2",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0210",
+				"id": "products-P0210",
 				"label": "Massive Attack",
 				"description": null
 			}
@@ -2089,13 +2089,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S511",
+			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2111,16 +2111,16 @@
 		"description": "Les outils du poste Enquêteur (Sabiane collecte) permettent d'accéder à des questionnaires d'enquête avec des fonctions de recherche, de tri et de filtres.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2133,13 +2133,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2155,16 +2155,16 @@
 		"description": "Les questionnaires enquêteur permettent de saisir des données de collecte soit en totalité, soit partiellement.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2187,13 +2187,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2209,16 +2209,16 @@
 		"description": "L'enquêteur peut interrompre le remplissage du questionnaire (sans en abandonner la collecte) pour le reprendre ultérieurement, les données collectées sont sauvegardées régulièrement pendant le questionnement. À noter que cet enregistrement ne nécessite pas de connexion internet. Les données sont sauvegardées en local et peuvent être synchronisées ultérieurement.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2231,13 +2231,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2253,16 +2253,16 @@
 		"description": "Après une interruption, l'enquêteur peut reprendre le remplissage du questionnaire à l'endroit où il s'était arrêté (ou au début du questionnaire au choix). Il peut accéder aux réponses qu'il a préalablement renseignées par retours arrière successifs au sein du questionnaire.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2280,13 +2280,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2302,16 +2302,16 @@
 		"description": "Un enquêteur peut abandonner définitivement un questionnaire. Il peut, à tout moment, interrompre définitivement un questionnaire et renseigner un motif d'abandon (refus, autres...).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2324,13 +2324,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2346,16 +2346,16 @@
 		"description": "Les questionnaires enquêteur permettent de mobiliser des ressources externes type ressources multimédias (vidéo, sons) ou des services d'aides à la saisie (nomenclatures, navigation sur listes) en proposant un fonctionnement hors-ligne (éventuellement minimal).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2373,13 +2373,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2395,16 +2395,16 @@
 		"description": "Les outils du poste enquêteur permettent d'accéder à différentes ressources documentaires, tels que des instructions relatives à la collecte d'une enquête donnée ou encore des consignes d'ordre générale.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2417,13 +2417,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2439,16 +2439,16 @@
 		"description": "Des contrôles de format ou de cohérence sont exécutés en cours de collecte et permettent de signaler à l'enquêteur les réponses ne satisfaisant pas aux critères de qualité en cours de collecte.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2461,13 +2461,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S512",
+			"id": "services-S512",
 			"label": "Collecter les données",
 			"serviceBpmn": {
-				"id": "S510",
+				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2483,20 +2483,20 @@
 		"description": "Les outils mis à disposition des intégrateurs et administrateurs Métallica, traitements batchs notamment, permettent d'ajouter/supprimer massivement des données de formations (formation à l'outil comme formation à une enquête).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-2",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			},
 			{
-				"id": "U008",
+				"id": "users-U008",
 				"label": "Administrateur de la collecte"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			}
@@ -2509,13 +2509,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S521",
+			"id": "services-S521",
 			"label": "Offrir un contexte de formation",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2531,16 +2531,16 @@
 		"description": "Le poste de collecte enquêteur permet des envois de mails contextualisés (appel au service de message avec adresses mail et objet renseignés)",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2553,13 +2553,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S522",
+			"id": "services-S522",
 			"label": "Faciliter les échanges avec les enquêtés",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2575,16 +2575,16 @@
 		"description": "L'application Sabiane collecte offre à l'enquêteur des fonctionnalités dédiées à faciliter la prise de rendez-vous avec le répondant (calendrier, plages de disponibilité, etc.)",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2597,13 +2597,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S522",
+			"id": "services-S522",
 			"label": "Faciliter les échanges avec les enquêtés",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2619,16 +2619,16 @@
 		"description": "Le poste de collecte enquêteur permet de renseigner les informations relatives au repérage (face à face) ou à un essai de contact (face à face et téléphone) adaptées au mode de l'enquête. Il permet tant d'enregistrer des tentatives de repérage ou essais de contact que des résultats définitifs pour ces phases de repérage/contact (issue de repérage/contact) Une application mobile reprenant ces fonctions est également (en plus du poste de collecte) mise à disposition des enquêteurs pour plus de mobilité (contexte d'un enquêteur dans la rue par exemple).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2651,13 +2651,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S523",
+			"id": "services-S523",
 			"label": "Accéder à des fonctionnalités de repérage associées à un mode de collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2673,16 +2673,16 @@
 		"description": "Le poste de collecte enquêteur permet de renseigner/mettre à jour les informations de contact d'une unité d'enquête. Une application mobile contenant ces fonctions est également mise à disposition des enquêteurs pour plus de mobilité.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2715,13 +2715,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S523",
+			"id": "services-S523",
 			"label": "Accéder à des fonctionnalités de repérage associées à un mode de collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2737,16 +2737,16 @@
 		"description": "Le poste de collecte enquêteur permet aux enquêteurs de visualiser les unités enquêtées collectées et celles restantes à faire. Il offre également des fonctions de tri/filtrage en fonction des enquêtes.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2759,13 +2759,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S524",
+			"id": "services-S524",
 			"label": "Suivre la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2781,16 +2781,16 @@
 		"description": "Les fonctions d'affichage des unités enquêtées permettent de prendre en compte des critères de priorité, fixés par la maîtrise d'ouvrage ou les gestionnaires.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2808,13 +2808,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S524",
+			"id": "services-S524",
 			"label": "Suivre la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2830,16 +2830,16 @@
 		"description": "Le poste de collecte enquêteur permet de visualiser (sous forme de notifications techniques) les dernières mises à jour sur les unités enquêtées (ajout, suppression, commentaires) qu'elles proviennent de l'enquêteur lui-même ou d'une mise à jour du système central.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2852,13 +2852,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S524",
+			"id": "services-S524",
 			"label": "Suivre la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2874,16 +2874,16 @@
 		"description": "Le poste de collecte enquêteur permet de visualiser un historique des différents événements relatifs à la collecte d'une unité enquêtée (prise de contact, envoi de courriers...).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2906,13 +2906,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S524",
+			"id": "services-S524",
 			"label": "Suivre la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2928,16 +2928,16 @@
 		"description": "Le poste de collecte enquêteur offre la possibilité de visualiser une carte indiquant le positionnement d'une adresse de contact. Les services techniques mis en œuvre sont mutualisés avec les fonctions similaire de Crabe (impression de cartes sur les fiches adresses papier).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2950,13 +2950,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S525",
+			"id": "services-S525",
 			"label": "Organiser la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -2972,16 +2972,16 @@
 		"description": "Le poste de collecte enquêteur permet de visualiser les unités enquêtées à collecter pour une date donnée à des fins de planification.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -2994,13 +2994,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S525",
+			"id": "services-S525",
 			"label": "Organiser la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -3016,16 +3016,16 @@
 		"description": "Le poste de collecte enquêteur permet de demander l'envoi ou le réenvoi d'un document de collecte (par courrier papier, par mail ou par SMS) à une unité enquêtée. Cette demande devra faire l'objet d'une validation par un gestionnaire en DEM.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -3038,13 +3038,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S525",
+			"id": "services-S525",
 			"label": "Organiser la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -3060,16 +3060,16 @@
 		"description": "Le poste de collecte enquêteur et le questionnaire enquêteur permettent de modifier le statut d'une unité d'enquête ou d'un questionnaire (cycle de vie d'une unité enquêtée et workflow de reprise/modification des questionnaires).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -3087,13 +3087,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S525",
+			"id": "services-S525",
 			"label": "Organiser la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -3109,16 +3109,16 @@
 		"description": "Le poste de collecte enquêteur permet la collecte d'unité enquêtée nouvelle (suite à éclatement de budget ou de ménages) ou le regroupement (fusion dans un panel) d'unités enquêtées et ce même dans un contexte hors-ligne.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -3136,13 +3136,13 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S525",
+			"id": "services-S525",
 			"label": "Organiser la collecte",
 			"serviceBpmn": {
-				"id": "S520",
+				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
 				"serviceBpmn": {
-					"id": "S500",
+					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
 					"serviceBpmn": null,
 					"description": null
@@ -3158,20 +3158,20 @@
 		"description": "Les données relatives au déroulement d'un questionnement (paradonnées) enregistrées par le questionnaire internet sont mises à disposition dans un entrepôt. A noter que ces données peuvent être exploitées à des fins de maîtrise d'œuvre ou de conception dans le cadre de tests d'enquête ou de questionnaire. Elles sont mises à disposition en cours de collecte afin de permettre le pilotage du processus (ex: echantillonnage des non-répondants sur la base de paradonnées web).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-4",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0304",
+				"id": "products-P0304",
 				"label": "Batch Coleman",
 				"description": null
 			}
@@ -3189,10 +3189,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S610",
+			"id": "services-S610",
 			"label": "Mise à disposition de paradonnées",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3206,20 +3206,20 @@
 		"description": "Les données relatives au déroulement d'un questionnement(paradonnées) enregistrées par le questionnaire enquêteur sont mis à disposition dans un entrepôt.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-4",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			}
@@ -3237,10 +3237,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S610",
+			"id": "services-S610",
 			"label": "Mise à disposition de paradonnées",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3254,20 +3254,20 @@
 		"description": "L'entrepôt de paradonnées (Parliament) fournit une offre d'indicateurs standards (type tableau de bord) et permet un requêtage libre sur les paradonnées pour la construction d'indicateurs ad-hoc (les paradonnées enquêteur individuelles sont réservées aux seuls maîtrises d'œuvre).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-3",
-		"idProduct": "P04",
+		"idProduct": "products-P04",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0404",
+				"id": "products-P0404",
 				"label": "Parliament",
 				"description": null
 			}
@@ -3290,10 +3290,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S620",
+			"id": "services-S620",
 			"label": "Offrir des possibilités de requêtages riches/libres sur les paradonnées",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3307,20 +3307,20 @@
 		"description": "La plateforme de collecte internet offre un accès type « site miroir » permettant aux équipes de gestion et de maîtrise d'œuvre statistique de visualiser des questionnaires de répondants internet sans possibilité de modification.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-5-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			}
@@ -3338,10 +3338,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S630",
+			"id": "services-S630",
 			"label": "Visualisation de questionnaires à contrôler",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3355,28 +3355,28 @@
 		"description": "Le questionnaire enquêteur dispose d'un mode « lecture seule» qui empêche les modifications mais permet une relecture par un enquêteur, un gestionnaire, ou tout autre utilisateur habilité.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -3389,10 +3389,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S630",
+			"id": "services-S630",
 			"label": "Visualisation de questionnaires à contrôler",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3406,20 +3406,20 @@
 		"description": "L'outil de gestion DEM permet d'identifier les questionnaires à vérifier selon des critères spécifiques à l'enquête. Il permet également de gérer le cycle de relecture de ces questionnaires (à relire/relu).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -3442,10 +3442,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S630",
+			"id": "services-S630",
 			"label": "Visualisation de questionnaires à contrôler",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3459,20 +3459,20 @@
 		"description": "Les gestionnaires peuvent modifier/corriger les réponses d'un questionnaire enquêteur dans le cadre d'un processus clairement formalisé. Sabiane collecte permet d'historiser les différentes modifications et leur contexte (en interview, par un gestionnaire…).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-4",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -3485,10 +3485,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S640",
+			"id": "services-S640",
 			"label": "Reprendre/Corriger un questionnaire",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3502,29 +3502,29 @@
 		"description": "Les gestionnaires disposent d'un outil leur permettant de visualiser dans une ergonomie adaptée des questionnaires à corriger. Une couche de contrôle post-collecte permet de mettre en avant les variables à instruire. Les gestionnaires peuvent modifier/corriger les réponses d'un questionnaire web, ces modifications sont historisées.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-4",
-		"idProduct": "P04",
+		"idProduct": "products-P04",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0405",
+				"id": "products-P0405",
 				"label": "Generic",
 				"description": null
 			},
 			{
-				"id": "P0402",
+				"id": "products-P0402",
 				"label": "Genesis",
 				"description": null
 			}
@@ -3542,10 +3542,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S640",
+			"id": "services-S640",
 			"label": "Reprendre/Corriger un questionnaire",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3559,28 +3559,28 @@
 		"description": "Le questionnaire enquêteur, utilisé dans un contexte de collecte par l'enquêteur ou dans un contexte de gestion par le gestionnaire DEM, permet la saisie de commentaires sur l'unité enquêté (informations de disponibilité ou signalement de difficultés rencontrées) et pour chaque question (informations sur le contexte particulier de collecte d'une réponse).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-4",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -3598,10 +3598,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S640",
+			"id": "services-S640",
 			"label": "Reprendre/Corriger un questionnaire",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3615,16 +3615,16 @@
 		"description": "En fin de collecte, à partir des évènements enregistrés pendant la période de collecte (cycle de vie d'une unité enquêtée implémenté dans les outils) des aggrégats renseignant sur le 'résultat de l'opération de collecte' sont construits pour chaque unité enquêtée (à des fins d'alimentation de l'infocentre).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-5-4",
-		"idProduct": "P04",
+		"idProduct": "products-P04",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0401",
+				"id": "products-P0401",
 				"label": "Alimentation Infocentre",
 				"description": null
 			}
@@ -3647,10 +3647,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S650",
+			"id": "services-S650",
 			"label": "Fournir des aggrégats destinés au contrôle de gestion",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3664,24 +3664,24 @@
 		"description": "Un infocentre permet la production d'indicateurs de performance et de contrôle de gestion servant de support au management des enquêteurs.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-5-4",
-		"idProduct": "P04",
+		"idProduct": "products-P04",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0401",
+				"id": "products-P0401",
 				"label": "Alimentation Infocentre",
 				"description": null
 			}
@@ -3694,10 +3694,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S650",
+			"id": "services-S650",
 			"label": "Fournir des aggrégats destinés au contrôle de gestion",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3711,16 +3711,16 @@
 		"description": "Le déploiement d'une enquête de satisfaction est un service offert par la nouvelle filière : mise en œuvre et déploiement en partie automatisé et intégration dans la nouvelle filière. Le protocole et le questionnement de telles enquêtes sont standardisés dans la nouvelle filière. Elles offrent des mécanismes d'évaluation tant sur le processus pour la maîtrise d'œuvre statistique que pour la qualité et connaissance du contexte pour la maîtrise d'ouvrage d'enquête.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-8-1",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			}
@@ -3733,10 +3733,10 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S660",
+			"id": "services-S660",
 			"label": "Mise en place d'enquêtes de satisfaction",
 			"serviceBpmn": {
-				"id": "S600",
+				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
 				"serviceBpmn": null,
 				"description": null
@@ -3750,21 +3750,21 @@
 		"description": "Un ensemble de \"questions/réponses\" est proposé sur les portails de promotion Coleman et Coltrane à destination des internautes. Il se décompose en deux parties, une générale à l'ensemble des enquêtes ménages et une spécifique à l'enquête concernée.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -3802,17 +3802,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			},
 			{
-				"id": "U011",
+				"id": "users-U011",
 				"label": "Administrateur du SI"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -3850,17 +3850,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -3895,33 +3895,33 @@
 		"description": "Des statistiques de consultation des FAQ sont mis à disposition des acteurs du SI collecte (nombre de connexions, questions les plus consultées,...)",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			},
 			{
-				"id": "U011",
+				"id": "users-U011",
 				"label": "Administrateur du SI"
 			},
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -3959,13 +3959,13 @@
 		"idProduct": "NotAvailable",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0211",
+				"id": "products-P0211",
 				"label": "Widget d’assistance",
 				"description": null
 			}
@@ -4003,13 +4003,13 @@
 		"idProduct": "NotAvailable",
 		"users": [
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0211",
+				"id": "products-P0211",
 				"label": "Widget d’assistance",
 				"description": null
 			}
@@ -4047,13 +4047,13 @@
 		"idProduct": "NotAvailable",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0213",
+				"id": "products-P0213",
 				"label": "Chatbot",
 				"description": null
 			}
@@ -4088,21 +4088,21 @@
 		"description": "Le portail permet d'accéder aux différents canaux d'assistance (formulaire, service de réinitialisation du mot de passe, widget, chatbot,...).",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -4137,21 +4137,21 @@
 		"description": "Sur les courriers, il est mentionné les différents canaux pour contacter l'assistance : téléphone, mail et courrier, ainsi que les liens internet pour se renseigner sur l'enquête et sur l'Insee.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0304",
+				"id": "products-P0304",
 				"label": "Batch Coleman",
 				"description": null
 			},
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			}
@@ -4189,13 +4189,13 @@
 		"idProduct": "NotAvailable",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0212",
+				"id": "products-P0212",
 				"label": "SVI - Serveur vocal interactif",
 				"description": null
 			}
@@ -4240,25 +4240,25 @@
 		"description": "A l'aide de l'identifiant de connexion ou de l'identifiant de l'unité enquêtée uniquement pour le site de gestion nationale, il est possible d'afficher l'historique des différents statuts pour une unité enquêtée.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -4288,30 +4288,30 @@
 		"description": "Une fonctionnalité de type 'site miroir' permet aux gestionnaires de visualiser un questionnaire internet d'un répondant sans le modifier, à des fins notamment de contrôle qualité et d'accompagnement du répondant.",
 		"dispo": 2,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			},
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -4346,21 +4346,21 @@
 		"description": "Un service de réinitialisation du mot de passe est proposé au répondant en cas d'oubli de celui-ci. Le nouveau peut lui être envoyé par messagerie ou par courrier postal.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -4405,20 +4405,20 @@
 		"description": "A partir de Moog, l'assistance ou un gestionnaire dispose d'une fonctionnalité pour réinitialiser le mot de passe d'un enquêté, le nouveau étant transmis automatiquement par message ou par courrier postal.",
 		"dispo": 3,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			}
@@ -4448,29 +4448,29 @@
 		"description": "De la documentation d'assistance à destination de répondants, type procédure de réinitialisation de son mot de passe ou base de connaissance, sont mises à disposition sur le portail.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -4505,29 +4505,29 @@
 		"description": "Un processus formalisé et documenté permet d'assurer l'assistance des enquêteurs à plusieurs niveaux selon la complexité rencontrée. Des outils collaboratifs, type réseau social d'entreprise ou moteur de chat, sont mobilisés pour faciliter les échanges entre enquêteurs et l'assistance.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			},
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -4562,20 +4562,20 @@
 		"description": "Les gestionnaires peuvent envoyer des notifications thématiques aux enquêteurs d'une région ou d'une enquête.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -4605,20 +4605,20 @@
 		"description": "Une fonctionnalité de type 'site miroir' permet aux gestionnaires de visualiser un questionnaire enquêteur sans le modifier, à des fins notamment de contrôle qualité et d'accompagnement du répondant.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			}
@@ -4648,44 +4648,44 @@
 		"description": "Les différents acteurs peuvent mettre à jour les coordonnées d'un répondant suite à une interaction : le répondant lui-même lors d'une connexion, l'enquêteur lors d'un entretien, le gestionnaire ou assimilés lors d'un échange d'assistance.",
 		"dispo": 1,
 		"idGsbpm": "4.1",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			},
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			},
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			},
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			},
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0201",
+				"id": "products-P0201",
 				"label": "Coleman - plateforme de collecte web",
 				"description": null
 			}
@@ -4728,17 +4728,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0301",
+				"id": "products-P0301",
 				"label": "Crabe-REM - Référentiel d'unités de collecte",
 				"description": null
 			}
@@ -4791,17 +4791,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0301",
+				"id": "products-P0301",
 				"label": "Crabe-REM - Référentiel d'unités de collecte",
 				"description": null
 			}
@@ -4849,21 +4849,21 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0301",
+				"id": "products-P0301",
 				"label": "Crabe-REM - Référentiel d'unités de collecte",
 				"description": null
 			}
@@ -4895,13 +4895,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -4949,13 +4949,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -4998,13 +4998,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0301",
+				"id": "products-P0301",
 				"label": "Crabe-REM - Référentiel d'unités de collecte",
 				"description": null
 			}
@@ -5047,13 +5047,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0306",
+				"id": "products-P0306",
 				"label": "Opale",
 				"description": null
 			}
@@ -5083,16 +5083,16 @@
 		"description": "Les outils de collecte, Sabiane (gestion et collecte) sont mis à jour automatiquement à partir du référentiel d'enquêteurs.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			}
@@ -5127,16 +5127,16 @@
 		"description": "L'application de gestion permet de sélectionner, rechercher et filtrer les unités enquêtées des enquêteurs, et d'en afficher l'état (préparée/repérée/contactée/enquêtée/mode de réponse...).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -5174,17 +5174,17 @@
 		"idProduct": "NotAvailable",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0204",
+				"id": "products-P0204",
 				"label": "RadioHead - module de communication",
 				"description": null
 			}
@@ -5237,13 +5237,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0204",
+				"id": "products-P0204",
 				"label": "RadioHead - module de communication",
 				"description": null
 			}
@@ -5281,13 +5281,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0204",
+				"id": "products-P0204",
 				"label": "RadioHead - module de communication",
 				"description": null
 			}
@@ -5322,16 +5322,16 @@
 		"description": "L'application de gestion (Sabiane gestion) propose des tableaux de bord et indicateurs (taux d'avancement, taux de collecte) standards (proposer à l'identique à toutes les enquêtes selon leur protocole) pour permettre le suivi local des collectes multimodes (potentiel résultat du web inclus) d'enquête.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -5376,16 +5376,16 @@
 		"description": "L'application de gestion Sabiane gestion, à partir d'une configuration encadrée (possibilités limités) permet de consulter des tableaux de suivi et indicateurs spécifiques à une enquête (suivi du 'taux de remplissage' de variables significatives ou de strates).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -5420,20 +5420,20 @@
 		"description": "L'application de gestion (Sabiane gestion) offre des fonctions de recherches et de filtres sur les unités enquêtées en fonction de leur répartition locale et/ou par enquête, ainsi que des fonctions de visualisation des informations relatives à ces unités (état).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -5468,20 +5468,20 @@
 		"description": "L'application Moog permet de visualiser des tableaux standards de suivi national pour des collectes multimodes.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			}
@@ -5521,20 +5521,20 @@
 		"description": "L'application de suivi national (Moog), à partir d'une configuration encadrée (possibilités limitées) permet de consulter des tableaux de suivi et indicateurs spécifiques à une enquête (suivi du 'taux de remplissage' de variables significatives ou de strates).",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			}
@@ -5569,20 +5569,20 @@
 		"description": "L'application de suivi national (Moog) offre des fonctions d'export des informations de suivi pour traitement en \"self\".",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			}
@@ -5625,22 +5625,22 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			},
 			{
-				"id": "P0204",
+				"id": "products-P0204",
 				"label": "RadioHead - module de communication",
 				"description": null
 			}
@@ -5678,18 +5678,18 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			},
 			{
-				"id": "P0204",
+				"id": "products-P0204",
 				"label": "RadioHead - module de communication",
 				"description": null
 			}
@@ -5727,13 +5727,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -5776,17 +5776,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -5829,22 +5829,22 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -5887,22 +5887,22 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -5942,39 +5942,39 @@
 		"description": "Les applications offrant du suivi national (Moog pour le web ménage, Coltrane Pilotage pour le web entreprise, à définir pour une collecte multimode) ou local (type application enquêteurs Sabiane Collecte) intègrent automatiquement les remontées éditiques de plis non distribués signalés par La Poste.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			},
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			},
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -6019,25 +6019,25 @@
 		"description": "Les applications offrant du suivi national (Moog pour le web ménage, Coltrane Pilotage pour le web entreprise, à définir pour une collecte multimode) ou local (type application enquêteurs Sabiane Collecte) intègrent automatiquement les retours de mails non délivrés.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -6077,25 +6077,25 @@
 		"description": "Les applications offrant du suivi national, Moog dans le contexte ménage, Coltrane pilotage dans celui entreprise, intègrent automatiquement les questionnaires papier reçus et numérisés.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -6130,20 +6130,20 @@
 		"description": "L'application de suivi local (Sabiane gestion) intègre automatiquement les réponses issues de questionnaire papier.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			},
 			{
-				"id": "U005",
+				"id": "users-U005",
 				"label": "Site de gestion locale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0206",
+				"id": "products-P0206",
 				"label": "Sabiane - gestion",
 				"description": null
 			}
@@ -6178,25 +6178,25 @@
 		"description": "Les applications de pilotage/suivi de collecte nationale permettent l'envoi de communication de masse (lettre de relance notamment) aux répondants.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -6236,20 +6236,20 @@
 		"description": "L'assistance peut signaler le refus de répondre d'un répondant. Ce signalement est pris en compte automatiquement et le répondant ne sera ni contacté par un enquêteur, ni relancé.",
 		"dispo": 0,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P02",
+		"idProduct": "products-P02",
 		"users": [
 			{
-				"id": "U010",
+				"id": "users-U010",
 				"label": "Assistance"
 			},
 			{
-				"id": "U009",
+				"id": "users-U009",
 				"label": "Site de gestion nationale"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0202",
+				"id": "products-P0202",
 				"label": "Moog",
 				"description": null
 			}
@@ -6284,26 +6284,26 @@
 		"description": "Avant lancement de la production éditique, les chaînes applicatives sollicitent un service externe (RNVP) garantissant la normalisation des adresses conformément aux normes postales (norme Afnor) et offrant des services de correction/standardisation pour en améliorer la qualité.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P03",
+		"idProduct": "products-P03",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0303",
+				"id": "products-P0303",
 				"label": "Batch Sabiane",
 				"description": null
 			},
 			{
-				"id": "P0304",
+				"id": "products-P0304",
 				"label": "Batch Coleman",
 				"description": null
 			},
 			{
-				"id": "P0305",
+				"id": "products-P0305",
 				"label": "Batch Coltrane",
 				"description": null
 			}
@@ -6356,17 +6356,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0301",
+				"id": "products-P0301",
 				"label": "Crabe-REM - Référentiel d'unités de collecte",
 				"description": null
 			}
@@ -6399,17 +6399,17 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0301",
+				"id": "products-P0301",
 				"label": "Crabe-REM - Référentiel d'unités de collecte",
 				"description": null
 			}
@@ -6439,30 +6439,30 @@
 		"description": "Au sein des questionnaires web et enquêteurs et des interfaces de gestion des données personnelles pour les répondants, un service de standardisation/correction de l'adresse postale et/ou mail est mobilisée afin d'aider le répondant à fournir des adresses de qualité.",
 		"dispo": 1,
 		"idGsbpm": "gsbpm-4-3",
-		"idProduct": "P01",
+		"idProduct": "products-P01",
 		"users": [
 			{
-				"id": "U003",
+				"id": "users-U003",
 				"label": "Répondant"
 			},
 			{
-				"id": "U004",
+				"id": "users-U004",
 				"label": "Enquêteur"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0203",
+				"id": "products-P0203",
 				"label": "Sabiane - plateforme de collecte enquêteur",
 				"description": null
 			},
 			{
-				"id": "P0101",
+				"id": "products-P0101",
 				"label": "Stromae - Orchestrateur web",
 				"description": null
 			},
 			{
-				"id": "P0209",
+				"id": "products-P0209",
 				"label": "Coltrane",
 				"description": null
 			}
@@ -6500,13 +6500,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U011",
+				"id": "users-U011",
 				"label": "Administrateur du SI"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -6539,25 +6539,25 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U011",
+				"id": "users-U011",
 				"label": "Administrateur du SI"
 			},
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			},
 			{
-				"id": "U001",
+				"id": "users-U001",
 				"label": "Maîtrise d'ouvrage d'enquête"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -6600,21 +6600,21 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			},
 			{
-				"id": "U008",
+				"id": "users-U008",
 				"label": "Administrateur de la collecte"
 			},
 			{
-				"id": "U002",
+				"id": "users-U002",
 				"label": "Maîtrise d'œuvre statistique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -6647,13 +6647,13 @@
 		"idProduct": "Services de préparation de collecte",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0302",
+				"id": "products-P0302",
 				"label": "Protools - orchestrateur de protocoles",
 				"description": null
 			}
@@ -6688,16 +6688,16 @@
 		"description": "Les données livrées par le SI de collecte sont consolidées quel que soit le mode utilisé pour la collecte ou les processus de contrôle qualité mobilisés. Les règles de consolidation visent à produire une base statistique pour exploitation statistique « aval ». Elles s'appuient sur des métadonnées actives (arbre des variables de l'enquête, règles algorithmique de consolidation…)",
 		"dispo": 0,
 		"idGsbpm": "5.8",
-		"idProduct": "P04",
+		"idProduct": "products-P04",
 		"users": [
 			{
-				"id": "U007",
+				"id": "users-U007",
 				"label": "Maîtrise d'œuvre informatique"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0403",
+				"id": "products-P0403",
 				"label": "Kraftwerk",
 				"description": null
 			}
@@ -6725,7 +6725,7 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S1000",
+			"id": "services-S1000",
 			"label": "Macro-Service Agrégation / Échanges de données",
 			"serviceBpmn": null,
 			"description": null
@@ -6740,13 +6740,13 @@
 		"idProduct": "NotAvailable",
 		"users": [
 			{
-				"id": "U011",
+				"id": "users-U011",
 				"label": "Administrateur du SI"
 			}
 		],
 		"tools": [
 			{
-				"id": "P0307",
+				"id": "products-P0307",
 				"label": "Batch Protools",
 				"description": null
 			}
@@ -6764,7 +6764,7 @@
 			}
 		],
 		"serviceBpmn": {
-			"id": "S1000",
+			"id": "services-S1000",
 			"label": "Macro-Service Agrégation / Échanges de données",
 			"serviceBpmn": null,
 			"description": null

@@ -9,12 +9,10 @@ export const fetcher = (url, method, body) => {
 		body: body ? JSON.stringify(body) : null,
 	})
 		.then((r) => {
-			console.log(r);
 			if (r.ok) return r.json();
 			throw new Error('API failed');
 		})
 		.catch((e) => {
-			console.log(e);
-			throw new Error(`Fetch error for ${url}`);
+			throw new Error(`Fetch error for ${url} with the following error: ${e}`);
 		});
 };
