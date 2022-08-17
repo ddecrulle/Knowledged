@@ -5,44 +5,7 @@ import { applications } from 'ui/components/constants/application';
 import ApplicationCard from './productsCard';
 import { makeStyles } from 'tss-react/mui';
 // import MockProducts from "utils/mockData/products";
-import { useIsWidthUp } from 'ui/utils/hookStyle';
-
-const useStyles = makeStyles()((theme) => {
-	return {
-		lgPTop: {
-			paddingTop: `${theme.spacing(10)} !important`,
-			[theme.breakpoints.down('md')]: {
-				paddingTop: `${theme.spacing(9)} !important`,
-			},
-			[theme.breakpoints.down('sm')]: {
-				paddingTop: `${theme.spacing(8)} !important`,
-			},
-			[theme.breakpoints.down('xs')]: {
-				paddingTop: `${theme.spacing(7)} !important`,
-			},
-		},
-		containerFluid: {
-			width: '100%',
-			paddingRight: theme.spacing(2),
-			paddingLeft: theme.spacing(2),
-			marginRight: 'auto',
-			marginLeft: 'auto',
-			maxWidth: 1370,
-		},
-		LgMgBottom: {
-			marginBottom: `${theme.spacing(10)} !important`,
-			[theme.breakpoints.down('md')]: {
-				marginBottom: `${theme.spacing(9)} !important`,
-			},
-			[theme.breakpoints.down('sm')]: {
-				marginBottom: `${theme.spacing(8)} !important`,
-			},
-			[theme.breakpoints.down('xs')]: {
-				marginBottom: `${theme.spacing(7)} !important`,
-			},
-		},
-	};
-});
+import { useIsWidthUp } from 'ui/utils/hooks/style';
 
 const Application = () => {
 	const { classes, cx } = useStyles();
@@ -81,3 +44,40 @@ const Application = () => {
 };
 
 export default Application;
+
+const useStyles = makeStyles()((theme) => {
+	return {
+		lgPTop: {
+			paddingTop: `${theme.spacing(10)} !important`,
+			[theme.breakpoints.down('md')]: {
+				paddingTop: `${theme.spacing(9)} !important`,
+			},
+			[theme.breakpoints.down('sm')]: {
+				paddingTop: `${theme.spacing(8)} !important`,
+			},
+			[theme.breakpoints.down('xs')]: {
+				paddingTop: `${theme.spacing(7)} !important`,
+			},
+		},
+		containerFluid: {
+			width: '100%',
+			paddingRight: theme.spacing(2),
+			paddingLeft: theme.spacing(2),
+			marginRight: 'auto',
+			marginLeft: 'auto',
+			maxWidth: 1370,
+		},
+		LgMgBottom: {
+			marginBottom: `${theme.spacing(10)} !important`,
+			[theme.breakpoints.down('md')]: {
+				marginBottom: `${theme.spacing(9)} !important`,
+			},
+			[theme.breakpoints.down('sm')]: {
+				marginBottom: `${theme.spacing(8)} !important`,
+			},
+			[theme.breakpoints.down('xs')]: {
+				marginBottom: `${theme.spacing(7)} !important`,
+			},
+		},
+	};
+});

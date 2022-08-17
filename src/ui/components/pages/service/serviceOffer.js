@@ -1,11 +1,69 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { makeStyles } from 'tss-react/mui';
-import Footer from 'ui/components/shared/footer/component';
+import Footer from 'ui/components/shared/footer/footer';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import atelierConception from 'ui/components/assets/img/atelierConception.png';
-import BlocFilter from './BlocFilter';
+import BlocFilter from './section/blocFilter';
+import BlocFunction from './section/blocFunction';
+import { useTreeUrlStatus } from 'ui/utils/hooks/searchParams';
+import { CoreApiContext } from 'ui/coreApi';
+
+const ServiceOffer = () => {
+	const { classes, theme } = useStyles();
+	const [treeState, setTreeState] = useTreeUrlStatus();
+	const [functions, setFunctions] = useState([]);
+	const [hierarchy, setHierarchy] = useState([]);
+
+	const { getFunctions, getHierarchies } = useContext(CoreApiContext);
+
+	useEffect(() => {
+		getHierarchies().then((r) => setHierarchy(r));
+		getFunctions().then((r) => {
+			setFunctions(r);
+		});
+	}, [getFunctions, getHierarchies]);
+
+	useEffect(() => {
+		//functions.filter()
+		//console.log(findId(functions[0], 'gsbpm'));
+		console.log(treeState);
+	}, [treeState]);
+
+	return (
+		<>
+			<div className={classes.wrapper}>
+				<div className={classes.container}>
+					<Box className={classes.row} display='flex' justifyContent='center'>
+						<Grid container spacing={2}>
+							<Grid item md={4} xs={12}>
+								<Box className={classes.box}>
+									<Card className={classes.card}>
+										<BlocFilter
+											treeState={treeState}
+											setTreeState={setTreeState}
+											hierarchy={hierarchy}
+										/>
+									</Card>
+								</Box>
+							</Grid>
+							<Grid item md={8} xs={12}>
+								<Box className={classes.box}>
+									<Card className={classes.card}>
+										<BlocFunction functions={functions} />
+									</Card>
+								</Box>
+							</Grid>
+						</Grid>
+					</Box>
+				</div>
+			</div>
+			<Footer upperColor={theme.palette.grey['100']} />
+		</>
+	);
+};
+
+export default ServiceOffer;
 
 const useStyles = makeStyles()((theme) => {
 	return {
@@ -47,10 +105,14 @@ const useStyles = makeStyles()((theme) => {
 			display: 'flex',
 			flexWrap: 'wrap',
 		},
+		box: {
+			display: 'flex',
+			flexDirection: 'column',
+			height: '100%',
+			//minWidth: 50,
+		},
 		card: {
 			boxShadow: theme.shadows[4],
-			marginLeft: theme.spacing(1),
-			marginRight: theme.spacing(1),
 			[theme.breakpoints.up('xs')]: {
 				paddingTop: theme.spacing(1),
 				paddingBottom: theme.spacing(1),
@@ -84,43 +146,3 @@ const useStyles = makeStyles()((theme) => {
 		},
 	};
 });
-
-const OffreDeService = () => {
-	const { classes, theme } = useStyles();
-
-	// const [functions, setFunctions] = useState([]);
-
-	// useEffect(() => {
-	//   setFunctions(dataFunctions);
-	// }, []);
-
-	return (
-		<>
-			<div className={classes.wrapper}>
-				<div className={classes.container}>
-					<Box className={classes.row} display='flex' justifyContent='center'>
-						<Grid container spacing={2}>
-							<Grid item md={4} xs={12}>
-								<BlocFilter />
-							</Grid>
-							<Grid item md={8} xs={12}>
-								<Box display='flex' flexDirection='column' height='100%'>
-									<Card className={classes.card}>
-										<img
-											alt={'Exemple pdf'}
-											src={atelierConception}
-											className={classes.image}
-										/>
-									</Card>
-								</Box>
-							</Grid>
-						</Grid>
-					</Box>
-				</div>
-			</div>
-			<Footer upperColor={theme.palette.grey['100']} />
-		</>
-	);
-};
-
-export default OffreDeService;

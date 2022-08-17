@@ -2,6 +2,8 @@ import { useSearchParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export const useTreeUrlStatus = () => {
+	//TODO use useReducer instead of useState
+
 	const [searchParams, setSearchParams] = useSearchParams();
 	const [state, setState] = useState(() => {
 		return {
@@ -11,8 +13,8 @@ export const useTreeUrlStatus = () => {
 			expanded: searchParams.get('expanded')
 				? searchParams.get('expanded').split(',')
 				: [],
-			filter: searchParams.get('filter')
-				? searchParams.get('filter').split(',')
+			filtered: searchParams.get('filtered')
+				? searchParams.get('filtered').split(',')
 				: [],
 		};
 	});
@@ -21,20 +23,19 @@ export const useTreeUrlStatus = () => {
 		if (
 			searchParams.get('selected') !== state.selected ||
 			searchParams.get('expanded') !== state.expanded ||
-			searchParams.get('filter') !== state.filter
+			searchParams.get('filtered') !== state.filtered
 		) {
 			setSearchParams({
 				selected: state.selected.join(','),
 				expanded: state.expanded.join(','),
-				filter: state.filter.join(','),
+				filtered: state.filtered.join(','),
 			});
 		}
 	}, [state, searchParams, setSearchParams]);
 
 	const updateState = (key, value) => {
 		setState((prevState) => {
-			const newState = { ...prevState, [key]: value };
-			return newState;
+			return { ...prevState, [key]: value };
 		});
 	};
 
