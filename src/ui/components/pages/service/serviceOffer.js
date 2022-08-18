@@ -8,6 +8,7 @@ import BlocFilter from './section/blocFilter';
 import BlocFunction from './section/blocFunction';
 import { useTreeUrlStatus } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
+import { useFiltredAndOrderedFunctions } from 'ui/utils/hooks/functions';
 
 const ServiceOffer = () => {
 	const { classes, theme } = useStyles();
@@ -24,11 +25,11 @@ const ServiceOffer = () => {
 		});
 	}, [getFunctions, getHierarchies]);
 
-	useEffect(() => {
-		//functions.filter()
-		//console.log(findId(functions[0], 'gsbpm'));
-		console.log(treeState);
-	}, [treeState]);
+	const filtredFunctions = useFiltredAndOrderedFunctions(
+		treeState.selected,
+		treeState.filtered,
+		functions
+	);
 
 	return (
 		<>
@@ -50,7 +51,7 @@ const ServiceOffer = () => {
 							<Grid item md={8} xs={12}>
 								<Box className={classes.box}>
 									<Card className={classes.card}>
-										<BlocFunction functions={functions} />
+										<BlocFunction functions={filtredFunctions} />
 									</Card>
 								</Box>
 							</Grid>

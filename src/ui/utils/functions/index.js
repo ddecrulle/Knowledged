@@ -1,1 +1,0 @@
-export { getFiltredAndOrderedFunctions } from './filterAndOrder';

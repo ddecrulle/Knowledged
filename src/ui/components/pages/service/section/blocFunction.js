@@ -1,11 +1,15 @@
 import { Box, Card } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from 'tss-react/mui';
 
 const BlocFunction = ({ functions }) => {
+	useEffect(() => {
+		console.log(functions);
+	}, [functions]);
+
 	const { classes, theme } = useStyles();
 
-	return <div> Function</div>;
+	return <div> {functions}</div>;
 };
 
 const useStyles = makeStyles()((theme) => ({
