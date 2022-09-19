@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '@mui/material/Card';
 import { makeStyles } from 'tss-react/mui';
 import TreeView from '@mui/lab/TreeView';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -8,7 +7,6 @@ import TreeItem from '@mui/lab/TreeItem';
 import Autocomplete from '@mui/material/Autocomplete';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
 
 import { top100Films } from './top100films';
 
