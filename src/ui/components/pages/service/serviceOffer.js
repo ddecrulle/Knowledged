@@ -15,6 +15,11 @@ const ServiceOffer = () => {
 	const [treeState, setTreeState] = useTreeUrlStatus();
 	const [functions, setFunctions] = useState([]);
 	const [hierarchy, setHierarchy] = useState([]);
+	const [filtredFunctions, setFiltredFunctions] = useFiltredAndOrderedFunctions(
+		treeState.selected,
+		treeState.filtered,
+		functions
+	);
 
 	const { getFunctions, getHierarchies } = useContext(CoreApiContext);
 
@@ -24,12 +29,6 @@ const ServiceOffer = () => {
 			setFunctions(r);
 		});
 	}, [getFunctions, getHierarchies]);
-
-	const filtredFunctions = useFiltredAndOrderedFunctions(
-		treeState.selected,
-		treeState.filtered,
-		functions
-	);
 
 	return (
 		<>

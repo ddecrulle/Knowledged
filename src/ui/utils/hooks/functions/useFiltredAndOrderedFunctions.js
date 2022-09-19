@@ -5,16 +5,20 @@ export const useFiltredAndOrderedFunctions = (
 	filtered,
 	functions
 ) => {
-	//TODEBUG
-
 	const [arrayOfIdToFilter, setArrayOfIdToFilter] = useState([]);
 	const [objOfIdByHierarchy, setObjOfIdByHierarchy] = useState({});
-	const [filtrerFunctions, setFiltrerFunctions] = useState([]);
+	const [filtredFunctions, setFiltredFunctions] = useState(functions);
+
+	// We don't filter by the parent node of the selected node
+
+	const filterParentNode = (array) => array.filter((str) => str.includes('-'));
 
 	const concatArrayWithoutDuplicate = (a, b) => [...new Set(a.concat(b))];
 
 	useEffect(() => {
-		setArrayOfIdToFilter(concatArrayWithoutDuplicate(selected, filtered));
+		setArrayOfIdToFilter(
+			concatArrayWithoutDuplicate(filterParentNode(selected), filtered)
+		);
 	}, [selected, filtered]);
 
 	useEffect(() => {
@@ -47,12 +51,20 @@ export const useFiltredAndOrderedFunctions = (
 				arrayTarget.includes(node.id) ? true : next()
 			)(obj, nodeKey);
 
-		setFiltrerFunctions(
-			Object.entries(objOfIdByHierarchy).forEach(([key, value]) =>
-				functions.filter((fct) => findId(value, fct, key))
-			)
+		const objOfFctFiltred = Object.entries(objOfIdByHierarchy).map(
+			([key, value]) => functions.filter((fct) => findId(value, fct, key))
+		);
+
+		console.log(objOfFctFiltred);
+
+		setFiltredFunctions(
+			objOfFctFiltred === {}
+				? objOfFctFiltred.reduce((acc, curr) =>
+						concatArrayWithoutDuplicate(acc, curr)
+				  )
+				: []
 		);
 	}, [functions, objOfIdByHierarchy]);
 
-	return filtrerFunctions;
+	return [filtredFunctions, setFiltredFunctions];
 };

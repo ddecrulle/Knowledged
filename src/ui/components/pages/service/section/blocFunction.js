@@ -9,7 +9,7 @@ const BlocFunction = ({ functions }) => {
 
 	const { classes, theme } = useStyles();
 
-	return <div> {functions}</div>;
+	return <div>Functions</div>;
 };
 
 const useStyles = makeStyles()((theme) => ({
