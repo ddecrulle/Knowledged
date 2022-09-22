@@ -7,11 +7,12 @@
 </p>
 
 <p align="center">
-<a href="">
-<img src="https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT"/>
-<img src="https://github.com/ddecrulle/Knowledge/actions/workflows/ci.yaml/badge.svg)](https://github.com/ddecrulle/Knowledge/actions/workflows/ci.yaml">
+<a href="https://opensource.org/licenses/MIT">
+<img src="https://img.shields.io/badge/License-MIT-blue.svg"/>
 </a>
-
+<a href="https://github.com/ddecrulle/Knowledge/actions/workflows/ci.yaml">
+<img src="https://github.com/ddecrulle/Knowledge/actions/workflows/ci.yaml/badge.svg">
+</a>
 </p>
 
 Knowledge is built with React. It was initialized with a classic Create React App and is deisgned thanks to Material UI
