@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { memo } from 'react';
 import WaveBorder from 'ui/components/shared/waveBorder';
 import { makeStyles } from 'tss-react/mui';
 import Typography from '@mui/material/Typography';
 import version from 'core/version';
 
-const useStyles = makeStyles()((theme, { upperColor }) => {
+const Footer = () => {
+	const { classes, theme } = useStyles();
+	return (
+		<footer className={classes.footer}>
+			<WaveBorder
+				upperColor={theme.palette.background.default}
+				lowerColor={theme.palette.common.darkBlack}
+				animationNegativeDelay={4}
+			/>
+			<div className={classes.footerInner}>
+				<Typography variant='h6' paragraph className={classes.text}>
+					Insee - Knowledge v{version}
+				</Typography>
+			</div>
+		</footer>
+	);
+};
+
+const useStyles = makeStyles()((theme) => {
 	return {
 		footer: {
-			backgroundColor: upperColor,
+			backgroundColor: theme.palette.background.default,
 		},
 		waveBorder: {},
 		footerInner: {
@@ -35,23 +53,4 @@ const useStyles = makeStyles()((theme, { upperColor }) => {
 		},
 	};
 });
-
-const Footer = ({ upperColor = '#FFFFFF' }) => {
-	const { classes, theme } = useStyles(upperColor);
-	return (
-		<footer className={classes.footer}>
-			<WaveBorder
-				upperColor={upperColor}
-				lowerColor={theme.palette.common.darkBlack}
-				animationNegativeDelay={4}
-			/>
-			<div className={classes.footerInner}>
-				<Typography variant='h6' paragraph className={classes.text}>
-					Insee - Knowledge v{version}
-				</Typography>
-			</div>
-		</footer>
-	);
-};
-
-export default Footer;
+export default memo(Footer);

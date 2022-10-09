@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { makeStyles } from 'tss-react/mui';
 
 import AppBar from '@mui/material/AppBar';
@@ -20,67 +20,6 @@ import logo from 'ui/components/assets/img/image.svg';
 import { Menu, SecondaryMenu } from 'ui/components/constants/menu';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as MaterialLink } from '@mui/material';
-
-const useStyles = makeStyles()((theme) => {
-	return {
-		appBar: {
-			position: 'relative',
-			boxShadow: 'none',
-			borderBottom: `1px solid ${theme.palette.grey['100']}`,
-			backgroundColor: 'white',
-			[theme.breakpoints.up('md')]: {
-				paddingRigth: 120,
-				paddingLeft: 120,
-			},
-		},
-		inline: {
-			display: 'inline',
-		},
-		flex: {
-			display: 'flex',
-			alignItems: 'center',
-		},
-		link: {
-			textDecoration: 'none',
-			color: 'inherit',
-		},
-		productLogo: {
-			display: 'inline-block',
-			borderLeft: `1px solid ${theme.palette.grey['A400']}`,
-			marginLeft: 32,
-			paddingLeft: 24,
-		},
-		tagline: {
-			display: 'inline-block',
-			marginLeft: 10,
-		},
-		iconContainer: {
-			display: 'none',
-			[theme.breakpoints.down('md')]: {
-				display: 'flex',
-				justifyContent: 'flex-end',
-				flexGrow: 1,
-			},
-		},
-		iconButton: {
-			float: 'right',
-		},
-		tabContainer: {
-			marginLeft: 32,
-			display: 'flex',
-			flexGrow: 1,
-			justifyContent: 'space-between',
-			[theme.breakpoints.down('md')]: {
-				display: 'none',
-			},
-		},
-		tabItem: {
-			paddingTop: 20,
-			paddingBottom: 20,
-			minWidth: 'auto',
-		},
-	};
-});
 
 const Header = () => {
 	const location = useLocation();
@@ -211,4 +150,64 @@ const Header = () => {
 	);
 };
 
-export default Header;
+const useStyles = makeStyles()((theme) => {
+	return {
+		appBar: {
+			position: 'relative',
+			boxShadow: 'none',
+			borderBottom: `1px solid ${theme.palette.grey['100']}`,
+			backgroundColor: 'white',
+			[theme.breakpoints.up('md')]: {
+				paddingRigth: 120,
+				paddingLeft: 120,
+			},
+		},
+		inline: {
+			display: 'inline',
+		},
+		flex: {
+			display: 'flex',
+			alignItems: 'center',
+		},
+		link: {
+			textDecoration: 'none',
+			color: 'inherit',
+		},
+		productLogo: {
+			display: 'inline-block',
+			borderLeft: `1px solid ${theme.palette.grey['A400']}`,
+			marginLeft: 32,
+			paddingLeft: 24,
+		},
+		tagline: {
+			display: 'inline-block',
+			marginLeft: 10,
+		},
+		iconContainer: {
+			display: 'none',
+			[theme.breakpoints.down('md')]: {
+				display: 'flex',
+				justifyContent: 'flex-end',
+				flexGrow: 1,
+			},
+		},
+		iconButton: {
+			float: 'right',
+		},
+		tabContainer: {
+			marginLeft: 32,
+			display: 'flex',
+			flexGrow: 1,
+			justifyContent: 'space-between',
+			[theme.breakpoints.down('md')]: {
+				display: 'none',
+			},
+		},
+		tabItem: {
+			paddingTop: 20,
+			paddingBottom: 20,
+			minWidth: 'auto',
+		},
+	};
+});
+export default memo(Header);

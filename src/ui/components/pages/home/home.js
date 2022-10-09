@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { memo } from 'react';
 import HeadSection from './section/headSection';
-import Application from './section/products';
 import InformationSysteme from './section/informationSystem';
-import Footer from 'ui/components/shared/footer';
+import Products from './section/products';
+import { makeStyles } from 'tss-react/mui';
 
 const Home = () => {
+	const { classes } = useStyles();
 	return (
-		<>
+		<section className={classes.section}>
 			<HeadSection />
-			<Application />
+			<Products />
 			<InformationSysteme />
-			<Footer />
-		</>
+		</section>
 	);
 };
 
-export default Home;
+const useStyles = makeStyles()(() => {
+	return {
+		section: { overflow: 'hidden' },
+	};
+});
+export default memo(Home);

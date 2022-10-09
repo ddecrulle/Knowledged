@@ -25,15 +25,10 @@ const useStyles = makeStyles()((theme, { color }) => {
 
 function shadeColor(hex, percent) {
 	const f = parseInt(hex.slice(1), 16);
-
 	const t = percent < 0 ? 0 : 255;
-
 	const p = percent < 0 ? percent * -1 : percent;
-
 	const R = f >> 16;
-
 	const G = (f >> 8) & 0x00ff;
-
 	const B = f & 0x0000ff;
 	return `#${(
 		0x1000000 +

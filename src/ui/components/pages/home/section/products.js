@@ -1,82 +1,48 @@
-import React from 'react';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import { applications } from 'ui/components/constants/application';
-import ApplicationCard from './productsCard';
+import React, { memo } from 'react';
+import products from 'core/mockData/hierarchy/products';
+import Product from './product/product';
 import { makeStyles } from 'tss-react/mui';
-// import MockProducts from "utils/mockData/products";
-import { useIsWidthUp } from 'ui/utils/hooks/style';
 
-const Application = () => {
-	const { classes, cx } = useStyles();
-	// const [products, setProducts] = useState(MockProducts);
-	const isMdUp = useIsWidthUp('md');
+const Products = () => {
+	const { classes } = useStyles();
+
 	return (
-		<div style={{ backgroundColor: '#FFFFFF' }}>
-			<div className={cx(classes.containerFluid, classes.lgPTop)}>
-				<Typography variant='h3' align='center' className={classes.LgMgBottom}>
-					Les différents Produits
-				</Typography>
-				<div className={classes.containerFluid}>
-					<Grid container spacing={4}>
-						{applications.map((element) => (
-							<Grid
-								item
-								xs={6}
-								md={4}
-								data-aos='zoom-in-up'
-								data-aos-delay={isMdUp ? element.mdDelay : element.smDelay}
-								key={element.headline}
-							>
-								<ApplicationCard
-									Icon={element.icon}
-									color={element.color}
-									headline={element.headline}
-									text={element.text}
-								/>
-							</Grid>
-						))}
-					</Grid>
+		<div className={classes.container}>
+			{products.children.map((p) => (
+				<div className={classes.product}>
+					<Product titleProducs={p.label} applications={p.children} />
 				</div>
-			</div>
+			))}
 		</div>
 	);
 };
 
-export default Application;
+export default memo(Products);
 
 const useStyles = makeStyles()((theme) => {
 	return {
-		lgPTop: {
-			paddingTop: `${theme.spacing(10)} !important`,
+		container: {
+			padding: `${theme.spacing(12)} 0`,
 			[theme.breakpoints.down('md')]: {
-				paddingTop: `${theme.spacing(9)} !important`,
+				padding: `${theme.spacing(9)} 0`,
 			},
 			[theme.breakpoints.down('sm')]: {
-				paddingTop: `${theme.spacing(8)} !important`,
+				paddingBottom: `${theme.spacing(6)} 0`,
 			},
 			[theme.breakpoints.down('xs')]: {
-				paddingTop: `${theme.spacing(7)} !important`,
+				paddingBottom: `${theme.spacing(3)} 0`,
 			},
 		},
-		containerFluid: {
-			width: '100%',
-			paddingRight: theme.spacing(2),
-			paddingLeft: theme.spacing(2),
-			marginRight: 'auto',
-			marginLeft: 'auto',
-			maxWidth: 1370,
-		},
-		LgMgBottom: {
-			marginBottom: `${theme.spacing(10)} !important`,
+		product: {
+			padding: `${theme.spacing(6)} ${theme.spacing(9)}`,
 			[theme.breakpoints.down('md')]: {
-				marginBottom: `${theme.spacing(9)} !important`,
+				padding: `${theme.spacing(9)} ${theme.spacing(6)}`,
 			},
 			[theme.breakpoints.down('sm')]: {
-				marginBottom: `${theme.spacing(8)} !important`,
+				paddingBottom: `${theme.spacing(6)} ${theme.spacing(3)}`,
 			},
 			[theme.breakpoints.down('xs')]: {
-				marginBottom: `${theme.spacing(7)} !important`,
+				paddingBottom: `${theme.spacing(3)} ${theme.spacing(1)}`,
 			},
 		},
 	};

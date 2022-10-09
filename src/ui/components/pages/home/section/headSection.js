@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { makeStyles } from 'tss-react/mui';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -7,92 +7,75 @@ import Card from '@mui/material/Card';
 import Hidden from '@mui/material/Hidden';
 import Box from '@mui/system/Box';
 import picture from 'ui/components/assets/img/funny-portrait-of-a-businessman-with-many-arms-picture.jpg';
-import WaveBorder from 'ui/components/shared/waveBorder/component';
 import { Link } from 'react-router-dom';
 import homePage from 'ui/components/constants/page/homePage';
 
 const HeadSection = () => {
 	const { classes } = useStyles();
-	// const { globalClasses } = globalStyles();
 	const { headSection } = homePage;
 	return (
-		<>
-			<div className={classes.wrapper}>
-				<div className={classes.container}>
-					<Box display='flex' justifyContent='center' className={classes.row}>
-						<Card
-							className={classes.card}
-							data-aos-delay='200'
-							data-aos='zoom-in'
-						>
-							<Grid
-								container
-								justifyContent='space-between'
-								className={classes.row}
+		<div className={classes.wrapper}>
+			<Box display='flex' justifyContent='center' className={classes.box}>
+				<Card className={classes.card} data-aos-delay='200' data-aos='zoom-in'>
+					<Grid
+						container
+						justifyContent='space-between'
+						className={classes.row}
+					>
+						<Grid item xs={12} md={5}>
+							<Box
+								display='flex'
+								flexDirection='column'
+								verticalAlign='middle'
+								height='100%'
 							>
-								<Grid item xs={12} md={5}>
-									<Box
-										display='flex'
-										flexDirection='column'
-										//justifyContent='space-between'
-										verticalAlign='middle'
-										height='100%'
-									>
-										<Box mb={4}>
-											<Typography variant={'h4'}>Knowledge,</Typography>
-										</Box>
-										<div>
-											<Box mb={2}>
-												<Typography variant={'body1'} color='textSecondary'>
-													{headSection.text}
-												</Typography>
-											</Box>
-											<Button
-												variant='contained'
-												color='secondary'
-												fullWidth
-												className={classes.extraLargeButton}
-												classes={classes.extraLargeButtonLabel}
-												component={Link}
-												to='services'
-											>
-												Accèder à l’offre de services
-											</Button>
-										</div>
+								<Box mb={4}>
+									<Typography variant={'h4'}>{headSection.title}</Typography>
+								</Box>
+								<div>
+									<Box mb={2}>
+										<Typography variant={'body1'} color='textSecondary'>
+											{headSection.text}
+										</Typography>
 									</Box>
-								</Grid>
-								<Hidden mdDown>
-									<Grid item md={6}>
-										<img
-											alt={'programme Metallica'}
-											src={picture}
-											className={classes.image}
-										/>
-									</Grid>
-								</Hidden>
+									<Button
+										variant='contained'
+										color='secondary'
+										fullWidth
+										className={classes.extraLargeButton}
+										classes={classes.extraLargeButtonLabel}
+										component={Link}
+										to='services'
+									>
+										{headSection.buttonServiceOffer}
+									</Button>
+								</div>
+							</Box>
+						</Grid>
+						<Hidden mdDown>
+							<Grid item md={6}>
+								<img
+									alt={'programme Metallica'}
+									src={picture}
+									className={classes.image}
+								/>
 							</Grid>
-						</Card>
-					</Box>
-				</div>
-			</div>
-			<WaveBorder
-				lowerColor='#FFFFFF'
-				className={classes.waveBorder}
-				animationNegativeDelay={2}
-			/>
-		</>
+						</Hidden>
+					</Grid>
+				</Card>
+			</Box>
+		</div>
 	);
 };
 
-export default HeadSection;
+export default memo(HeadSection);
 
 const useStyles = makeStyles()((theme) => {
 	return {
-		row: {
+		box: {
+			justifyContent: 'center',
 			display: 'flex',
 			flexWrap: 'wrap',
-			marginRight: -theme.spacing(2),
-			marginLeft: -theme.spacing(2),
 		},
 		extraLargeButtonLabel: {
 			fontSize: theme.typography.body1.fontSize,
@@ -145,18 +128,16 @@ const useStyles = makeStyles()((theme) => {
 			},
 		},
 		wrapper: {
-			position: 'relative',
 			backgroundColor: theme.palette.secondary.main,
-			paddingBottom: theme.spacing(2),
-			paddingTop: `${theme.spacing(4)} !important`,
+			padding: `${theme.spacing(12)} ${theme.spacing(9)}`,
 			[theme.breakpoints.down('md')]: {
-				paddingTop: `${theme.spacing(4)} !important`,
+				padding: `${theme.spacing(9)} ${theme.spacing(6)}`,
 			},
 			[theme.breakpoints.down('sm')]: {
-				paddingTop: `${theme.spacing(4)} !important`,
+				paddingBottom: `${theme.spacing(6)} ${theme.spacing(3)}`,
 			},
 			[theme.breakpoints.down('xs')]: {
-				paddingTop: `${theme.spacing(4)} !important`,
+				paddingBottom: `${theme.spacing(3)} ${theme.spacing(1)}`,
 			},
 		},
 		image: {
@@ -164,47 +145,6 @@ const useStyles = makeStyles()((theme) => {
 			verticalAlign: 'middle',
 			borderRadius: theme.shape.borderRadius,
 			boxShadow: theme.shadows[4],
-		},
-		container: {
-			width: '100%',
-			paddingRight: theme.spacing(2),
-			paddingLeft: theme.spacing(2),
-			marginRight: 'auto',
-			marginLeft: 'auto',
-			maxWidth: 1370,
-			marginTop: theme.spacing(6),
-			marginBottom: theme.spacing(12),
-			[theme.breakpoints.down('md')]: {
-				marginBottom: theme.spacing(9),
-			},
-			[theme.breakpoints.down('sm')]: {
-				marginBottom: theme.spacing(6),
-			},
-			[theme.breakpoints.down('sm')]: {
-				marginBottom: theme.spacing(3),
-			},
-		},
-		containerFix: {
-			[theme.breakpoints.up('md')]: {
-				maxWidth: 'none !important',
-			},
-			width: '100%',
-			paddingRight: theme.spacing(4),
-			paddingLeft: theme.spacing(4),
-			marginRight: 'auto',
-			marginLeft: 'auto',
-			[theme.breakpoints.up('sm')]: {
-				maxWidth: 540,
-			},
-			[theme.breakpoints.up('md')]: {
-				maxWidth: 720,
-			},
-			[theme.breakpoints.up('lg')]: {
-				maxWidth: 1170,
-			},
-		},
-		waveBorder: {
-			paddingTop: theme.spacing(4),
 		},
 	};
 });

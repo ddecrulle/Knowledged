@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { makeStyles } from 'tss-react/mui';
-import Footer from 'ui/components/shared/footer/footer';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -11,11 +10,11 @@ import { CoreApiContext } from 'ui/coreApi';
 import { useFiltredAndOrderedFunctions } from 'ui/utils/hooks/functions';
 
 const ServiceOffer = () => {
-	const { classes, theme } = useStyles();
+	const { classes } = useStyles();
 	const [treeState, setTreeState] = useTreeUrlStatus();
 	const [functions, setFunctions] = useState([]);
 	const [hierarchy, setHierarchy] = useState([]);
-	const [filtredFunctions, setFiltredFunctions] = useFiltredAndOrderedFunctions(
+	const [filtredFunctions] = useFiltredAndOrderedFunctions(
 		treeState.selected,
 		treeState.filtered,
 		functions
@@ -31,35 +30,32 @@ const ServiceOffer = () => {
 	}, [getFunctions, getHierarchies]);
 
 	return (
-		<>
-			<div className={classes.wrapper}>
-				<div className={classes.container}>
-					<Box className={classes.row} display='flex' justifyContent='center'>
-						<Grid container spacing={2}>
-							<Grid item md={4} xs={12}>
-								<Box className={classes.box}>
-									<Card className={classes.card}>
-										<BlocFilter
-											treeState={treeState}
-											setTreeState={setTreeState}
-											hierarchy={hierarchy}
-										/>
-									</Card>
-								</Box>
-							</Grid>
-							<Grid item md={8} xs={12}>
-								<Box className={classes.box}>
-									<Card className={classes.card}>
-										<BlocFunction functions={filtredFunctions} />
-									</Card>
-								</Box>
-							</Grid>
+		<div className={classes.wrapper}>
+			<div className={classes.container}>
+				<Box className={classes.row} display='flex' justifyContent='center'>
+					<Grid container spacing={2}>
+						<Grid item md={4} xs={12}>
+							<Box className={classes.box}>
+								<Card className={classes.card}>
+									<BlocFilter
+										treeState={treeState}
+										setTreeState={setTreeState}
+										hierarchy={hierarchy}
+									/>
+								</Card>
+							</Box>
 						</Grid>
-					</Box>
-				</div>
+						<Grid item md={8} xs={12}>
+							<Box className={classes.box}>
+								<Card className={classes.card}>
+									<BlocFunction functions={filtredFunctions} />
+								</Card>
+							</Box>
+						</Grid>
+					</Grid>
+				</Box>
 			</div>
-			<Footer upperColor={theme.palette.grey['100']} />
-		</>
+		</div>
 	);
 };
 

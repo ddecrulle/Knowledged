@@ -4,18 +4,20 @@ import AOS from 'aos/dist/aos';
 import 'aos/dist/aos.css';
 import Home from 'ui/components/pages/home';
 import Service from 'ui/components/pages/service';
-import TopBar from 'ui/components/shared/topbar';
+import Header from 'ui/components/shared/header';
+import Footer from 'ui/components/shared/footer/footer';
 
 AOS.init({ once: true });
 
 const Root = () => {
 	return (
 		<Router>
-			<TopBar />
+			<Header />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='services' element={<Service />} />
 			</Routes>
+			<Footer />
 		</Router>
 	);
 };

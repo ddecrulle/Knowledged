@@ -58,7 +58,7 @@ const BlocFilter = ({ treeState, setTreeState, hierarchy }) => {
 				)}
 				value={treeState.filtered}
 				onChange={handleAutocomplete}
-				//disabled
+				disabled
 			/>
 			<Button
 				onClick={handleCollapseClick}

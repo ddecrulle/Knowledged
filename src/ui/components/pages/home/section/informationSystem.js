@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Box from '@mui/system/Box';
 import si from 'ui/components/assets/img/siMetallica.png';
 
+const InformationSysteme = () => {
+	const { classes } = useStyles();
+	return (
+		<div className={classes.lgPTop}>
+			<Typography variant='h3' align='center' className={classes.title}>
+				Le Système d'informations de collecte
+			</Typography>
+			<div className={classes.container}>
+				<Box className={classes.box}>
+					<div className={'container'}>
+						<img
+							data-aos='zoom-in'
+							alt={"Le système d'informations de collecte"}
+							src={si}
+							className={classes.image}
+						/>
+					</div>
+				</Box>
+			</div>
+		</div>
+	);
+};
+
 const useStyles = makeStyles()((theme) => {
 	return {
 		lgPTop: {
-			backgroundColor: '#FFFFFF',
+			background: theme.palette.grey['100'],
 			paddingTop: `${theme.spacing(20)} !important`,
 			[theme.breakpoints.down('md')]: {
 				paddingTop: `${theme.spacing(18)} !important`,
@@ -67,29 +90,4 @@ const useStyles = makeStyles()((theme) => {
 	};
 });
 
-const InformationSysteme = () => {
-	const { classes } = useStyles();
-	return (
-		<>
-			<div className={classes.lgPTop}>
-				<Typography variant='h3' align='center' className={classes.title}>
-					Le Système d'informations de collecte
-				</Typography>
-				<div className={classes.container}>
-					<Box className={classes.box}>
-						<div className={'container'}>
-							<img
-								data-aos='zoom-in'
-								alt={"Le système d'informations de collecte"}
-								src={si}
-								className={classes.image}
-							/>
-						</div>
-					</Box>
-				</div>
-			</div>
-		</>
-	);
-};
-
-export default InformationSysteme;
+export default memo(InformationSysteme);

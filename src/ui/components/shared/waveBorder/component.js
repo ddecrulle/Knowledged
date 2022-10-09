@@ -1,34 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { makeStyles } from 'tss-react/mui';
 import { keyframes } from 'tss-react';
-
-const useStyles = makeStyles()(
-	(theme, { animationNegativeDelay, upperColor }) => ({
-		root: {
-			background: upperColor ? upperColor : theme.palette.secondary.main,
-		},
-		waves: {
-			position: 'relative',
-			width: '100%',
-			marginBottom: -7,
-			height: '7vw',
-			minHeight: '7vw',
-		},
-		parallax: {
-			'& > use': {
-				animation: `${keyframes`
-        0% { 
-          transform : translate3d(-90px, 0, 0)
-        },
-        100% {
-          transform : translate3d(85px, 0, 0)
-        },
-        `} 4s cubic-bezier(0.62, 0.5, 0.38, 0.5) infinite`,
-				animationDelay: `-${animationNegativeDelay}s`,
-			},
-		},
-	})
-);
 
 const WaveBorder = ({
 	className,
@@ -63,4 +35,32 @@ const WaveBorder = ({
 	);
 };
 
-export default WaveBorder;
+const useStyles = makeStyles()(
+	(theme, { animationNegativeDelay, upperColor }) => ({
+		root: {
+			background: upperColor ? upperColor : theme.palette.secondary.main,
+		},
+		waves: {
+			position: 'relative',
+			width: '100%',
+			marginBottom: -7,
+			height: '7vw',
+			minHeight: '7vw',
+		},
+		parallax: {
+			'& > use': {
+				animation: `${keyframes`
+        0% { 
+          transform : translate3d(-90px, 0, 0)
+        },
+        100% {
+          transform : translate3d(85px, 0, 0)
+        },
+        `} 4s cubic-bezier(0.62, 0.5, 0.38, 0.5) infinite`,
+				animationDelay: `-${animationNegativeDelay}s`,
+			},
+		},
+	})
+);
+
+export default memo(WaveBorder);
