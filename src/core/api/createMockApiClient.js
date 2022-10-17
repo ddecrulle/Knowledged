@@ -6,6 +6,22 @@ import services from 'core/mockData/hierarchy/services';
 import status from 'core/mockData/hierarchy/status';
 
 export const createMockApiClient = () => {
+	const getHierarchywithId = (id) => {
+		switch (id) {
+			case 'users':
+				return users;
+			case 'gsbpm':
+				return gsbpm;
+			case 'products':
+				return products;
+			case 'services':
+				return services;
+			case 'status':
+				return status;
+			default:
+				return {};
+		}
+	};
 	return {
 		getFunctions: () => Promise.resolve(functions),
 		getFunctionById: (id) =>
@@ -14,21 +30,4 @@ export const createMockApiClient = () => {
 			Promise.resolve(Array.of(users, gsbpm, products, services, status)),
 		getHierarchyById: (id) => Promise.resolve(getHierarchywithId(id)),
 	};
-};
-
-const getHierarchywithId = (id) => {
-	switch (id) {
-		case 'users':
-			return users;
-		case 'gsbpm':
-			return gsbpm;
-		case 'products':
-			return products;
-		case 'services':
-			return services;
-		case 'status':
-			return status;
-		default:
-			return {};
-	}
 };

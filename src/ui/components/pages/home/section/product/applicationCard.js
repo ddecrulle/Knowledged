@@ -6,7 +6,6 @@ const useStyles = makeStyles()((theme, { color }) => {
 	return {
 		wrapper: {
 			backgroundColor: theme.palette.common.white,
-			overflowX: 'hidden',
 		},
 		iconWrapper: {
 			color: color,

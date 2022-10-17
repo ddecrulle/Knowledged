@@ -27,10 +27,10 @@ const useStyles = makeStyles()((theme) => {
 				padding: `${theme.spacing(9)} 0`,
 			},
 			[theme.breakpoints.down('sm')]: {
-				paddingBottom: `${theme.spacing(6)} 0`,
+				padding: `${theme.spacing(6)} 0`,
 			},
 			[theme.breakpoints.down('xs')]: {
-				paddingBottom: `${theme.spacing(3)} 0`,
+				padding: `${theme.spacing(3)} 0`,
 			},
 		},
 		product: {

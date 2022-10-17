@@ -15,7 +15,7 @@ const HeadSection = () => {
 	const { headSection } = homePage;
 	return (
 		<div className={classes.wrapper}>
-			<Box display='flex' justifyContent='center' className={classes.box}>
+			<Box className={classes.box}>
 				<Card className={classes.card} data-aos-delay='200' data-aos='zoom-in'>
 					<Grid
 						container
@@ -28,6 +28,7 @@ const HeadSection = () => {
 								flexDirection='column'
 								verticalAlign='middle'
 								height='100%'
+								justifyContent='center'
 							>
 								<Box mb={4}>
 									<Typography variant={'h4'}>{headSection.title}</Typography>
@@ -122,9 +123,6 @@ const useStyles = makeStyles()((theme) => {
 				paddingBottom: theme.spacing(6),
 				paddingLeft: theme.spacing(6),
 				paddingRight: theme.spacing(6),
-			},
-			[theme.breakpoints.down('lg')]: {
-				width: 'auto',
 			},
 		},
 		wrapper: {
