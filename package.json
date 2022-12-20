@@ -5,22 +5,22 @@
 	"author": "u/ddecrulle",
 	"license": "MIT",
 	"dependencies": {
-		"@emotion/react": "^11.7.1",
-		"@emotion/styled": "^11.6.0",
-		"@mui/icons-material": "^5.3.0",
-		"@mui/lab": "^5.0.0-alpha.67",
-		"@mui/material": "^5.3.0",
-		"@testing-library/jest-dom": "^5.14.1",
-		"@testing-library/react": "^13.3.0",
+		"@emotion/react": "^11.10.5",
+		"@emotion/styled": "^11.10.5",
+		"@mui/icons-material": "^5.11.0",
+		"@mui/lab": "^5.0.0-alpha.113",
+		"@mui/material": "^5.11.1",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
 		"aos": "^2.3.4",
-		"powerhooks": "^0.20.10",
+		"powerhooks": "^0.20.32",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "6",
 		"react-scripts": "5.0.1",
-		"tss-react": "^4.3.4",
-		"web-vitals": "^2.1.0"
+		"tss-react": "^4.4.5",
+		"web-vitals": "^3.1.0"
 	},
 	"scripts": {
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
@@ -56,19 +56,19 @@
 		]
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.0.3",
-		"@commitlint/config-conventional": "^17.0.3",
-		"eslint": "^8.12.0",
+		"@commitlint/cli": "^17.3.0",
+		"@commitlint/config-conventional": "^17.3.0",
+		"eslint": "^8.30.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-config-react-app": "^7.0.1",
 		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-jsx-a11y": "^6.5.1",
-		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-react": "^7.29.4",
-		"eslint-plugin-react-hooks": "^4.4.0",
-		"husky": "^8.0.1",
-		"lint-staged": "^13.0.3",
-		"prettier": "^2.6.2"
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.31.11",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
+		"prettier": "^2.8.1"
 	}
 }
