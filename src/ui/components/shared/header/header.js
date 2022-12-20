@@ -27,6 +27,9 @@ const Header = () => {
 	const [open, setOpen] = useState(false);
 	const { classes } = useStyles();
 
+	const openTab = () => setOpen(true);
+	const closeTab = () => setOpen(false);
+
 	return (
 		<AppBar position='static' color='default' className={classes.appBar}>
 			<Toolbar>
@@ -46,7 +49,7 @@ const Header = () => {
 							</div>
 							<Box className={classes.iconContainer}>
 								<IconButton
-									onClick={() => setOpen(true)}
+									onClick={openTab}
 									className={classes.iconButton}
 									color='inherit'
 									aria-label='Menu'
@@ -58,8 +61,8 @@ const Header = () => {
 								<SwipeableDrawer
 									anchor='right'
 									open={open}
-									onClose={() => setOpen(false)}
-									onOpen={() => setOpen(true)}
+									onClose={closeTab}
+									onOpen={openTab}
 								>
 									<AppBar title='Menu' />
 									<List>
@@ -68,7 +71,7 @@ const Header = () => {
 												component={item.external ? MaterialLink : Link}
 												href={item.external ? item.pathname : null}
 												to={item.external ? null : item.pathname}
-												onClick={() => setOpen(false)}
+												onClick={openTab}
 												button
 												key={item.label}
 											>
@@ -132,9 +135,7 @@ const Header = () => {
 												<div>
 													{item.label}{' '}
 													{item.icon === 'github' && (
-														<GithubIcon
-															style={{ marginLeft: 5, verticalAlign: 'sub' }}
-														/>
+														<GithubIcon className={classes.githubIcon} />
 													)}
 												</div>
 											}
@@ -207,6 +208,10 @@ const useStyles = makeStyles()((theme) => {
 			paddingTop: 20,
 			paddingBottom: 20,
 			minWidth: 'auto',
+		},
+		githubIcon: {
+			marginLeft: 5,
+			verticalAlign: 'sub',
 		},
 	};
 });
