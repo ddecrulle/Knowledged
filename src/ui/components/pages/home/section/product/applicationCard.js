@@ -2,7 +2,6 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { makeStyles } from 'tss-react/mui';
-import { CardContent } from '@mui/material';
 
 const ApplicationCard = ({ Icon, color, headline, text }) => {
 	const { classes } = useStyles({ color });
