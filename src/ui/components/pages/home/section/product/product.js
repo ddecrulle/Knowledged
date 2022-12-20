@@ -6,29 +6,25 @@ import { makeStyles } from 'tss-react/mui';
 import CloudIcon from '@mui/icons-material/Cloud';
 import Card from '@mui/material/Card';
 
-const Product = ({ titleProducs, applications }) => {
+const Product = ({ titleProducts, applications }) => {
 	const { classes } = useStyles();
 	return (
 		<Card className={classes.paper} data-aos='zoom-in-up' data-aos-delay='200'>
 			<Typography variant='h3' align='center' className={classes.title}>
-				{titleProducs}
+				{titleProducts}
 			</Typography>
 			<Grid
 				container
-				direction='row'
-				justifyContent='center'
-				alignItems='center'
-				spacing={4}
+				spacing={{ xs: 2, md: 4 }}
+				columns={{ xs: 4, sm: 8, md: 12 }}
 			>
 				{applications.map((element) => (
-					<Grid item xs={8} sm={6} key={element.headline}>
-						<ApplicationCard
-							Icon={<CloudIcon style={{ fontSize: 30 }} />}
-							color='#2d21ea'
-							headline={element.label}
-							text={element.label}
-						/>
-					</Grid>
+					<ApplicationCard
+						Icon={<CloudIcon style={{ fontSize: 30 }} />}
+						color='#2d21ea'
+						headline={element.label}
+						text={element.label}
+					/>
 				))}
 			</Grid>
 		</Card>
@@ -51,6 +47,9 @@ const useStyles = makeStyles()((theme) => {
 		},
 		title: {
 			marginBottom: theme.spacing(5),
+		},
+		applicationContainer: {
+			display: 'flex',
 		},
 	};
 });

@@ -32,7 +32,7 @@ const ServiceOffer = () => {
 	return (
 		<div className={classes.wrapper}>
 			<div className={classes.container}>
-				<Box className={classes.row} display='flex' justifyContent='center'>
+				<Box className={classes.row} justifyContent='center'>
 					<Grid container spacing={2}>
 						<Grid item md={4} xs={12}>
 							<Box className={classes.box}>
@@ -64,7 +64,7 @@ export default ServiceOffer;
 const useStyles = makeStyles()((theme) => {
 	return {
 		wrapper: {
-			background: theme.palette.grey['100'],
+			background: theme.palette.background.default,
 			position: 'relative',
 			paddingBottom: theme.spacing(2),
 			paddingTop: `${theme.spacing(4)} !important`,
@@ -100,12 +100,12 @@ const useStyles = makeStyles()((theme) => {
 		row: {
 			display: 'flex',
 			flexWrap: 'wrap',
+			justifyContent: 'center',
 		},
 		box: {
 			display: 'flex',
 			flexDirection: 'column',
 			height: '100%',
-			//minWidth: 50,
 		},
 		card: {
 			boxShadow: theme.shadows[4],

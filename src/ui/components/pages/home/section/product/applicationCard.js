@@ -1,6 +1,26 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import { makeStyles } from 'tss-react/mui';
+import { CardContent } from '@mui/material';
+
+const ApplicationCard = ({ Icon, color, headline, text }) => {
+	const { classes } = useStyles({ color });
+
+	return (
+		<Grid item xs={2} sm={4} md={4}>
+			<div className={classes.iconWrapper}>{Icon}</div>
+			<Typography variant='h5' paragraph>
+				{headline}
+			</Typography>
+			<Typography variant='body1' color='textSecondary'>
+				{text}
+			</Typography>
+		</Grid>
+	);
+};
+
+export default ApplicationCard;
 
 const useStyles = makeStyles()((theme, { color }) => {
 	return {
@@ -38,25 +58,3 @@ function shadeColor(hex, percent) {
 		.toString(16)
 		.slice(1)}`;
 }
-
-const ApplicationCard = ({ Icon, color, headline, text }) => {
-	const { classes } = useStyles({ color });
-	return (
-		<>
-			<div
-				// We will set color and fill here, due to some prios complications
-				className={classes.iconWrapper}
-			>
-				{Icon}
-			</div>
-			<Typography variant='h5' paragraph>
-				{headline}
-			</Typography>
-			<Typography variant='body1' color='textSecondary'>
-				{text}
-			</Typography>
-		</>
-	);
-};
-
-export default ApplicationCard;
