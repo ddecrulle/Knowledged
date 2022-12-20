@@ -14,6 +14,9 @@ export const useFilteredAndOrderedFunctions = (
 
 	const filterParentNode = (array) => array.filter((str) => str.includes('-'));
 
+	const intersectionArrays = (first, second) =>
+		first.filter((x) => second.includes(x));
+
 	const concatArrayWithoutDuplicate = (a, b) => [...new Set(a.concat(b))];
 
 	useEffect(() => {
@@ -53,11 +56,14 @@ export const useFilteredAndOrderedFunctions = (
 			)(obj, nodeKey);
 
 		const objOfFctFiltered = Object.entries(objOfIdByHierarchy).reduce(
-			(prev, [key, value]) =>
-				concatArrayWithoutDuplicate(
-					prev,
-					functions.filter((fct) => findId(value, fct, key))
-				),
+			(prev, [key, value], index) => {
+				const functionFilteredByOneNode = functions.filter((fct) =>
+					findId(value, fct, key)
+				);
+				return index === 0
+					? functionFilteredByOneNode
+					: intersectionArrays(prev, functionFilteredByOneNode);
+			},
 			[]
 		);
 
