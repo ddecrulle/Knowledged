@@ -1,1 +1,1 @@
-export { useFiltredAndOrderedFunctions } from './useFiltredAndOrderedFunctions';
+export { useFilteredAndOrderedFunctions } from './useFilteredAndOrderedFunctions';

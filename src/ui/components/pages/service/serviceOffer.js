@@ -7,14 +7,14 @@ import BlocFilter from './section/blocFilter';
 import BlocFunction from './section/blocFunction';
 import { useTreeUrlStatus } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
-import { useFiltredAndOrderedFunctions } from 'ui/utils/hooks/functions';
+import { useFilteredAndOrderedFunctions } from 'ui/utils/hooks/functions';
 
 const ServiceOffer = () => {
 	const { classes } = useStyles();
 	const [treeState, setTreeState] = useTreeUrlStatus();
 	const [functions, setFunctions] = useState([]);
 	const [hierarchy, setHierarchy] = useState([]);
-	const [filtredFunctions] = useFiltredAndOrderedFunctions(
+	const [filteredFunctions] = useFilteredAndOrderedFunctions(
 		treeState.selected,
 		treeState.filtered,
 		functions
@@ -48,7 +48,7 @@ const ServiceOffer = () => {
 						<Grid item md={8} xs={12}>
 							<Box className={classes.box}>
 								<Card className={classes.card}>
-									<BlocFunction functions={filtredFunctions} />
+									<BlocFunction functions={filteredFunctions} />
 								</Card>
 							</Box>
 						</Grid>

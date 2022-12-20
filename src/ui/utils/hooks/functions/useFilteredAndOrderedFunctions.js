@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 
-export const useFiltredAndOrderedFunctions = (
+export const useFilteredAndOrderedFunctions = (
 	selected,
 	filtered,
 	functions
 ) => {
+	//TODO Implement filter
 	const [arrayOfIdToFilter, setArrayOfIdToFilter] = useState([]);
 	const [objOfIdByHierarchy, setObjOfIdByHierarchy] = useState({});
-	const [filtredFunctions, setFiltredFunctions] = useState(functions);
+	const [filteredFunctions, setFilteredFunctions] = useState(functions);
 
 	// We don't filter by the parent node of the selected node
 
@@ -51,20 +52,17 @@ export const useFiltredAndOrderedFunctions = (
 				arrayTarget.includes(node.id) ? true : next()
 			)(obj, nodeKey);
 
-		const objOfFctFiltred = Object.entries(objOfIdByHierarchy).map(
-			([key, value]) => functions.filter((fct) => findId(value, fct, key))
+		const objOfFctFiltered = Object.entries(objOfIdByHierarchy).reduce(
+			(prev, [key, value]) =>
+				concatArrayWithoutDuplicate(
+					prev,
+					functions.filter((fct) => findId(value, fct, key))
+				),
+			[]
 		);
 
-		console.log(objOfFctFiltred);
-
-		setFiltredFunctions(
-			objOfFctFiltred === {}
-				? objOfFctFiltred.reduce((acc, curr) =>
-						concatArrayWithoutDuplicate(acc, curr)
-				  )
-				: []
-		);
+		setFilteredFunctions(objOfFctFiltered);
 	}, [functions, objOfIdByHierarchy]);
 
-	return [filtredFunctions, setFiltredFunctions];
+	return [filteredFunctions, setFilteredFunctions];
 };
