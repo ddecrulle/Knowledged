@@ -34,16 +34,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S111",
 			"label": "Accompagnement à la conception du protocole de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -92,16 +92,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S111",
 			"label": "Accompagnement à la conception du protocole de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -145,16 +145,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S112",
 			"label": "Accompagnement à la conception du questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -197,16 +197,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S112",
 			"label": "Accompagnement à la conception du questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S110",
 				"label": "Accompagnement à la conception d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -274,16 +274,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -336,16 +336,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -389,16 +389,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -437,16 +437,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -500,16 +500,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -553,16 +553,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S121",
 			"label": "Outil de conception du modèle de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -626,16 +626,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S122",
 			"label": "Outil de génération de questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -678,16 +678,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S123",
 			"label": "Outil de spécification des contrôles qualité post-collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -736,16 +736,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S123",
 			"label": "Outil de spécification des contrôles qualité post-collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S120",
 				"label": "Atelier de conception du modèle de questionnaires pour différents usages",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -799,16 +799,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S131",
 			"label": "Outil de paramétrage et visualisation des documents>",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S130",
 				"label": "Atelier de constitution des opérations éditiques",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -847,16 +847,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S131",
 			"label": "Outil de paramétrage et visualisation des documents>",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S130",
 				"label": "Atelier de constitution des opérations éditiques",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -899,16 +899,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S131",
 			"label": "Outil de paramétrage et visualisation des documents>",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S130",
 				"label": "Atelier de constitution des opérations éditiques",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S100",
 					"label": "Conception d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -967,13 +967,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S210",
 			"label": "Offrir une vitrine de l'enquête en phase avec insee.fr et qui respecte un cadre standardisé commun à toutes les enquêtes ménages >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1020,13 +1020,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S210",
 			"label": "Offrir une vitrine de l'enquête en phase avec insee.fr et qui respecte un cadre standardisé commun à toutes les enquêtes ménages >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1063,13 +1063,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S220",
 			"label": "Espace dédié aux enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1106,13 +1106,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S220",
 			"label": "Espace dédié aux enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1159,13 +1159,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S230",
 			"label": "Outil de configuration du site de promotion des enquêtes >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S200",
 				"label": "Macro-service Accès aux enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1207,16 +1207,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S311",
 			"label": "Lister les questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1260,16 +1260,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S311",
 			"label": "Lister les questionnaires",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1318,16 +1318,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S312",
 			"label": "Consulter un questionnaire web (ou des annexes)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1366,16 +1366,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S312",
 			"label": "Consulter un questionnaire web (ou des annexes)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1419,16 +1419,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S312",
 			"label": "Consulter un questionnaire web (ou des annexes)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1472,16 +1472,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S313",
 			"label": "Saisir un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1525,16 +1525,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S313",
 			"label": "Saisir un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1578,16 +1578,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S313",
 			"label": "Saisir un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1641,16 +1641,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S313",
 			"label": "Saisir un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1694,16 +1694,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S313",
 			"label": "Saisir un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1747,16 +1747,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S313",
 			"label": "Saisir un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S310",
 				"label": "Présenter et permettre l'accès aux questionnaires en ligne",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S300",
 					"label": "Macro service Collecte Web",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -1795,13 +1795,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S320",
 			"label": "Fournir une preuve de dépôt d'un questionnaire complété",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S300",
 				"label": "Macro service Collecte Web",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1838,13 +1838,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S320",
 			"label": "Fournir une preuve de dépôt d'un questionnaire complété",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S300",
 				"label": "Macro service Collecte Web",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1881,13 +1881,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S410",
 			"label": "Mettre à disposition des questionnaires papier",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1934,13 +1934,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S420",
 			"label": "Numériser de manière standardisée",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -1987,13 +1987,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S420",
 			"label": "Numériser de manière standardisée",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -2040,13 +2040,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S420",
 			"label": "Numériser de manière standardisée",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S400",
 				"label": "Macro-service Collecte papier",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -2087,16 +2087,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2139,16 +2139,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2191,16 +2191,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2256,16 +2256,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S511",
 			"label": "Accéder à un espace dédié à la formation (appropriation des questionnaires)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2304,16 +2304,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2362,16 +2362,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2410,16 +2410,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2463,16 +2463,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2511,16 +2511,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2564,16 +2564,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2612,16 +2612,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2660,16 +2660,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S512",
 			"label": "Collecter les données",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S510",
 				"label": "Offrir aux enquêteurs un service dédié à la passation de questionnaires d'enquêtes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2712,16 +2712,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S521",
 			"label": "Offrir un contexte de formation",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2760,16 +2760,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S522",
 			"label": "Faciliter les échanges avec les enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2808,16 +2808,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S522",
 			"label": "Faciliter les échanges avec les enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2866,16 +2866,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S523",
 			"label": "Accéder à des fonctionnalités de repérage associées à un mode de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2934,16 +2934,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S523",
 			"label": "Accéder à des fonctionnalités de repérage associées à un mode de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -2982,16 +2982,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S524",
 			"label": "Suivre la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3035,16 +3035,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S524",
 			"label": "Suivre la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3083,16 +3083,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S524",
 			"label": "Suivre la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3141,16 +3141,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S524",
 			"label": "Suivre la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3189,16 +3189,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S525",
 			"label": "Organiser la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3237,16 +3237,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S525",
 			"label": "Organiser la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3285,16 +3285,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S525",
 			"label": "Organiser la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3338,16 +3338,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S525",
 			"label": "Organiser la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3391,16 +3391,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S525",
 			"label": "Organiser la collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S520",
 				"label": "Offrir aux enquêteurs un service dédié au suivi et l'organisation de la collecte",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S500",
 					"label": "Macro-service Collecte enquêteurs",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -3448,13 +3448,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S610",
 			"label": "Mise à disposition de paradonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3500,13 +3500,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S610",
 			"label": "Mise à disposition de paradonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3557,13 +3557,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S620",
 			"label": "Offrir des possibilités de requêtages riches/libres sur les paradonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3609,13 +3609,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S630",
 			"label": "Visualisation de questionnaires à contrôler",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3664,13 +3664,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S630",
 			"label": "Visualisation de questionnaires à contrôler",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3721,13 +3721,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S630",
 			"label": "Visualisation de questionnaires à contrôler",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3768,13 +3768,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S640",
 			"label": "Reprendre/Corriger un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3829,13 +3829,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S640",
 			"label": "Reprendre/Corriger un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3889,13 +3889,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S640",
 			"label": "Reprendre/Corriger un questionnaire",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3942,13 +3942,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S650",
 			"label": "Fournir des aggrégats destinés au contrôle de gestion",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -3993,13 +3993,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S650",
 			"label": "Fournir des aggrégats destinés au contrôle de gestion",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4036,13 +4036,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S660",
 			"label": "Mise en place d'enquêtes de satisfaction",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S600",
 				"label": "Macro-Service Contrôle qualité",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4084,16 +4084,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4136,16 +4136,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4188,16 +4188,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4253,16 +4253,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4301,16 +4301,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4349,16 +4349,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4397,16 +4397,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S711",
 			"label": "Optimiser l'assistance aux répondants web",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4450,16 +4450,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S712",
 			"label": "Orienter les enquêtés vers l'assistance de manière homogène entre enquêtes",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4503,16 +4503,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S712",
 			"label": "Orienter les enquêtés vers l'assistance de manière homogène entre enquêtes",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4561,16 +4561,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S712",
 			"label": "Orienter les enquêtés vers l'assistance de manière homogène entre enquêtes",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S710",
 				"label": "Fournir des outils pour assister les répondants web",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S700",
 					"label": "Macro-service Assistance",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -4618,13 +4618,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S720",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4680,13 +4680,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S720",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4743,13 +4743,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S720",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4790,13 +4790,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S720",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4851,13 +4851,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S720",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêtés",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4912,13 +4912,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S730",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -4959,13 +4959,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S730",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -5006,13 +5006,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S730",
 			"label": "Fournir des outils destinés à faciliter l'assistance des enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S700",
 				"label": "Macro-service Assistance",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -5082,16 +5082,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S811",
 			"label": "Offrir une information cohérente et consolidée sur les UE quel que soit le mode de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5149,16 +5149,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S811",
 			"label": "Offrir une information cohérente et consolidée sur les UE quel que soit le mode de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5211,16 +5211,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S812",
 			"label": "Constituer les échantillons de collecte y compris ajout de sur échantillons",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5261,16 +5261,16 @@
 			}
 		],
 		"tasks": [],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S812",
 			"label": "Constituer les échantillons de collecte y compris ajout de sur échantillons",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5319,16 +5319,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S813",
 			"label": "Automatiser les processus entre séquences / campagnes de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5372,16 +5372,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S813",
 			"label": "Automatiser les processus entre séquences / campagnes de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5425,16 +5425,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S813",
 			"label": "Automatiser les processus entre séquences / campagnes de collecte",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S810",
 				"label": "Disposer d'un référentiel des unités enquêtées (UE)",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5473,13 +5473,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S820",
 			"label": "Disposer d'un référentiel des enquêteurs >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -5521,13 +5521,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S820",
 			"label": "Disposer d'un référentiel des enquêteurs >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -5569,13 +5569,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S830",
 			"label": "Piloter l'activité des enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -5631,16 +5631,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S841",
 			"label": "Service d'envoi de communications en masse",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5679,16 +5679,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S841",
 			"label": "Service d'envoi de communications en masse",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5727,16 +5727,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S841",
 			"label": "Service d'envoi de communications en masse",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5785,16 +5785,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S842",
 			"label": "Suivi local des collectes avec enquêteurs>",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5833,16 +5833,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S842",
 			"label": "Suivi local des collectes avec enquêteurs>",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5885,16 +5885,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S842",
 			"label": "Suivi local des collectes avec enquêteurs>",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5942,16 +5942,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S843",
 			"label": "Suivi national des collectes, quel que soit le mode",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -5994,16 +5994,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S843",
 			"label": "Suivi national des collectes, quel que soit le mode",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6051,16 +6051,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S843",
 			"label": "Suivi national des collectes, quel que soit le mode",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6108,16 +6108,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S844",
 			"label": "Mise en œuvre des collectes avec enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6161,16 +6161,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S844",
 			"label": "Mise en œuvre des collectes avec enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6214,16 +6214,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S844",
 			"label": "Mise en œuvre des collectes avec enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6271,16 +6271,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S844",
 			"label": "Mise en œuvre des collectes avec enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6333,16 +6333,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S845",
 			"label": "Mise en œuvre des collectes sans enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6395,16 +6395,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S845",
 			"label": "Mise en œuvre des collectes sans enquêteurs",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6476,16 +6476,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S846",
 			"label": "Mise en oeuvre des collectes multimodes (complémentaire)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6538,16 +6538,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S846",
 			"label": "Mise en oeuvre des collectes multimodes (complémentaire)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6595,16 +6595,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S846",
 			"label": "Mise en oeuvre des collectes multimodes (complémentaire)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6647,16 +6647,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S846",
 			"label": "Mise en oeuvre des collectes multimodes (complémentaire)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6709,16 +6709,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S846",
 			"label": "Mise en oeuvre des collectes multimodes (complémentaire)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6761,16 +6761,16 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S846",
 			"label": "Mise en oeuvre des collectes multimodes (complémentaire)",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S840",
 				"label": "Offrir un service dédié au suivi et à la mise en œuvre des collectes",
-				"serviceBpmn": {
+				"services": {
 					"id": "services-S800",
 					"label": "Macro-service Pilotage des activités d'enquêtes",
-					"serviceBpmn": null,
+					"services": null,
 					"description": null
 				},
 				"description": null
@@ -6839,13 +6839,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S850",
 			"label": "Offrir un service de normalisation des coordonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -6886,13 +6886,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S850",
 			"label": "Offrir un service de normalisation des coordonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -6933,13 +6933,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S850",
 			"label": "Offrir un service de normalisation des coordonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -6995,13 +6995,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S850",
 			"label": "Offrir un service de normalisation des coordonnées",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S800",
 				"label": "Macro-service Pilotage des activités d'enquêtes",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -7038,13 +7038,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S910",
 			"label": "Permettre une administration de l'ensemble de l'offre de services de manière homogène et cohérente",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S900",
 				"label": "Macro-Service Administration de l'offre de services",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -7103,13 +7103,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S920",
 			"label": "Permettre une mise en production de l'offre de services >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S900",
 				"label": "Macro-Service Administration de l'offre de services",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -7154,13 +7154,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S920",
 			"label": "Permettre une mise en production de l'offre de services >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S900",
 				"label": "Macro-Service Administration de l'offre de services",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -7202,13 +7202,13 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S920",
 			"label": "Permettre une mise en production de l'offre de services >",
-			"serviceBpmn": {
+			"services": {
 				"id": "services-S900",
 				"label": "Macro-Service Administration de l'offre de services",
-				"serviceBpmn": null,
+				"services": null,
 				"description": null
 			},
 			"description": null
@@ -7260,10 +7260,10 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S1000",
 			"label": "Macro-Service Agrégation / Échanges de données",
-			"serviceBpmn": null,
+			"services": null,
 			"description": null
 		}
 	},
@@ -7303,10 +7303,10 @@
 				"label": ""
 			}
 		],
-		"serviceBpmn": {
+		"services": {
 			"id": "services-S1000",
 			"label": "Macro-Service Agrégation / Échanges de données",
-			"serviceBpmn": null,
+			"services": null,
 			"description": null
 		}
 	}
