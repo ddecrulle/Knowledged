@@ -30,13 +30,6 @@ export const useFilteredAndOrderedFunctions = (
 	}, [arrayOfIdToFilter]);
 
 	useEffect(() => {
-		console.log(arrayOfIdToFilter);
-	}, [arrayOfIdToFilter]);
-	useEffect(() => {
-		console.log(objOfIdWithChild);
-	}, [objOfIdWithChild]);
-
-	useEffect(() => {
 		const searchArray = (fn) => (array, nodeKey) =>
 			Array.isArray(array)
 				? array.length === 0
