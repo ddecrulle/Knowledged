@@ -26,7 +26,6 @@ const HeadSection = () => {
 							<Box
 								display='flex'
 								flexDirection='column'
-								verticalAlign='middle'
 								height='100%'
 								justifyContent='center'
 							>
