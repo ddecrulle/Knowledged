@@ -92,19 +92,16 @@ const Header = () => {
 									</List>
 								</SwipeableDrawer>
 								<Tabs value={location.pathname}>
-									{Menu.map((item, index) => {
-										console.log(item);
-										return (
-											<Tab
-												key={`primary-${index}`}
-												value={item.pathname}
-												component={item.external ? MaterialLink : Link}
-												href={item.external ? item.pathname : null}
-												to={item.external ? null : item.pathname}
-												label={item.label}
-											/>
-										);
-									})}
+									{Menu.map((item, index) => (
+										<Tab
+											key={`primary-${index}`}
+											value={item.pathname}
+											component={item.external ? MaterialLink : Link}
+											href={item.external ? item.pathname : null}
+											to={item.external ? null : item.pathname}
+											label={item.label}
+										/>
+									))}
 								</Tabs>
 								<Tabs
 									indicatorColor='primary'
