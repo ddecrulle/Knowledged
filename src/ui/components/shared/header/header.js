@@ -69,7 +69,6 @@ const Header = () => {
 												href={item.external ? item.pathname : null}
 												to={item.external ? null : item.pathname}
 												onClick={() => setOpen(false)}
-												button
 												key={item.label}
 											>
 												<ListItemText primary={item.label} />
@@ -83,7 +82,6 @@ const Header = () => {
 												component={item.external ? MaterialLink : Link}
 												href={item.external ? item.pathname : null}
 												to={item.external ? null : item.pathname}
-												button
 												disabled={item.disabled}
 												key={item.label}
 											>
@@ -93,22 +91,20 @@ const Header = () => {
 										<Divider />
 									</List>
 								</SwipeableDrawer>
-								<Tabs
-									value={location.pathname}
-									indicatorColor='primary'
-									textColor='primary'
-								>
-									{Menu.map((item, index) => (
-										<Tab
-											key={`primary-${index}`}
-											value={item.pathname}
-											component={item.external ? MaterialLink : Link}
-											href={item.external ? item.pathname : null}
-											to={item.external ? null : item.pathname}
-											classes={classes.tabItem}
-											label={item.label}
-										/>
-									))}
+								<Tabs value={location.pathname}>
+									{Menu.map((item, index) => {
+										console.log(item);
+										return (
+											<Tab
+												key={`primary-${index}`}
+												value={item.pathname}
+												component={item.external ? MaterialLink : Link}
+												href={item.external ? item.pathname : null}
+												to={item.external ? null : item.pathname}
+												label={item.label}
+											/>
+										);
+									})}
 								</Tabs>
 								<Tabs
 									indicatorColor='primary'
@@ -126,15 +122,12 @@ const Header = () => {
 											component={item.external ? MaterialLink : Link}
 											href={item.external ? item.pathname : null}
 											to={item.external ? null : item.pathname}
-											classes={classes.tabItem}
 											disabled={item.disabled}
 											label={
 												<div>
 													{item.label}{' '}
 													{item.icon === 'github' && (
-														<GithubIcon
-															style={{ marginLeft: 5, verticalAlign: 'sub' }}
-														/>
+														<GithubIcon className={classes.githubIcon} />
 													)}
 												</div>
 											}
@@ -158,7 +151,6 @@ const useStyles = makeStyles()((theme) => {
 			borderBottom: `1px solid ${theme.palette.grey['100']}`,
 			backgroundColor: 'white',
 			[theme.breakpoints.up('md')]: {
-				paddingRigth: 120,
 				paddingLeft: 120,
 			},
 		},
@@ -203,11 +195,7 @@ const useStyles = makeStyles()((theme) => {
 				display: 'none',
 			},
 		},
-		tabItem: {
-			paddingTop: 20,
-			paddingBottom: 20,
-			minWidth: 'auto',
-		},
+		githubIcon: { marginLeft: 5, verticalAlign: 'sub' },
 	};
 });
 export default memo(Header);

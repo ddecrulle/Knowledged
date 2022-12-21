@@ -43,7 +43,6 @@ const HeadSection = () => {
 										color='secondary'
 										fullWidth
 										className={classes.extraLargeButton}
-										classes={classes.extraLargeButtonLabel}
 										component={Link}
 										to='services'
 									>
