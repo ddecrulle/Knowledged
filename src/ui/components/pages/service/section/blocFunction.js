@@ -5,7 +5,7 @@ const BlocFunction = ({ functions }) => {
 	//const { classes, theme } = useStyles();
 
 	return functions.map((fct) => (
-		<div>
+		<div key={fct.id}>
 			<h1>{fct['id']}</h1>
 			{fct['label']}
 		</div>
