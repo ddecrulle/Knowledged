@@ -1,6 +1,6 @@
 {
 	"name": "knowledge",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "The user interface that presents the service offer of the INSEE survey information system",
 	"author": "u/ddecrulle",
 	"license": "MIT",
@@ -14,6 +14,7 @@
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
 		"aos": "^2.3.4",
+		"lodash.groupby": "^4.6.0",
 		"powerhooks": "^0.20.32",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",

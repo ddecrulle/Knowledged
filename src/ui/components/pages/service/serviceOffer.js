@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import BlocFilter from './section/blocFilter';
-import BlocFunction from './section/blocFunction';
+import BlocFunction from './section/blocFunctions';
 import { useTreeUrlStatus } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
 import { useFilteredAndOrderedFunctions } from 'ui/utils/hooks/functions';
