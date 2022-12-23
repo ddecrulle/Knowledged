@@ -29,6 +29,10 @@ const ServiceOffer = () => {
 		});
 	}, [getFunctions, getHierarchies]);
 
+	const hierarchyProducts = hierarchy.find(
+		(hierarchy) => hierarchy.id === 'products'
+	);
+
 	return (
 		<div className={classes.wrapper}>
 			<div className={classes.container}>
@@ -48,7 +52,10 @@ const ServiceOffer = () => {
 						<Grid item md={8} xs={12}>
 							<Box className={classes.box}>
 								<Card className={classes.card}>
-									<BlocFunction functions={filteredFunctions} />
+									<BlocFunction
+										functions={filteredFunctions}
+										products={hierarchyProducts}
+									/>
 								</Card>
 							</Box>
 						</Grid>
