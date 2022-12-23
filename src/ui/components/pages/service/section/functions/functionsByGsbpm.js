@@ -2,7 +2,7 @@ import React from 'react';
 import { Function } from './function';
 //import { makeStyles } from 'tss-react/mui';
 
-export const FunctionsGroupedByProducts = ({ productFunctions }) => {
+export const FunctionsByGSBPM = ({ productFunctions }) => {
 	//const { classes } = useStyles();
 
 	return (

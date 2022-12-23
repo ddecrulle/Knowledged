@@ -6,26 +6,18 @@ export const Function = ({ fct }) => {
 	const { classes } = useStyles();
 
 	return (
-		<div key={fct.id}>
-			<Typography variant='subtitle1' textTransform='uppercase' color='grey'>
-				{fct['gsbpm']['label']}
+		<li>
+			<Typography
+				variant='subtitle1'
+				textTransform='uppercase'
+				className={classes.fctLabel}
+			>
+				{fct['label']}
 			</Typography>
-
-			<ul>
-				<li>
-					<Typography
-						variant='subtitle1'
-						textTransform='uppercase'
-						className={classes.fctLabel}
-					>
-						{fct['label']}
-					</Typography>
-					<Typography variant='body1' color='GrayText'>
-						{fct['description']}
-					</Typography>
-				</li>
-			</ul>
-		</div>
+			<Typography variant='body1' color='GrayText'>
+				{fct['description']}
+			</Typography>
+		</li>
 	);
 };
 

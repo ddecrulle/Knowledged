@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import groupBy from 'lodash.groupby';
-import { FunctionsGroupedByProducts } from './functions/functionsGroupedByProducts';
+import { FunctionsByProducts } from './functions/functionsByProducts';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Divider from '@mui/material/Divider';
@@ -24,16 +24,16 @@ const BlocFunction = ({ functions, products }) => {
 			const idProduct = groupedFunctions[0].idProduct;
 			const labelProduct = getLabelProduct(arrayProducts, idProduct);
 			return (
-				<React.Fragment key={idProduct}>
+				<div key={idProduct} className={classes.productFunctions}>
 					<Divider component='div' className={classes.titleDivider} />
 					<Typography className={classes.productTitle} variant='h4'>
 						{labelProduct}
 					</Typography>
-					<FunctionsGroupedByProducts
+					<FunctionsByProducts
 						productFunctions={groupedFunctions}
 						labelProduct={labelProduct}
 					/>
-				</React.Fragment>
+				</div>
 			);
 		}
 	);
@@ -55,4 +55,5 @@ const useStyles = makeStyles()((theme) => ({
 		marginLeft: theme.spacing(4),
 		display: 'table-caption',
 	},
+	productFunctions: { marginBottom: theme.spacing(6) },
 }));
