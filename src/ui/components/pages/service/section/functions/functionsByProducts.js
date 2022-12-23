@@ -3,32 +3,27 @@ import { Function } from './function';
 import groupBy from 'lodash.groupby';
 import Typography from '@mui/material/Typography';
 
-//import { makeStyles } from 'tss-react/mui';
-
 export const FunctionsByProducts = ({ productFunctions }) => {
-	//const { classes } = useStyles();
-
-	//  Object.values(groupBy(productFunctions, (fct) => fct.gsbpm.id)).map(
 	return (
 		<>
 			{Object.values(groupBy(productFunctions, (fct) => fct.gsbpm.id)).map(
 				(gsbpmGroupedFct) => {
-					const gsbpmLabel = gsbpmGroupedFct[0]['gsbpm']['label'];
+					const { id, label } = gsbpmGroupedFct[0]['gsbpm'];
 					return (
-						<>
+						<React.Fragment key={id}>
 							<Typography
 								variant='subtitle1'
 								textTransform='uppercase'
 								color='grey'
 							>
-								{gsbpmLabel}
+								{label}
 							</Typography>
 							<ul>
 								{gsbpmGroupedFct.map((fct) => (
 									<Function fct={fct} key={fct.id} />
 								))}
 							</ul>
-						</>
+						</React.Fragment>
 					);
 				}
 			)}
