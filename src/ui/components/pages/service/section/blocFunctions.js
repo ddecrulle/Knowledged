@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import groupBy from 'lodash.groupby';
-import { GroupedFunctions } from './functions/groupedFunctions';
+import { FunctionsGroupedByProducts } from './functions/functionsGroupedByProducts';
+import Typography from '@mui/material/Typography';
+import { makeStyles } from 'tss-react/mui';
+import Divider from '@mui/material/Divider';
 
 const BlocFunction = ({ functions, products }) => {
+	const { classes } = useStyles();
+
 	const [arrayProducts, setArrayProducts] = useState([]);
 
 	const getLabelProduct = (products, idProduct) => {
@@ -19,14 +24,35 @@ const BlocFunction = ({ functions, products }) => {
 			const idProduct = groupedFunctions[0].idProduct;
 			const labelProduct = getLabelProduct(arrayProducts, idProduct);
 			return (
-				<GroupedFunctions
-					groupedFunctions={groupedFunctions}
-					labelProduct={labelProduct}
-					key={idProduct}
-				/>
+				<React.Fragment key={idProduct}>
+					<Divider component='div' className={classes.titleDivider} />
+					<Typography className={classes.productTitle} variant='h4'>
+						{labelProduct}
+					</Typography>
+					<FunctionsGroupedByProducts
+						productFunctions={groupedFunctions}
+						labelProduct={labelProduct}
+					/>
+				</React.Fragment>
 			);
 		}
 	);
 };
 
 export default BlocFunction;
+
+const useStyles = makeStyles()((theme) => ({
+	titleDivider: {
+		width: theme.spacing(6),
+		borderWidth: '3px',
+		backgroundColor: '#4cbee2',
+		borderRadius: '10px',
+	},
+	productTitle: {
+		fontWeight: 500,
+		textTransform: 'uppercase',
+		marginBottom: theme.spacing(6),
+		marginLeft: theme.spacing(4),
+		display: 'table-caption',
+	},
+}));
