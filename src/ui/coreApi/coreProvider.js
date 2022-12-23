@@ -8,7 +8,6 @@ export function CoreProvider({ children }) {
 	const apiUrl = getEnvVar('API_URL');
 	const apiClient = apiUrl ? createApiClient(apiUrl) : createMockApiClient();
 
-	console.log(apiUrl);
 	return (
 		<CoreApiContext.Provider value={apiClient}>
 			{children}
