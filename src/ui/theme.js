@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
 const primary = '#b3294e';
-const secondary = '#10069f';
+const secondary = '#0f417a';
 const black = '#343a40';
 const darkBlack = 'rgb(36, 40, 44)';
 const background = '#f5f5f5';
@@ -35,6 +35,7 @@ const theme = createTheme({
 		tonalOffset: 0.2,
 		background: {
 			default: background,
+			bleu: secondary,
 		},
 		spacing,
 	},

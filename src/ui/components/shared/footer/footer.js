@@ -7,10 +7,10 @@ import version from 'core/version';
 const Footer = () => {
 	const { classes, theme } = useStyles();
 	return (
-		<footer className={classes.footer}>
+		<footer>
 			<WaveBorder
 				upperColor={theme.palette.background.default}
-				lowerColor={theme.palette.common.darkBlack}
+				lowerColor={theme.palette.background.bleu}
 				animationNegativeDelay={4}
 			/>
 			<div className={classes.footerInner}>
@@ -24,13 +24,10 @@ const Footer = () => {
 
 const useStyles = makeStyles()((theme) => {
 	return {
-		footer: {
-			backgroundColor: theme.palette.background.default,
-		},
 		waveBorder: {},
 		footerInner: {
 			textAlign: 'center',
-			backgroundColor: theme.palette.common.darkBlack,
+			backgroundColor: theme.palette.background.bleu,
 			paddingTop: theme.spacing(8),
 			paddingLeft: theme.spacing(2),
 			paddingRight: theme.spacing(2),
