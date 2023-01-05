@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import Hidden from '@mui/material/Hidden';
 import Box from '@mui/system/Box';
-import picture from 'ui/components/assets/img/babel_tower.png';
+import picture from 'ui/components/assets/img/babel_tower.svg';
 import { Link } from 'react-router-dom';
 import homePage from 'ui/components/constants/page/homePage';
 
