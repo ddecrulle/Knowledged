@@ -3,9 +3,9 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { makeStyles } from 'tss-react/mui';
 
-const ApplicationCard = ({ Icon, color, headline, text }) => {
+const ApplicationCard = ({ Icon, color, headline, text, id }) => {
 	const { classes } = useStyles({ color });
-
+	//TODO Make an href to /services?selected=id&expanded=id
 	return (
 		<Grid item xs={2} sm={4} md={4}>
 			<div className={classes.iconWrapper}>{Icon}</div>

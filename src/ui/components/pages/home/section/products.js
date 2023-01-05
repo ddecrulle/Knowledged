@@ -1,14 +1,22 @@
-import React, { memo } from 'react';
-import products from 'core/mockData/hierarchy/products';
+import React, { memo, useContext, useEffect, useState } from 'react';
 import Product from './product/product';
 import { makeStyles } from 'tss-react/mui';
+import { CoreApiContext } from 'ui/coreApi';
 
 const Products = () => {
 	const { classes } = useStyles();
 
+	const [products, setProducts] = useState([]);
+
+	const { getHierarchyById } = useContext(CoreApiContext);
+
+	useEffect(() => {
+		getHierarchyById('products').then((r) => setProducts(r.children));
+	}, [getHierarchyById]);
+
 	return (
 		<div className={classes.container}>
-			{products.children.map((p) => (
+			{products.map((p) => (
 				<div className={classes.product} key={p.id}>
 					<Product titleProducts={p.label} applications={p.children} />
 				</div>

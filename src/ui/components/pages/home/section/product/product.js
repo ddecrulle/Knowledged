@@ -21,10 +21,11 @@ const Product = ({ titleProducts, applications }) => {
 				{applications.map((element) => (
 					<ApplicationCard
 						key={element.id}
+						id={element.id}
 						Icon={<CloudIcon style={{ fontSize: 30 }} />}
 						color='#2d21ea'
 						headline={element.label}
-						text={element.label}
+						text={element.description}
 					/>
 				))}
 			</Grid>
