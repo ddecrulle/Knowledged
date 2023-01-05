@@ -53,7 +53,6 @@ const useStyles = makeStyles()((theme) => ({
 		textTransform: 'uppercase',
 		marginBottom: theme.spacing(6),
 		marginLeft: theme.spacing(4),
-		display: 'table-caption',
 	},
 	productFunctions: { marginBottom: theme.spacing(6) },
 }));
