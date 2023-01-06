@@ -5,16 +5,17 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import BlocFilter from './section/blocFilter';
 import BlocFunction from './section/blocFunctions';
-import { useTreeUrlStatus } from 'ui/utils/hooks/searchParams';
+import { useTreeUrlParams } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
 import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
 
 const ServiceOffer = () => {
 	const { classes } = useStyles();
-	const [treeState, setTreeState] = useTreeUrlStatus();
+	const [searchParams, updateParams] = useTreeUrlParams();
 	const [functions, setFunctions] = useState([]);
 	const [hierarchy, setHierarchy] = useState([]);
-	const { selected, filtered } = treeState;
+
+	const { selected, filtered } = searchParams;
 
 	const filteredFunctions = useMemo(
 		() => getFunctionsFilterer(selected, filtered, functions),
@@ -43,8 +44,8 @@ const ServiceOffer = () => {
 							<Box className={classes.box}>
 								<Card className={classes.card}>
 									<BlocFilter
-										treeState={treeState}
-										setTreeState={setTreeState}
+										treeState={searchParams}
+										setTreeState={updateParams}
 										hierarchy={hierarchy}
 									/>
 								</Card>

@@ -1,27 +1,4 @@
 export const getFunctionsFilterer = (selected, filtered, functions) => {
-	console.log('callback');
-	const concatArrayWithoutDuplicate = (a, b) => [...new Set(a.concat(b))];
-	const intersectionArrays = (first, second) =>
-		first.filter((x) => second.includes(x));
-
-	const searchArray = (fn) => (array, nodeKey) =>
-		Array.isArray(array)
-			? array.length === 0
-				? false
-				: searchArray(fn)(array[0], nodeKey) ||
-				  searchArray(fn)(array.slice(1), nodeKey)
-			: searchTree(fn)(array, nodeKey);
-
-	const searchTree = (fn) => (obj, nodeKey) =>
-		fn(obj, () =>
-			obj[nodeKey] == null ? false : searchArray(fn)(obj[nodeKey], nodeKey)
-		);
-
-	const findId = (arrayTarget, obj, nodeKey) =>
-		searchArray((node, next) =>
-			arrayTarget.some((e) => node.id.includes(e)) ? true : next()
-		)(obj, nodeKey);
-
 	const arrayOfIdToFilter = concatArrayWithoutDuplicate(selected, filtered);
 
 	const objOfIdWithChild = arrayOfIdToFilter.reduce((acc, curr) => {
@@ -43,3 +20,25 @@ export const getFunctionsFilterer = (selected, filtered, functions) => {
 		[]
 	);
 };
+const concatArrayWithoutDuplicate = (a, b) => [...new Set(a.concat(b))];
+
+const intersectionArrays = (first, second) =>
+	first.filter((x) => second.includes(x));
+
+const searchArray = (fn) => (array, nodeKey) =>
+	Array.isArray(array)
+		? array.length === 0
+			? false
+			: searchArray(fn)(array[0], nodeKey) ||
+			  searchArray(fn)(array.slice(1), nodeKey)
+		: searchTree(fn)(array, nodeKey);
+
+const searchTree = (fn) => (obj, nodeKey) =>
+	fn(obj, () =>
+		obj[nodeKey] == null ? false : searchArray(fn)(obj[nodeKey], nodeKey)
+	);
+
+const findId = (arrayTarget, obj, nodeKey) =>
+	searchArray((node, next) =>
+		arrayTarget.some((e) => node.id.includes(e)) ? true : next()
+	)(obj, nodeKey);

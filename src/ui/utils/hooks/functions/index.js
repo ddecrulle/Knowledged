@@ -1,1 +1,0 @@
-export { useFilteredAndOrderedFunctions } from './useFilteredAndOrderedFunctions';
