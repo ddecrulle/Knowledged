@@ -2,15 +2,21 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { makeStyles } from 'tss-react/mui';
+import IconButton from '@mui/material/IconButton';
+import InfoIcon from '@mui/icons-material/Info';
+import { Link } from 'react-router-dom';
 
 const ApplicationCard = ({ Icon, color, headline, text, id }) => {
 	const { classes } = useStyles({ color });
-	//TODO Make an href to /services?selected=id&expanded=id
+	//TODO add expanded with parents
 	return (
 		<Grid item xs={2} sm={4} md={4}>
 			<div className={classes.iconWrapper}>{Icon}</div>
 			<Typography variant='h5' paragraph>
 				{headline}
+				<IconButton component={Link} to={`/services?selected=${id}`}>
+					<InfoIcon />
+				</IconButton>
 			</Typography>
 			<Typography variant='body1' color='textSecondary'>
 				{text}

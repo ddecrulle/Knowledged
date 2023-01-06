@@ -1,43 +1,18 @@
-import { useSearchParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useConstCallback } from 'powerhooks';
+import { ArrayParam, useQueryParams, withDefault } from 'use-query-params';
 
-export const useTreeUrlStatus = () => {
-	//TODO use useReducer instead of useState
+const MyFiltersParam = withDefault(ArrayParam, []);
 
-	const [searchParams, setSearchParams] = useSearchParams();
-	const [state, setState] = useState(() => {
-		return {
-			selected: searchParams.get('selected')
-				? searchParams.get('selected').split(',')
-				: [],
-			expanded: searchParams.get('expanded')
-				? searchParams.get('expanded').split(',')
-				: [],
-			filtered: searchParams.get('filtered')
-				? searchParams.get('filtered').split(',')
-				: [],
-		};
+export const useTreeUrlParams = () => {
+	const [searchParams, setSearchParams] = useQueryParams({
+		selected: MyFiltersParam,
+		expanded: MyFiltersParam,
+		filtered: MyFiltersParam,
 	});
 
-	useEffect(() => {
-		if (
-			searchParams.get('selected') !== state.selected ||
-			searchParams.get('expanded') !== state.expanded ||
-			searchParams.get('filtered') !== state.filtered
-		) {
-			setSearchParams({
-				selected: state.selected.join(','),
-				expanded: state.expanded.join(','),
-				filtered: state.filtered.join(','),
-			});
-		}
-	}, [state, searchParams, setSearchParams]);
+	const updateParams = useConstCallback((key, value) => {
+		setSearchParams({ [key]: value }, 'pushIn');
+	});
 
-	const updateState = (key, value) => {
-		setState((prevState) => {
-			return { ...prevState, [key]: value };
-		});
-	};
-
-	return [state, updateState];
+	return [searchParams, updateParams];
 };
