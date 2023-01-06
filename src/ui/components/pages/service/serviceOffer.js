@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect, useMemo } from 'react';
 import { makeStyles } from 'tss-react/mui';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -7,17 +7,18 @@ import BlocFilter from './section/blocFilter';
 import BlocFunction from './section/blocFunctions';
 import { useTreeUrlStatus } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
-import { useFilteredAndOrderedFunctions } from 'ui/utils/hooks/functions';
+import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
 
 const ServiceOffer = () => {
 	const { classes } = useStyles();
 	const [treeState, setTreeState] = useTreeUrlStatus();
 	const [functions, setFunctions] = useState([]);
 	const [hierarchy, setHierarchy] = useState([]);
-	const [filteredFunctions] = useFilteredAndOrderedFunctions(
-		treeState.selected,
-		treeState.filtered,
-		functions
+	const { selected, filtered } = treeState;
+
+	const filteredFunctions = useMemo(
+		() => getFunctionsFilterer(selected, filtered, functions),
+		[selected, filtered, functions]
 	);
 
 	const { getFunctions, getHierarchies } = useContext(CoreApiContext);
