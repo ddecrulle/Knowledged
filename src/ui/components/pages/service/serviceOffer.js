@@ -93,7 +93,6 @@ const useStyles = makeStyles()((theme) => {
 			paddingLeft: theme.spacing(4),
 			marginRight: 'auto',
 			marginLeft: 'auto',
-			minWidth: 500,
 			marginTop: theme.spacing(6),
 			marginBottom: theme.spacing(6),
 			[theme.breakpoints.down('md')]: {
