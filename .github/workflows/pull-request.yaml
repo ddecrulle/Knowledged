@@ -20,6 +20,3 @@ jobs:
       - name: test
         id: test_action
         run: echo '${{ toJSON(github.event.pull_request) }}'
-      - name: test
-        id: test_condition
-        run: echo '${{ github.event.pull_request.types === 'edited' }}'
