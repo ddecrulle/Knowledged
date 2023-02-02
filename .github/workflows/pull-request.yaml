@@ -11,3 +11,12 @@ jobs:
       - uses: bcoe/conventional-release-labels@v1
         with:
           type_labels: '{"feat": "feature", "fix": "fix", "breaking": "breaking","ci":"ci","docs":"docs"}'
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        id: github_context_step
+        run: echo '${{ toJSON(github) }}'
+      - name: test
+        id: test_action
+        run: echo '${{ toJSON(github.event.pull_request) }}'
