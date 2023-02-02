@@ -47,9 +47,16 @@ jobs:
         id: short-sha
         with:
           length: 6
+      - name: Computing Docker image tags
+        id: step1
+        run: |
+          OUT=$GITHUB_REPOSITORY:$(
+          pull-${GITHUB_SHA::7}
+          OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
+          echo ::set-output name=docker_tags::$OUT
       - uses: docker/build-push-action@v3.3.0
         with:
           push: true
           context: .
-          tags: ${{github.repository}}:pull-${{ steps.short-sha.outputs.sha }}
+          tags: ${{ steps.step1.outputs.docker_tags }}
           file: Dockerfile
