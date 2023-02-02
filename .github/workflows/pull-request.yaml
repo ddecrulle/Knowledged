@@ -3,7 +3,7 @@ on:
   pull_request:
     branches:
       - main
-    types: [opened, edited]
+    types: [opened, edited, synchronize]
 jobs:
   label:
     runs-on: ubuntu-latest
@@ -13,10 +13,11 @@ jobs:
           type_labels: '{"feat": "feature", "fix": "fix", "breaking": "breaking","ci":"ci","docs":"docs"}'
   docker:
     runs-on: ubuntu-latest
+    if: ${{github.event.action != 'edited'}}
     steps:
       - name: Dump GitHub context
         id: github_context_step
         run: echo '${{ toJSON(github) }}'
       - name: test
         id: test_action
-        run: echo '${{ toJSON(github.event.pull_request) }}'
+        run: echo '${{ toJSON(github.event.action) }}'
