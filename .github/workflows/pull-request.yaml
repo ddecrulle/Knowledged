@@ -51,5 +51,5 @@ jobs:
         with:
           push: true
           context: .
-          tags: pull-${{ steps.short-sha.outputs.sha }}
+          tags: $GITHUB_REPOSITORY:pull-${{ steps.short-sha.outputs.sha }}
           file: Dockerfile
