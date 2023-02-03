@@ -43,10 +43,6 @@ jobs:
           name: build
           path: build
       - run: tar -cvf build.tar ./build
-      - uses: benjlevesque/short-sha@v2.1
-        id: short-sha
-        with:
-          length: 6
       - name: Computing Docker image tags
         id: step1
         run: |
