@@ -48,6 +48,8 @@ jobs:
       - name: Computing Docker image tags
         id: step1
         run: |
+          echo ${GITHUB_EVENT_PULL_REQUEST_HEAD_SHA}
+          echo ${GITHUB_SHA}
           OUT=$GITHUB_REPOSITORY:pull-${GITHUB_EVENT_PULL_REQUEST_HEAD_SHA::7}
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
           echo ::set-output name=docker_tags::$OUT
