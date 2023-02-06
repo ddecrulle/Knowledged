@@ -49,18 +49,12 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - name: Echo sha
-        env:
-          SHA: ${{github.event.pull_request.head.sha}}
-        run: echo "$SHA"
-      - name: Echo short sha
-        env:
-            SHA: ${{github.event.pull_request.head.sha}}
-        run: echo ${SHA::7}
       - name: Computing Docker image tags
         id: step1
+        env:
+          SHA: ${{github.event.pull_request.head.sha}}
         run: |
-          OUT=$GITHUB_REPOSITORY:pull-${GITHUB_EVENT_WORKFLOW_RUN_HEAD_SHA::7}
+          OUT=$GITHUB_REPOSITORY:pull-${SHA::7}
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
           echo ::set-output name=docker_tags::$OUT
       - uses: docker/build-push-action@v3.3.0
