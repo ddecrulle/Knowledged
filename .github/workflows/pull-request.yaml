@@ -45,16 +45,12 @@ jobs:
           name: build
           path: build
       - run: tar -cvf build.tar ./build
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: echo "$GITHUB_CONTEXT"
       - name: Computing Docker image tags
         id: step1
         env:
-          SHA: ${{github.event.pull_request.head.sha}}
+          COMMIT_SHA: ${{github.event.pull_request.head.sha}}
         run: |
-          OUT=$GITHUB_REPOSITORY:pull-${SHA::7}
+          OUT=$GITHUB_REPOSITORY:pull-${COMMIT_SHA::8}
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
           echo ::set-output name=docker_tags::$OUT
       - uses: docker/build-push-action@v3.3.0
