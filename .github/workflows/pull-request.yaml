@@ -49,6 +49,10 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
+      - name: Echo sha
+        run: echo ${GITHUB_EVENT_WORKFLOW_RUN_HEAD_SHA}
+      - name: Echo short sha
+        run: echo ${GITHUB_EVENT_WORKFLOW_RUN_HEAD_SHA::7}
       - name: Computing Docker image tags
         id: step1
         run: |
