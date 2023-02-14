@@ -5,19 +5,19 @@ const Menu = [
 		external: false,
 	},
 	{
-		label: 'Offre de service',
+		label: 'Offre de services',
 		pathname: '/services',
 		external: false,
 	},
 ];
 
 const SecondaryMenu = [
-	{
-		label: 'Se connecter',
-		pathname: '/signin',
-		external: false,
-		disabled: true,
-	},
+	// {
+	// 	label: 'Se connecter',
+	// 	pathname: '/signin',
+	// 	external: false,
+	// 	disabled: true,
+	// },
 	{
 		label: 'Github',
 		pathname: 'https://github.com/ddecrulle/knowledge',
