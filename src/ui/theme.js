@@ -88,6 +88,19 @@ const theme = createTheme({
 	},
 	typography: {
 		useNextVariants: true,
+		fontFamily: ['Raleway', '"Helvetica"', 'Arial', 'sans-serif'].join(','),
+		h1: {
+			fontFamily: ['Rubik', '"Helvetica"', 'Arial', 'sans-serif'].join(','),
+		},
+		h2: {
+			fontFamily: ['Rubik', '"Helvetica"', 'Arial', 'sans-serif'].join(','),
+		},
+		h3: {
+			fontFamily: ['Rubik', '"Helvetica"', 'Arial', 'sans-serif'].join(','),
+		},
+		h4: {
+			fontFamily: ['Rubik', '"Helvetica"', 'Arial', 'sans-serif'].join(','),
+		},
 	},
 });
 
