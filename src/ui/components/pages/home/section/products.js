@@ -8,11 +8,11 @@ const Products = () => {
 
 	const [products, setProducts] = useState([]);
 
-	const { getHierarchyById } = useContext(CoreApiContext);
+	const { getProducts } = useContext(CoreApiContext);
 
 	useEffect(() => {
-		getHierarchyById('products').then((r) => setProducts(r.children));
-	}, [getHierarchyById]);
+		getProducts().then((r) => setProducts(r.children));
+	}, [getProducts]);
 
 	return (
 		<div className={classes.container}>

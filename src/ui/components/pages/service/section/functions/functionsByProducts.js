@@ -3,7 +3,7 @@ import { Function } from './function';
 import groupBy from 'lodash.groupby';
 import Typography from '@mui/material/Typography';
 
-export const FunctionsByProducts = ({ productFunctions }) => {
+export const FunctionsByProducts = ({ productFunctions, color }) => {
 	return (
 		<>
 			{Object.values(groupBy(productFunctions, (fct) => fct.gsbpm.id)).map(
@@ -20,7 +20,7 @@ export const FunctionsByProducts = ({ productFunctions }) => {
 							</Typography>
 							<ul>
 								{gsbpmGroupedFct.map((fct) => (
-									<Function fct={fct} key={fct.id} />
+									<Function fct={fct} key={fct.id} color={color} />
 								))}
 							</ul>
 						</React.Fragment>

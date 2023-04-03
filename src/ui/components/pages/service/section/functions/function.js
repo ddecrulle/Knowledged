@@ -1,10 +1,56 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
-import { Chip } from '@mui/material';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 
-export const Function = ({ fct }) => {
-	const { classes } = useStyles();
+const getDispoIcons = (dispo) => {
+	switch (dispo) {
+		case 1: {
+			return (
+				<>
+					<CheckBoxIcon />
+					<CheckBoxOutlineBlankIcon />
+					<CheckBoxOutlineBlankIcon />
+				</>
+			);
+		}
+		case 2: {
+			return (
+				<>
+					<CheckBoxIcon />
+					<CheckBoxIcon />
+					<CheckBoxOutlineBlankIcon />
+				</>
+			);
+		}
+		case 3: {
+			return (
+				<>
+					<CheckBoxIcon />
+					<CheckBoxIcon />
+					<CheckBoxIcon />
+				</>
+			);
+		}
+
+		case 0:
+		default: {
+			return (
+				<>
+					<CheckBoxOutlineBlankIcon />
+					<CheckBoxOutlineBlankIcon />
+					<CheckBoxOutlineBlankIcon />
+				</>
+			);
+		}
+	}
+};
+
+export const Function = ({ fct, color }) => {
+	const { description, label, dispo } = fct;
+	const { classes } = useStyles({ color });
+	console.log(dispo);
 	return (
 		<li className={classes.li}>
 			<Typography
@@ -12,36 +58,38 @@ export const Function = ({ fct }) => {
 				textTransform='uppercase'
 				className={classes.fctLabel}
 			>
-				{fct['label']}
+				{label}
 			</Typography>
-			<Typography
-				variant='body1'
-				color='GrayText'
-				className={classes.descriptionText}
-			>
-				{fct['description']}
+			<Typography variant='body1' color='GrayText'>
+				{description}
 			</Typography>
-			{fct.products.map((p) => (
-				<Chip
-					key={p.id}
-					className={classes.chip}
-					label={p.label}
-					color='secondary'
-				/>
-			))}
+			<ul className={classes.ulAppli}>
+				{fct.products.map((p) => (
+					<li key={p.id} className={classes.liAppli}>
+						<Typography
+							textTransform='uppercase'
+							variant='body2'
+							color='GrayText'
+						>
+							{p.label}
+						</Typography>{' '}
+						{getDispoIcons(dispo)}
+					</li>
+				))}
+			</ul>
 		</li>
 	);
 };
 
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles()((theme, { color }) => ({
 	li: {
 		marginBottom: theme.spacing(1),
 	},
-	descriptionText: {
-		//marginBottom: theme.spacing(1),
+	ulAppli: {
+		listStyleType: 'disclosure-closed',
+		color: color,
 	},
-	chip: {
-		marginTop: theme.spacing(1),
-		marginRight: theme.spacing(0.5),
+	liAppli: {
+		textTransform: 'uppercase',
 	},
 }));

@@ -13,7 +13,7 @@ const ServiceOffer = () => {
 	const { classes } = useStyles();
 	const [searchParams, updateParams] = useTreeUrlParams();
 	const [functions, setFunctions] = useState([]);
-	const [hierarchy, setHierarchy] = useState([]);
+	const [products, setProducts] = useState([]);
 
 	const { selected, filtered } = searchParams;
 
@@ -22,18 +22,14 @@ const ServiceOffer = () => {
 		[selected, filtered, functions]
 	);
 
-	const { getFunctions, getHierarchies } = useContext(CoreApiContext);
+	const { getFunctions, getProducts } = useContext(CoreApiContext);
 
 	useEffect(() => {
-		getHierarchies().then((r) => setHierarchy(r));
+		getProducts().then((r) => setProducts(r));
 		getFunctions().then((r) => {
 			setFunctions(r);
 		});
-	}, [getFunctions, getHierarchies]);
-
-	const hierarchyProducts = hierarchy.find(
-		(hierarchy) => hierarchy.id === 'products'
-	);
+	}, [getFunctions, getProducts]);
 
 	return (
 		<div className={classes.wrapper}>
@@ -46,7 +42,7 @@ const ServiceOffer = () => {
 									<BlocFilter
 										treeState={searchParams}
 										setTreeState={updateParams}
-										hierarchy={hierarchy}
+										products={products['children'] ?? []}
 									/>
 								</Card>
 							</Box>
@@ -56,7 +52,7 @@ const ServiceOffer = () => {
 								<Card className={classes.card}>
 									<BlocFunction
 										functions={filteredFunctions}
-										products={hierarchyProducts}
+										products={products['children'] ?? []}
 									/>
 								</Card>
 							</Box>

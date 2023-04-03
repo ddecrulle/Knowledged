@@ -26,8 +26,6 @@ export const createMockApiClient = () => {
 		getFunctions: () => Promise.resolve(functions),
 		getFunctionById: (id) =>
 			Promise.resolve(functions.filter((fct) => fct[id] === id)),
-		getHierarchies: () =>
-			Promise.resolve(Array.of(users, gsbpm, products, services, status)),
-		getHierarchyById: (id) => Promise.resolve(getHierarchywithId(id)),
+		getProducts: async (id) => Promise.resolve(getHierarchywithId('products')),
 	};
 };

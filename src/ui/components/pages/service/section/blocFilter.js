@@ -18,7 +18,7 @@ const renderTree = (nodes) => (
 	</TreeItem>
 );
 
-const BlocFilter = ({ treeState, setTreeState, hierarchy }) => {
+const BlocFilter = ({ treeState, setTreeState, products }) => {
 	const { classes } = useStyles();
 
 	const handleAutocomplete = (_, newValue) => {
@@ -82,7 +82,7 @@ const BlocFilter = ({ treeState, setTreeState, hierarchy }) => {
 				onNodeSelect={handleSelect}
 				multiSelect
 			>
-				{hierarchy.map((item) => renderTree(item))}
+				{products.map((item) => renderTree(item))}
 			</TreeView>
 		</>
 	);

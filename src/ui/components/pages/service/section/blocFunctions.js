@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import groupBy from 'lodash.groupby';
 import { FunctionsByProducts } from './functions/functionsByProducts';
 import Typography from '@mui/material/Typography';
@@ -6,32 +6,42 @@ import { makeStyles } from 'tss-react/mui';
 import Divider from '@mui/material/Divider';
 
 const BlocFunction = ({ functions, products }) => {
-	const { classes } = useStyles();
+	const { classes, cx, css } = useStyles();
 
-	const [arrayProducts, setArrayProducts] = useState([]);
-
-	const getLabelProduct = (products, idProduct) => {
+	const getProduct = (products, idProduct) => {
 		const product = products.find((p) => p.id === idProduct);
-		return product ? product.label : 'NotAvailable';
+		if (!product) return { iconUrl: '', label: 'NotAvailable', color: 'white' };
+		return product;
 	};
-
-	useEffect(() => {
-		if (products) setArrayProducts(products['children']);
-	}, [products]);
 
 	return Object.values(groupBy(functions, (fct) => fct.idProduct)).map(
 		(groupedFunctions) => {
 			const idProduct = groupedFunctions[0].idProduct;
-			const labelProduct = getLabelProduct(arrayProducts, idProduct);
+			const {
+				iconUrl,
+				label: labelProduct,
+				color,
+			} = getProduct(products, idProduct);
 			return (
 				<div key={idProduct} className={classes.productFunctions}>
-					<Divider component='div' className={classes.titleDivider} />
+					<img src={iconUrl} alt='' height='50px' width='50px' />
+					<Divider
+						component='div'
+						orientation='vertical'
+						className={cx(
+							css({
+								backgroundColor: color,
+							}),
+							classes.titleDivider
+						)}
+					/>
 					<Typography className={classes.productTitle} variant='h4'>
 						{labelProduct}
 					</Typography>
 					<FunctionsByProducts
 						productFunctions={groupedFunctions}
 						labelProduct={labelProduct}
+						color={color}
 					/>
 				</div>
 			);
@@ -45,7 +55,6 @@ const useStyles = makeStyles()((theme) => ({
 	titleDivider: {
 		width: theme.spacing(6),
 		borderWidth: '3px',
-		backgroundColor: '#4cbee2',
 		borderRadius: '10px',
 	},
 	productTitle: {

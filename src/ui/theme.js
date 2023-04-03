@@ -14,7 +14,7 @@ const borderWidth = 2;
 const borderColor = 'rgba(0, 0, 0, 0.13)';
 
 // spacing
-const spacing = 8;
+const spacing = 1;
 
 const theme = createTheme({
 	palette: {
