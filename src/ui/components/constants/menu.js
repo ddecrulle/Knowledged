@@ -9,15 +9,26 @@ const Menu = [
 		pathname: '/services',
 		external: false,
 	},
+	{
+		label: 'Outils du SI',
+		pathname: '/tools',
+		external: false,
+	},
 ];
 
 const SecondaryMenu = [
-	// {
-	// 	label: 'Se connecter',
-	// 	pathname: '/signin',
-	// 	external: false,
-	// 	disabled: true,
-	// },
+	{
+		label: 'Utilisateurs',
+		pathname: '/users',
+		external: false,
+		disabled: true,
+	},
+	{
+		label: 'GSBPM',
+		pathname: '/gsbpm',
+		external: false,
+		disabled: true,
+	},
 	{
 		label: 'Github',
 		pathname: 'https://github.com/ddecrulle/knowledge',

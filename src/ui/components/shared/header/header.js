@@ -35,7 +35,7 @@ const Header = () => {
 						<div className={classes.inline}>
 							<Typography variant='h6' color='inherit' noWrap>
 								<Link to='/' className={classes.link}>
-									<img width={20} src={logo} alt='knowledge logo' />
+									<img width={40} src={logo} alt='knowledge logo' />
 									<span className={classes.tagline}>Knowledge</span>
 								</Link>
 							</Typography>
@@ -63,7 +63,7 @@ const Header = () => {
 								>
 									<AppBar title='Menu' />
 									<List>
-										{Menu.map((item, index) => (
+										{Menu.map((item) => (
 											<ListItemButton
 												component={item.external ? MaterialLink : Link}
 												href={item.external ? item.pathname : null}
@@ -77,7 +77,7 @@ const Header = () => {
 										<Divider />
 									</List>
 									<List>
-										{SecondaryMenu.map((item, index) => (
+										{SecondaryMenu.map((item) => (
 											<ListItemButton
 												component={item.external ? MaterialLink : Link}
 												href={item.external ? item.pathname : null}
@@ -92,9 +92,9 @@ const Header = () => {
 									</List>
 								</SwipeableDrawer>
 								<Tabs value={location.pathname}>
-									{Menu.map((item, index) => (
+									{Menu.map((item) => (
 										<Tab
-											key={`primary-${index}`}
+											key={`primary-${item.label}`}
 											value={item.pathname}
 											component={item.external ? MaterialLink : Link}
 											href={item.external ? item.pathname : null}
@@ -113,9 +113,9 @@ const Header = () => {
 										},
 									}}
 								>
-									{SecondaryMenu.map((item, index) => (
+									{SecondaryMenu.map((item) => (
 										<Tab
-											key={`secondary-${index}`}
+											key={`secondary-${item.label}`}
 											component={item.external ? MaterialLink : Link}
 											href={item.external ? item.pathname : null}
 											to={item.external ? null : item.pathname}

@@ -3,20 +3,22 @@ import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Box from '@mui/system/Box';
 import si from 'ui/components/assets/img/siMetallica.png';
+import homePage from 'ui/components/constants/page/homePage';
 
-const InformationSysteme = () => {
+const InformationSystem = () => {
+	const { informationSystemSection } = homePage;
 	const { classes } = useStyles();
 	return (
 		<div className={classes.lgPTop}>
 			<Typography variant='h3' align='center' className={classes.title}>
-				Le Système d'informations de collecte
+				{informationSystemSection.title}
 			</Typography>
 			<div className={classes.container}>
 				<Box className={classes.box}>
 					<div className={'container'}>
 						<img
 							data-aos='zoom-in'
-							alt={"Le système d'informations de collecte"}
+							alt={informationSystemSection.imageAlt}
 							src={si}
 							className={classes.image}
 						/>
@@ -90,4 +92,4 @@ const useStyles = makeStyles()((theme) => {
 	};
 });
 
-export default memo(InformationSysteme);
+export default memo(InformationSystem);
