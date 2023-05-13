@@ -1,4 +1,4 @@
-const homePage = {
+export const homePage = {
 	headSection: {
 		title: 'Knowledge',
 		text: 'Bibliothèque de connaissances de l’offre de services du système d’information de collecte de enquêtes ménages et entreprises de l’Insee',
@@ -9,4 +9,3 @@ const homePage = {
 		imageAlt: "Illustration du système d'information",
 	},
 };
-export default homePage;

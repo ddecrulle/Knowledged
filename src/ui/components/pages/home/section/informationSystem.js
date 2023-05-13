@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Box from '@mui/system/Box';
 import si from 'ui/components/assets/img/siMetallica.png';
-import homePage from 'ui/components/constants/page/homePage';
+import { homePage } from 'ui/components/constants/page/homePage';
 
 const InformationSystem = () => {
 	const { informationSystemSection } = homePage;
