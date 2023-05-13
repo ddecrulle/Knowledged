@@ -8,6 +8,7 @@ import Header from 'ui/components/shared/header';
 import Footer from 'ui/components/shared/footer/footer';
 import { QueryParamProvider } from 'use-query-params';
 import { ReactRouter6Adapter } from 'use-query-params/adapters/react-router-6';
+import Tools from 'ui/components/pages/tools/tools';
 
 AOS.init({ once: true });
 
@@ -19,6 +20,7 @@ const Root = () => {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='services' element={<Service />} />
+					<Route path='tools' element={<Tools />} />
 				</Routes>
 			</QueryParamProvider>
 			<Footer />
