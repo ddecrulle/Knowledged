@@ -35,7 +35,7 @@ const Header = () => {
 						<div className={classes.inline}>
 							<Typography variant='h6' color='inherit' noWrap>
 								<Link to='/' className={classes.link}>
-									<img width={40} src={logo} alt='knowledge logo' />
+									<img width={40} src={logo} alt='logo' />
 									<span className={classes.tagline}>Knowledge</span>
 								</Link>
 							</Typography>
@@ -62,13 +62,14 @@ const Header = () => {
 									onOpen={() => setOpen(true)}
 								>
 									<AppBar title='Menu' />
-									<List>
+									<List className={classes.swipeableList}>
 										{Menu.map((item) => (
 											<ListItemButton
 												component={item.external ? MaterialLink : Link}
 												href={item.external ? item.pathname : null}
 												to={item.external ? null : item.pathname}
 												onClick={() => setOpen(false)}
+												disabled={item.disabled}
 												key={item.label}
 											>
 												<ListItemText primary={item.label} />
@@ -84,6 +85,8 @@ const Header = () => {
 												to={item.external ? null : item.pathname}
 												disabled={item.disabled}
 												key={item.label}
+												target={item.external ? '_blank' : null}
+												rel={item.external ? 'noopener' : null}
 											>
 												<ListItemText primary={item.label} />
 											</ListItemButton>
@@ -94,12 +97,14 @@ const Header = () => {
 								<Tabs value={location.pathname}>
 									{Menu.map((item) => (
 										<Tab
+											className={classes.tab}
 											key={`primary-${item.label}`}
 											value={item.pathname}
-											component={item.external ? MaterialLink : Link}
+											LinkComponent={item.external ? MaterialLink : Link}
 											href={item.external ? item.pathname : null}
 											to={item.external ? null : item.pathname}
 											label={item.label}
+											disabled={item.disabled}
 										/>
 									))}
 								</Tabs>
@@ -115,11 +120,13 @@ const Header = () => {
 								>
 									{SecondaryMenu.map((item) => (
 										<Tab
+											className={classes.tab}
 											key={`secondary-${item.label}`}
-											component={item.external ? MaterialLink : Link}
+											LinkComponent={item.external ? MaterialLink : Link}
 											href={item.external ? item.pathname : null}
 											to={item.external ? null : item.pathname}
 											disabled={item.disabled}
+											target={item.external ? '_blank' : null}
 											label={
 												<div>
 													{item.label}{' '}
@@ -147,9 +154,6 @@ const useStyles = makeStyles()((theme) => {
 			boxShadow: 'none',
 			borderBottom: `1px solid ${theme.palette.grey['100']}`,
 			backgroundColor: 'white',
-			[theme.breakpoints.up('md')]: {
-				paddingLeft: 120,
-			},
 		},
 		inline: {
 			display: 'inline',
@@ -192,7 +196,13 @@ const useStyles = makeStyles()((theme) => {
 				display: 'none',
 			},
 		},
+		tab: {
+			textTransform: 'none',
+		},
 		githubIcon: { marginLeft: 5, verticalAlign: 'sub' },
+		swipeableList: {
+			padding: 0,
+		},
 	};
 });
 export default memo(Header);

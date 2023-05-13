@@ -14,9 +14,6 @@ const Menu = [
 		pathname: '/tools',
 		external: false,
 	},
-];
-
-const SecondaryMenu = [
 	{
 		label: 'Utilisateurs',
 		pathname: '/users',
@@ -29,6 +26,9 @@ const SecondaryMenu = [
 		external: false,
 		disabled: true,
 	},
+];
+
+const SecondaryMenu = [
 	{
 		label: 'Github',
 		pathname: 'https://github.com/ddecrulle/knowledge',
