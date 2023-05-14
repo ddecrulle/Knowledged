@@ -43,7 +43,7 @@ const useStyles = makeStyles()(
 		waves: {
 			position: 'relative',
 			width: '100%',
-			marginBottom: -7,
+			marginBottom: -8,
 			height: '7vw',
 			minHeight: '7vw',
 		},

@@ -24,7 +24,6 @@ const Footer = () => {
 
 const useStyles = makeStyles()((theme) => {
 	return {
-		waveBorder: {},
 		footerInner: {
 			textAlign: 'center',
 			backgroundColor: theme.palette.background.bleu,
