@@ -21,8 +21,7 @@
 		"react-router-dom": "^6.11.1",
 		"react-scripts": "^5.0.1",
 		"tss-react": "^4.8.3",
-		"use-query-params": "^2.2.1",
-		"web-vitals": "^3.3.1"
+		"use-query-params": "^2.2.1"
 	},
 	"scripts": {
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
