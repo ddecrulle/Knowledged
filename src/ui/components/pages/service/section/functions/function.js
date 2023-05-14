@@ -50,7 +50,6 @@ const getDispoIcons = (dispo) => {
 export const Function = ({ fct, color }) => {
 	const { description, label, dispo } = fct;
 	const { classes } = useStyles({ color });
-	console.log(dispo);
 	return (
 		<li className={classes.li}>
 			<Typography
