@@ -56,7 +56,7 @@ const useStyles = makeStyles()(
         100% {
           transform : translate3d(85px, 0, 0)
         },
-        `} 4s cubic-bezier(0.62, 0.5, 0.38, 0.5) infinite`,
+        `} 10s cubic-bezier(0.62, 0.5, 0.38, 0.5) infinite`,
 				animationDelay: `-${animationNegativeDelay}s`,
 			},
 		},
