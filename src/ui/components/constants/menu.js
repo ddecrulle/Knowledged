@@ -30,7 +30,7 @@ const Menu = [
 
 const SecondaryMenu = [
 	{
-		label: 'Github',
+		label: 'GitHub',
 		pathname: 'https://github.com/ddecrulle/knowledge',
 		icon: 'github',
 		external: true,
