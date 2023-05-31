@@ -1,11 +1,11 @@
 import React from 'react';
 import groupBy from 'lodash.groupby';
-import { FunctionsByProducts } from './functions/functionsByProducts';
+import { FunctionsByProducts } from './content/functionsByProducts';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Divider from '@mui/material/Divider';
 
-const BlocFunction = ({ functions, products }) => {
+export const ContentBloc = ({ functions, products }) => {
 	const { classes, cx, css } = useStyles();
 
 	const getProduct = (products, idProduct) => {
@@ -48,8 +48,6 @@ const BlocFunction = ({ functions, products }) => {
 		}
 	);
 };
-
-export default BlocFunction;
 
 const useStyles = makeStyles()((theme) => ({
 	titleDivider: {

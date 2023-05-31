@@ -1,5 +1,5 @@
 import React from 'react';
-import { Function } from './function';
+import { Content } from './content';
 import groupBy from 'lodash.groupby';
 import Typography from '@mui/material/Typography';
 
@@ -20,7 +20,7 @@ export const FunctionsByProducts = ({ productFunctions, color }) => {
 							</Typography>
 							<ul>
 								{gsbpmGroupedFct.map((fct) => (
-									<Function fct={fct} key={fct.id} color={color} />
+									<Content content={fct} key={fct.id} color={color} />
 								))}
 							</ul>
 						</React.Fragment>

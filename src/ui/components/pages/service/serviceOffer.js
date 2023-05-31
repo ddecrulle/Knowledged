@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import BlocFunction from './section/blocFunctions';
+import { ContentBloc } from './section/contentBloc';
 import { useTreeUrlParams } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
 import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
@@ -51,7 +51,7 @@ const ServiceOffer = () => {
 						<Grid item md={8} xs={12}>
 							<Box className={classes.box}>
 								<Card className={classes.card}>
-									<BlocFunction
+									<ContentBloc
 										functions={filteredFunctions}
 										products={products['children'] ?? []}
 									/>

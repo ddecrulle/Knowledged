@@ -7,8 +7,8 @@ import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 const getDispoFiled = (dispo) =>
 	dispo ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />;
 
-export const Function = ({ fct, color }) => {
-	const { description, label, dispo } = fct;
+export const Content = ({ content, color }) => {
+	const { description, label, dispo } = content;
 	const { classes } = useStyles({ color });
 	return (
 		<li className={classes.li}>
@@ -23,7 +23,7 @@ export const Function = ({ fct, color }) => {
 				{description}
 			</Typography>
 			<ul className={classes.ulAppli}>
-				{fct.products.map((p) => (
+				{content.products.map((p) => (
 					<li key={p.id}>
 						<Typography
 							textTransform='uppercase'
