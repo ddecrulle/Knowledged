@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import TreeFilter from 'ui/components/shared/treeFilter/treeFilter';
+import { ProductContentBloc } from 'ui/components/pages/tools/productContentBloc/productContentBloc';
 
 const Tools = () => {
 	const { classes } = useStyles();
@@ -38,7 +39,7 @@ const Tools = () => {
 						<Grid item md={8} xs={12}>
 							<Box className={classes.box}>
 								<Card className={classes.card}>
-									<div>Tool in Progress</div>
+									<ProductContentBloc products={products['children'] ?? []} />
 								</Card>
 							</Box>
 						</Grid>
