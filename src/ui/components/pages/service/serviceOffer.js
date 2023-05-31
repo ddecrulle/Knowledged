@@ -3,11 +3,11 @@ import { makeStyles } from 'tss-react/mui';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import BlocFilter from './section/blocFilter';
 import BlocFunction from './section/blocFunctions';
 import { useTreeUrlParams } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
 import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
+import TreeFilter from 'ui/components/shared/treeFilter/treeFilter';
 
 const ServiceOffer = () => {
 	const { classes } = useStyles();
@@ -39,10 +39,11 @@ const ServiceOffer = () => {
 						<Grid item md={4} xs={12}>
 							<Box className={classes.box}>
 								<Card className={classes.card}>
-									<BlocFilter
+									<TreeFilter
 										treeState={searchParams}
 										setTreeState={updateParams}
-										products={products['children'] ?? []}
+										tree={products['children'] ?? []}
+										autoCompleteLabel='Produits, GSBPM, Jalons ...'
 									/>
 								</Card>
 							</Box>

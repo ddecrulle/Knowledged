@@ -4,48 +4,8 @@ import { makeStyles } from 'tss-react/mui';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 
-const getDispoIcons = (dispo) => {
-	switch (dispo) {
-		case 1: {
-			return (
-				<>
-					<CheckBoxIcon />
-					<CheckBoxOutlineBlankIcon />
-					<CheckBoxOutlineBlankIcon />
-				</>
-			);
-		}
-		case 2: {
-			return (
-				<>
-					<CheckBoxIcon />
-					<CheckBoxIcon />
-					<CheckBoxOutlineBlankIcon />
-				</>
-			);
-		}
-		case 3: {
-			return (
-				<>
-					<CheckBoxIcon />
-					<CheckBoxIcon />
-					<CheckBoxIcon />
-				</>
-			);
-		}
-
-		case 0:
-		default: {
-			return (
-				<>
-					<CheckBoxOutlineBlankIcon />
-					<CheckBoxOutlineBlankIcon />
-					<CheckBoxOutlineBlankIcon />
-				</>
-			);
-		}
-	}
-};
+const getDispoFiled = (dispo) =>
+	dispo ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />;
 
 export const Function = ({ fct, color }) => {
 	const { description, label, dispo } = fct;
@@ -64,15 +24,15 @@ export const Function = ({ fct, color }) => {
 			</Typography>
 			<ul className={classes.ulAppli}>
 				{fct.products.map((p) => (
-					<li key={p.id} className={classes.liAppli}>
+					<li key={p.id}>
 						<Typography
 							textTransform='uppercase'
 							variant='body2'
 							color='GrayText'
 						>
 							{p.label}
-						</Typography>{' '}
-						{getDispoIcons(dispo)}
+						</Typography>
+						{getDispoFiled(dispo)}
 					</li>
 				))}
 			</ul>
@@ -87,8 +47,5 @@ const useStyles = makeStyles()((theme, { color }) => ({
 	ulAppli: {
 		listStyleType: 'disclosure-closed',
 		color: color,
-	},
-	liAppli: {
-		textTransform: 'uppercase',
 	},
 }));
