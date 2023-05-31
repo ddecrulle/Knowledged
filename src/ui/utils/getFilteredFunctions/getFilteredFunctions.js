@@ -1,4 +1,7 @@
 export const getFunctionsFilterer = (selected, filtered, functions) => {
+	if (selected.length === 0 && filtered.length === 0) {
+		return functions;
+	}
 	const arrayOfIdToFilter = concatArrayWithoutDuplicate(selected, filtered);
 
 	const objOfIdWithChild = arrayOfIdToFilter.reduce((acc, curr) => {
