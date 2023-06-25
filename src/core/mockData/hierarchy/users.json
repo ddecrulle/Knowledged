@@ -1,45 +1,45 @@
 {
-	"id": "users",
-	"label": "Les utilisateurs",
-	"description": "test",
-	"children": [
-		{
-			"id": "users-U001",
-			"label": "Maîtrise d'ouvrage d'enquête"
-		},
-		{
-			"id": "users-U002",
-			"label": "Maîtrise d'œuvre statistique"
-		},
-		{
-			"id": "users-U003",
-			"label": "Répondant"
-		},
-		{
-			"id": "users-U004",
-			"label": "Enquêteur"
-		},
-		{
-			"id": "users-U005",
-			"label": "Site de gestion locale"
-		},
-		{
-			"id": "users-U006",
-			"label": "Méthodologie"
-		},
-		{
-			"id": "users-U007",
-			"label": "Maîtrise d'œuvre informatique"
-		},
-		{
-			"id": "users-U008",
-			"label": "Administrateur de la collecte"
-		},
-		{
-			"id": "users-U009",
-			"label": "Site de gestion nationale"
-		},
-		{ "id": "users-U010", "label": "Assistance" },
-		{ "id": "users-U011", "label": "Administrateur du SI" }
-	]
+  "id": "users",
+  "label": "Les utilisateurs",
+  "description": "test",
+  "children": [
+    {
+      "id": "users-U001",
+      "label": "Maîtrise d'ouvrage d'enquête"
+    },
+    {
+      "id": "users-U002",
+      "label": "Maîtrise d'œuvre statistique"
+    },
+    {
+      "id": "users-U003",
+      "label": "Répondant"
+    },
+    {
+      "id": "users-U004",
+      "label": "Enquêteur"
+    },
+    {
+      "id": "users-U005",
+      "label": "Site de gestion locale"
+    },
+    {
+      "id": "users-U006",
+      "label": "Méthodologie"
+    },
+    {
+      "id": "users-U007",
+      "label": "Maîtrise d'œuvre informatique"
+    },
+    {
+      "id": "users-U008",
+      "label": "Administrateur de la collecte"
+    },
+    {
+      "id": "users-U009",
+      "label": "Site de gestion nationale"
+    },
+    { "id": "users-U010", "label": "Assistance" },
+    { "id": "users-U011", "label": "Administrateur du SI" }
+  ]
 }

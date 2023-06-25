@@ -1,213 +1,213 @@
 {
-	"id": "products",
-	"label": "Les produits",
-	"children": [
-		{
-			"id": "products-P01",
-			"label": "Atelier de conception d'enquêtes",
-			"description": "L'atelier de conception d'enquêtes est un ensemble de documentation (formation à la conception de questionnaire, documentation sur l'offre de services du système d'information de collecte), de processus (spécification/recette, déploiement, etc.) et d'outils permettant aux acteurs de spécifier et configurer un processus de collecte d'enquête dans le système d'information de collecte.",
-			"iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/concevoir.svg",
-			"color": "#52d3f7",
-			"children": [
-				{
-					"id": "products-P0101",
-					"label": "Stromae",
-					"description": "Orchestrateur web"
-				},
-				{
-					"id": "products-P0102",
-					"label": "Queen",
-					"description": "Orchestrateur enquêteur"
-				},
-				{
-					"id": "products-P0103",
-					"label": "Pogues",
-					"description": "Atelier de conception de questionnaire"
-				},
-				{
-					"id": "products-P0104",
-					"label": "Lunatic",
-					"description": "Bibliothèque de composants"
-				},
-				{
-					"id": "products-P0105",
-					"label": "Eno",
-					"description": "Générateur d'instruments de collecte"
-				},
-				{
-					"id": "products-P0106",
-					"label": "Public Enemy",
-					"description": "Outil de personnalisation d'un instrument de collecte"
-				},
-				{
-					"id": "products-P0107",
-					"label": "Documentation",
-					"description": "Supports variés destinés aux utilisateurs"
-				}
-			]
-		},
-		{
-			"id": "products-P02",
-			"label": "Plateformes de collecte",
-			"description": "Le produit plateformes de collecte est un service de présentation et d'accès/utilisation du questionnaire autoadministré (web et papier) ou géré par l'enquêteur",
-			"iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/collecter.svg",
-			"color": "#cb61ae",
-			"children": [
-				{
-					"id": "products-P0201",
-					"label": "Platine - Promotion",
-					"description": "Portail de promotion de la collecte web"
-				},
-				{
-					"id": "products-P0214",
-					"label": "Platine - Mes Enquêtes",
-					"description": "Portail de présentation de plusieurs questionnaires"
-				},
-				{
-					"id": "products-P0215",
-					"label": "Platine - Authentification",
-					"description": "Page assurant le mécanisme d'authentification d'accès au questionnaire"
-				},
-				{
-					"id": "products-P0216",
-					"label": "Platine - Collecte",
-					"description": "Service d'accès à des questionnaires web"
-				},
-				{
-					"id": "products-P0217",
-					"label": "Platine - Pilotage",
-					"description": "Page permettant la visualisation et la mise à jour des informations personnelles"
-				},
-				{
-					"id": "products-P0202",
-					"label": "Moog",
-					"description": "Outil de suivi et de gestion de la collecte web"
-				},
-				{
-					"id": "products-P0203",
-					"label": "Sabiane - Collecte",
-					"description": "Plateforme de collecte enquêteur"
-				},
-				{
-					"id": "products-P0206",
-					"label": "Sabiane - Gestion",
-					"description": "Outil de suivi et de gestion de la collecte enquêteur"
-				},
-				{
-					"id": "products-P0210",
-					"label": "Massive Attack",
-					"description": "Outil de génération de données pour les formations enquêteurs"
-				},
-				{
-					"id": "products-P0204",
-					"label": "Meshuggah",
-					"description": "Module de communication"
-				},
-				{
-					"id": "products-P0205",
-					"label": "Atelier de numérisation",
-					"description": "Outil de saisie numérique des questionnaires papiers"
-				},
-				{
-					"id": "products-P0209",
-					"label": "Coltrane",
-					"description": "Plateforme de collecte entreprises"
-				},
-				{
-					"id": "products-P0211",
-					"label": "Widget d’assistance",
-					"description": ""
-				},
-				{
-					"id": "products-P0212",
-					"label": "SVI",
-					"description": "Serveur vocal interactif"
-				},
-				{
-					"id": "products-P0213",
-					"label": "Chatbot",
-					"description": "Chatbot"
-				},
-				{
-					"id": "products-P0218",
-					"label": "Mapex",
-					"description": "Application mobile d'aide à l'organisation du travail des enquêteurs"
-				}
-			]
-		},
-		{
-			"id": "products-P03",
-			"label": "Préparation de la collecte",
-			"description": "...",
-			"iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/construire.svg",
-			"color": "#ff7e33",
-			"children": [
-				{
-					"id": "products-P0301",
-					"label": "Crabe-REM",
-					"description": "Référentiel d'unités de collecte"
-				},
-				{
-					"id": "products-P0302",
-					"label": "Protools",
-					"description": "Orchestrateur de protocoles"
-				},
+  "id": "products",
+  "label": "Les produits",
+  "children": [
+    {
+      "id": "products-P01",
+      "label": "Atelier de conception d'enquêtes",
+      "description": "L'atelier de conception d'enquêtes est un ensemble de documentation (formation à la conception de questionnaire, documentation sur l'offre de services du système d'information de collecte), de processus (spécification/recette, déploiement, etc.) et d'outils permettant aux acteurs de spécifier et configurer un processus de collecte d'enquête dans le système d'information de collecte.",
+      "iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/concevoir.svg",
+      "color": "#52d3f7",
+      "children": [
+        {
+          "id": "products-P0101",
+          "label": "Stromae",
+          "description": "Orchestrateur web"
+        },
+        {
+          "id": "products-P0102",
+          "label": "Queen",
+          "description": "Orchestrateur enquêteur"
+        },
+        {
+          "id": "products-P0103",
+          "label": "Pogues",
+          "description": "Atelier de conception de questionnaire"
+        },
+        {
+          "id": "products-P0104",
+          "label": "Lunatic",
+          "description": "Bibliothèque de composants"
+        },
+        {
+          "id": "products-P0105",
+          "label": "Eno",
+          "description": "Générateur d'instruments de collecte"
+        },
+        {
+          "id": "products-P0106",
+          "label": "Public Enemy",
+          "description": "Outil de personnalisation d'un instrument de collecte"
+        },
+        {
+          "id": "products-P0107",
+          "label": "Documentation",
+          "description": "Supports variés destinés aux utilisateurs"
+        }
+      ]
+    },
+    {
+      "id": "products-P02",
+      "label": "Plateformes de collecte",
+      "description": "Le produit plateformes de collecte est un service de présentation et d'accès/utilisation du questionnaire autoadministré (web et papier) ou géré par l'enquêteur",
+      "iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/collecter.svg",
+      "color": "#cb61ae",
+      "children": [
+        {
+          "id": "products-P0201",
+          "label": "Platine - Promotion",
+          "description": "Portail de promotion de la collecte web"
+        },
+        {
+          "id": "products-P0214",
+          "label": "Platine - Mes Enquêtes",
+          "description": "Portail de présentation de plusieurs questionnaires"
+        },
+        {
+          "id": "products-P0215",
+          "label": "Platine - Authentification",
+          "description": "Page assurant le mécanisme d'authentification d'accès au questionnaire"
+        },
+        {
+          "id": "products-P0216",
+          "label": "Platine - Collecte",
+          "description": "Service d'accès à des questionnaires web"
+        },
+        {
+          "id": "products-P0217",
+          "label": "Platine - Pilotage",
+          "description": "Page permettant la visualisation et la mise à jour des informations personnelles"
+        },
+        {
+          "id": "products-P0202",
+          "label": "Moog",
+          "description": "Outil de suivi et de gestion de la collecte web"
+        },
+        {
+          "id": "products-P0203",
+          "label": "Sabiane - Collecte",
+          "description": "Plateforme de collecte enquêteur"
+        },
+        {
+          "id": "products-P0206",
+          "label": "Sabiane - Gestion",
+          "description": "Outil de suivi et de gestion de la collecte enquêteur"
+        },
+        {
+          "id": "products-P0210",
+          "label": "Massive Attack",
+          "description": "Outil de génération de données pour les formations enquêteurs"
+        },
+        {
+          "id": "products-P0204",
+          "label": "Meshuggah",
+          "description": "Module de communication"
+        },
+        {
+          "id": "products-P0205",
+          "label": "Atelier de numérisation",
+          "description": "Outil de saisie numérique des questionnaires papiers"
+        },
+        {
+          "id": "products-P0209",
+          "label": "Coltrane",
+          "description": "Plateforme de collecte entreprises"
+        },
+        {
+          "id": "products-P0211",
+          "label": "Widget d’assistance",
+          "description": ""
+        },
+        {
+          "id": "products-P0212",
+          "label": "SVI",
+          "description": "Serveur vocal interactif"
+        },
+        {
+          "id": "products-P0213",
+          "label": "Chatbot",
+          "description": "Chatbot"
+        },
+        {
+          "id": "products-P0218",
+          "label": "Mapex",
+          "description": "Application mobile d'aide à l'organisation du travail des enquêteurs"
+        }
+      ]
+    },
+    {
+      "id": "products-P03",
+      "label": "Préparation de la collecte",
+      "description": "...",
+      "iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/construire.svg",
+      "color": "#ff7e33",
+      "children": [
+        {
+          "id": "products-P0301",
+          "label": "Crabe-REM",
+          "description": "Référentiel d'unités de collecte"
+        },
+        {
+          "id": "products-P0302",
+          "label": "Protools",
+          "description": "Orchestrateur de protocoles"
+        },
 
-				{
-					"id": "products-P0303",
-					"label": "Batch Sabiane",
-					"description": ""
-				},
-				{
-					"id": "products-P0304",
-					"label": "Batch Coleman",
-					"description": ""
-				},
-				{
-					"id": "products-P0305",
-					"label": "Batch Coltrane",
-					"description": ""
-				},
-				{
-					"id": "products-P0306",
-					"label": "Opale",
-					"description": ""
-				},
-				{
-					"id": "products-P0307",
-					"label": "Batch Protools",
-					"description": ""
-				}
-			]
-		},
-		{
-			"id": "products-P04",
-			"label": "Traitements des enquêtes",
-			"description": "...",
-			"iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/traiter.svg",
-			"color": "#69c462",
-			"children": [
-				{
-					"id": "products-P0401",
-					"label": "Alimentation Infocentre"
-				},
-				{
-					"id": "products-P0402",
-					"label": "Genesis"
-				},
-				{
-					"id": "products-P0403",
-					"label": "Kraftwerk"
-				},
-				{
-					"id": "products-P0404",
-					"label": "Parliament"
-				},
-				{
-					"id": "products-P0405",
-					"label": "Generic"
-				}
-			]
-		}
-	]
+        {
+          "id": "products-P0303",
+          "label": "Batch Sabiane",
+          "description": ""
+        },
+        {
+          "id": "products-P0304",
+          "label": "Batch Coleman",
+          "description": ""
+        },
+        {
+          "id": "products-P0305",
+          "label": "Batch Coltrane",
+          "description": ""
+        },
+        {
+          "id": "products-P0306",
+          "label": "Opale",
+          "description": ""
+        },
+        {
+          "id": "products-P0307",
+          "label": "Batch Protools",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "products-P04",
+      "label": "Traitements des enquêtes",
+      "description": "...",
+      "iconUrl": "https://raw.githubusercontent.com/ddecrulle/Knowledge-Data/main/static/traiter.svg",
+      "color": "#69c462",
+      "children": [
+        {
+          "id": "products-P0401",
+          "label": "Alimentation Infocentre"
+        },
+        {
+          "id": "products-P0402",
+          "label": "Genesis"
+        },
+        {
+          "id": "products-P0403",
+          "label": "Kraftwerk"
+        },
+        {
+          "id": "products-P0404",
+          "label": "Parliament"
+        },
+        {
+          "id": "products-P0405",
+          "label": "Generic"
+        }
+      ]
+    }
+  ]
 }

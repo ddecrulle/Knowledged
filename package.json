@@ -1,75 +1,56 @@
 {
-	"name": "knowledge",
-	"version": "1.7.9",
-	"description": "The user interface that presents the service offer of the INSEE survey information system",
-	"author": "u/ddecrulle",
-	"license": "MIT",
-	"dependencies": {
-		"@emotion/react": "^11.11.0",
-		"@emotion/styled": "^11.11.0",
-		"@mui/icons-material": "^5.11.16",
-		"@mui/lab": "5.0.0-alpha.129",
-		"@mui/material": "^5.13.3",
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^14.0.0",
-		"@testing-library/user-event": "^14.4.3",
-		"aos": "^2.3.4",
-		"lodash.groupby": "^4.6.0",
-		"powerhooks": "^0.26.14",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.11.2",
-		"react-scripts": "^5.0.1",
-		"tss-react": "^4.8.5",
-		"use-query-params": "^2.2.1"
-	},
-	"scripts": {
-		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-		"start": "react-scripts start",
-		"build": "npm run generate-entrypoint && react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"generate-entrypoint": "node scripts/generate-entrypoint.js",
-		"prepare": "husky install"
-	},
-	"lint-staged": {
-		"**/*.{js,jsx,css}": [
-			"yarn prettier --write",
-			"yarn eslint --fix"
-		]
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^17.6.5",
-		"@commitlint/config-conventional": "^17.6.5",
-		"eslint": "^8.41.0",
-		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-config-react-app": "^7.0.1",
-		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-jsx-a11y": "^6.7.1",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-react": "^7.32.2",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^13.2.2",
-		"prettier": "^2.8.8"
-	}
+  "name": "knowledge",
+  "version": "1.8.0",
+  "description": "The user interface that presents the service offer of the INSEE survey information system",
+  "author": "u/ddecrulle",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "5.0.0-alpha.134",
+    "@mui/material": "^5.13.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "aos": "^2.3.4",
+    "lodash.groupby": "^4.6.0",
+    "powerhooks": "^0.26.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.0",
+    "tss-react": "^4.8.6",
+    "use-query-params": "^2.2.1"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "npm run generate-entrypoint && vite build",
+    "_format": "prettier '**/*.{js,jsx,json,md}'",
+    "format": "npm run _format -- --write",
+    "format:check": "npm run _format -- --list-different",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "generate-entrypoint": "node scripts/generate-entrypoint.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,css}": [
+      "yarn format",
+      "yarn lint"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@vitejs/plugin-react": "^4.0.1",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "vite": "^4.3.9",
+    "vite-tsconfig-paths": "^3.6.0"
+  }
 }
