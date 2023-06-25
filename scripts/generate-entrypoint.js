@@ -1,6 +1,7 @@
-import { readFile, writeFileSync } from 'fs';
+/* eslint-disable */
+var fs = require('fs');
 
-readFile('.env', 'utf8', function (_, contents) {
+fs.readFile('.env', 'utf8', function (_, contents) {
   const content = contents
     .split('\n')
     .filter((line) => !line.startsWith('#'))
@@ -11,12 +12,12 @@ readFile('.env', 'utf8', function (_, contents) {
         `echo "window._env_['${key.replace(
           'REACT_APP_',
           ''
-        )}'] = '${key.replace(
+        )}'] = '\$${key.replace(
           'REACT_APP_',
           ''
         )}';" >> /usr/share/nginx/html/env-config.js`
     );
 
   const fullFile = ['#!/bin/sh', ...content, 'exec "$@"'].join('\n');
-  writeFileSync('entrypoint.sh', fullFile, 'utf8');
+  fs.writeFileSync('entrypoint.sh', fullFile, 'utf8');
 });
