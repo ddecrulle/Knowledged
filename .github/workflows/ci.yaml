@@ -18,8 +18,8 @@ jobs:
       - run: yarn build
       - uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: build
+          name: dist
+          path: dist
 
   check_if_version_upgraded:
     name: Check if version upgrade
@@ -70,9 +70,9 @@ jobs:
           echo ::set-output name=docker_tags::$OUT
       - uses: actions/download-artifact@v3
         with:
-          name: build
-          path: build
-      - run: tar -cvf build.tar ./build
+          name: dist
+          path: dist
+      - run: tar -cvf build.tar ./dist
       - uses: docker/build-push-action@v3.3.0
         with:
           push: true
