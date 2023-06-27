@@ -25,11 +25,12 @@ jobs:
       - run: yarn build
       - uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: build
+          name: dist
+          path: dist
   docker:
     runs-on: ubuntu-latest
     needs: build
+    if: contains(github.event.pull_request.labels.*.name, 'deploy')
     steps:
       - uses: actions/checkout@v3
         with:
@@ -42,9 +43,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - uses: actions/download-artifact@v3
         with:
-          name: build
-          path: build
-      - run: tar -cvf build.tar ./build
+          name: dist
+          path: dist
+      - run: tar -cvf build.tar ./dist
       - name: Computing Docker image tags
         id: step1
         env:
@@ -52,7 +53,7 @@ jobs:
         run: |
           OUT=$GITHUB_REPOSITORY:pull-${COMMIT_SHA::8}
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
-          echo ::set-output name=docker_tags::$OUT
+          echo "docker_tags=$OUT" >> "$GITHUB_OUTPUT"
       - uses: docker/build-push-action@v3.3.0
         with:
           push: true

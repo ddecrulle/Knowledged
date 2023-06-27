@@ -29,7 +29,7 @@ jobs:
       from_version: ${{ steps.step1.outputs.from_version }}
       to_version: ${{ steps.step1.outputs.to_version }}
       is_upgraded_version: ${{ steps.step1.outputs.is_upgraded_version }}
-      is_release_beta: ${{steps.step1.outputs.is_release_beta }}
+      is_release_beta: ${{ steps.step1.outputs.is_release_beta }}
     steps:
       - uses: garronej/ts-ci@v2.1.0
         id: step1
@@ -58,16 +58,9 @@ jobs:
           IS_UPGRADED_VERSION: ${{ needs.check_if_version_upgraded.outputs.is_upgraded_version }}
           TO_VERSION: ${{ needs.check_if_version_upgraded.outputs.to_version }}
         run: |
-          OUT=$GITHUB_REPOSITORY:$(
-          [ "$GITHUB_EVENT_NAME" == "pull_request" ] &&
-            echo "$GITHUB_HEAD_REF" ||
-            echo "${GITHUB_REF#refs/*/}"
-          )
-          if [ "$IS_UPGRADED_VERSION" = "true" ]; then
-            OUT=$OUT,$GITHUB_REPOSITORY:$TO_VERSION,$GITHUB_REPOSITORY:latest
-          fi
+          OUT=$GITHUB_REPOSITORY:$TO_VERSION,$GITHUB_REPOSITORY:latest
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
-          echo ::set-output name=docker_tags::$OUT
+          echo "docker_tags=$OUT" >> "$GITHUB_OUTPUT"
       - uses: actions/download-artifact@v3
         with:
           name: dist
