@@ -54,9 +54,10 @@ jobs:
           OUT=$GITHUB_REPOSITORY:pull-${COMMIT_SHA::8}
           OUT=$(echo "$OUT" | awk '{print tolower($0)}') 
           echo "docker_tags=$OUT" >> "$GITHUB_OUTPUT"
-      - uses: docker/build-push-action@v3.3.0
+      - uses: docker/build-push-action@v4
         with:
           push: true
+          platforms: linux/amd64,linux/arm64
           context: .
           tags: ${{ steps.step1.outputs.docker_tags }}
           file: Dockerfile
