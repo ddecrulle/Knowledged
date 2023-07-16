@@ -15,12 +15,7 @@ const renderTree = (nodes) => (
   </TreeItem>
 );
 
-export const TreeFilter = ({
-  treeState,
-  setTreeState,
-  tree,
-  autoCompleteLabel,
-}) => {
+export const TreeFilter = ({ treeState, setTreeState, tree, autoComplete }) => {
   const { classes } = useStyles();
 
   const handleAutocomplete = (_, newValue) => {
@@ -45,19 +40,26 @@ export const TreeFilter = ({
 
   return (
     <>
-      <Autocomplete
-        multiple
-        className={classes.autocomplete}
-        id='tags-standard'
-        getOptionLabel={(option) => option.title}
-        renderInput={(params) => (
-          <TextField {...params} variant='outlined' label={autoCompleteLabel} />
-        )}
-        options={[]}
-        value={treeState.filtered}
-        onChange={handleAutocomplete}
-        disabled
-      />
+      {autoComplete.isEnabled && (
+        <Autocomplete
+          multiple
+          className={classes.autocomplete}
+          id='tags-standard'
+          getOptionLabel={(option) => option.title}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              variant='outlined'
+              label={autoComplete.label}
+            />
+          )}
+          options={[]}
+          value={treeState.filtered}
+          onChange={handleAutocomplete}
+          disabled
+        />
+      )}
+
       <Button
         onClick={handleCollapseClick}
         disabled={treeState.expanded.length === 0}

@@ -12,23 +12,27 @@ export const ProductContentBloc = ({ products }) => {
     const { id, iconUrl, label: labelProduct, color, description } = product;
     return (
       <div key={id} className={classes.productFunctions}>
-        <img src={iconUrl} alt='' height='50px' width='50px' />
-        <Divider
-          component='div'
-          orientation='vertical'
-          className={cx(
-            css({
-              backgroundColor: color,
-            }),
-            classes.titleDivider
-          )}
-        />
-        <Typography className={classes.productTitle} variant='h4'>
-          {labelProduct}
-          <Typography textTransform='none' variant='body1' color='gray'>
-            {description}
+        <div className={classes.title}>
+          <div>
+            <img src={iconUrl} alt='' height='50px' width='50px' />
+            <Divider
+              component='div'
+              orientation='vertical'
+              className={cx(
+                css({
+                  backgroundColor: color,
+                }),
+                classes.titleDivider
+              )}
+            />
+          </div>
+          <Typography className={classes.productTitle} variant='h4'>
+            {labelProduct}
+            <Typography textTransform='none' variant='body1' color='gray'>
+              {description}
+            </Typography>
           </Typography>
-        </Typography>
+        </div>
         <ProductTools product={product} color={color} />
       </div>
     );
@@ -36,8 +40,12 @@ export const ProductContentBloc = ({ products }) => {
 };
 
 const useStyles = makeStyles()((theme) => ({
+  title: {
+    display: 'inline-flex',
+  },
   titleDivider: {
     width: theme.spacing(6),
+    height: theme.spacing(0.5),
     borderWidth: '3px',
     borderRadius: '10px',
   },

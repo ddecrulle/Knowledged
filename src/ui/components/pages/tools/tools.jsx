@@ -31,7 +31,7 @@ export const Tools = () => {
                     treeState={searchParams}
                     setTreeState={updateParams}
                     tree={products['children'] ?? []}
-                    autoCompleteLabel='Applications'
+                    autoComplete={{ isEnabled: false }}
                   />
                 </Card>
               </Box>

@@ -43,7 +43,10 @@ export const ServiceOffer = () => {
                     treeState={searchParams}
                     setTreeState={updateParams}
                     tree={products['children'] ?? []}
-                    autoCompleteLabel='Produits, GSBPM, Jalons ...'
+                    autoComplete={{
+                      isEnabled: true,
+                      label: 'Produits, GSBPM, Jalons ...',
+                    }}
                   />
                 </Card>
               </Box>

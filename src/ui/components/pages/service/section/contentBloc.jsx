@@ -23,20 +23,24 @@ export const ContentBloc = ({ functions, products }) => {
       } = getProduct(products, idProduct);
       return (
         <div key={idProduct} className={classes.productFunctions}>
-          <img src={iconUrl} alt='' height='50px' width='50px' />
-          <Divider
-            component='div'
-            orientation='vertical'
-            className={cx(
-              css({
-                backgroundColor: color,
-              }),
-              classes.titleDivider
-            )}
-          />
-          <Typography className={classes.productTitle} variant='h4'>
-            {labelProduct}
-          </Typography>
+          <div className={classes.title}>
+            <div>
+              <img src={iconUrl} alt='' height='50px' width='50px' />
+              <Divider
+                component='div'
+                orientation='vertical'
+                className={cx(
+                  css({
+                    backgroundColor: color,
+                  }),
+                  classes.titleDivider
+                )}
+              />
+            </div>
+            <Typography className={classes.productTitle} variant='h4'>
+              {labelProduct}
+            </Typography>
+          </div>
           <FunctionsByProducts
             productFunctions={groupedFunctions}
             labelProduct={labelProduct}
@@ -49,8 +53,12 @@ export const ContentBloc = ({ functions, products }) => {
 };
 
 const useStyles = makeStyles()((theme) => ({
+  title: {
+    display: 'inline-flex',
+  },
   titleDivider: {
     width: theme.spacing(6),
+    height: theme.spacing(0.5),
     borderWidth: '3px',
     borderRadius: '10px',
   },
