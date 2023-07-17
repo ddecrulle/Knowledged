@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
   {
     element: (
       <QueryParamProvider adapter={ReactRouter6Adapter}>
-        <Layout />{' '}
+        <Layout />
       </QueryParamProvider>
     ),
     children: [
