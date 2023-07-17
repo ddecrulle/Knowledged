@@ -1,12 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Root } from './root';
+import { router } from './root';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import { CoreProvider } from './coreApi';
+import { RouterProvider } from 'react-router-dom';
 
 export const muiCache = createCache({
   key: 'mui',
@@ -22,7 +23,7 @@ root.render(
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <CoreProvider>
-          <Root />
+          <RouterProvider router={router} />
         </CoreProvider>
       </ThemeProvider>
     </CacheProvider>
