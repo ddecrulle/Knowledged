@@ -2,11 +2,12 @@ import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Divider from '@mui/material/Divider';
 import { ProductTools } from './productTools';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export const ProductContentBloc = ({ products }) => {
   const { classes, cx, css } = useStyles();
 
-  if (products.length === 0) return <div>Loading</div>;
+  if (products.length === 0) return <CircularProgress />;
 
   return products.map((product) => {
     const { id, iconUrl, label: labelProduct, color, description } = product;

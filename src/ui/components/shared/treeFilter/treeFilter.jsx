@@ -26,7 +26,7 @@ export const TreeFilter = ({ treeState, setTreeState, tree, autoComplete }) => {
     setTreeState('expanded', nodeIds);
   };
 
-  const handleSelect = (e, nodeIds) => {
+  const handleSelect = (_, nodeIds) => {
     setTreeState('selected', nodeIds);
   };
 

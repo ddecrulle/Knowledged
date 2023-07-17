@@ -1,4 +1,5 @@
 import groupBy from 'lodash.groupby';
+import sortBy from 'lodash.sortby';
 import { FunctionsByProducts } from './content/functionsByProducts';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
@@ -13,43 +14,43 @@ export const ContentBloc = ({ functions, products }) => {
     return product;
   };
 
-  return Object.values(groupBy(functions, (fct) => fct.idProduct)).map(
-    (groupedFunctions) => {
-      const idProduct = groupedFunctions[0].idProduct;
-      const {
-        iconUrl,
-        label: labelProduct,
-        color,
-      } = getProduct(products, idProduct);
-      return (
-        <div key={idProduct} className={classes.productFunctions}>
-          <div className={classes.title}>
-            <div>
-              <img src={iconUrl} alt='' height='50px' width='50px' />
-              <Divider
-                component='div'
-                orientation='vertical'
-                className={cx(
-                  css({
-                    backgroundColor: color,
-                  }),
-                  classes.titleDivider
-                )}
-              />
-            </div>
-            <Typography className={classes.productTitle} variant='h4'>
-              {labelProduct}
-            </Typography>
+  return Object.values(
+    groupBy(sortBy(functions, 'idProduct'), (fct) => fct.idProduct)
+  ).map((groupedFunctions) => {
+    const idProduct = groupedFunctions[0].idProduct;
+    const {
+      iconUrl,
+      label: labelProduct,
+      color,
+    } = getProduct(products, idProduct);
+    return (
+      <div key={idProduct} className={classes.productFunctions}>
+        <div className={classes.title}>
+          <div>
+            <img src={iconUrl} alt='' height='50px' width='50px' />
+            <Divider
+              component='div'
+              orientation='vertical'
+              className={cx(
+                css({
+                  backgroundColor: color,
+                }),
+                classes.titleDivider
+              )}
+            />
           </div>
-          <FunctionsByProducts
-            productFunctions={groupedFunctions}
-            labelProduct={labelProduct}
-            color={color}
-          />
+          <Typography className={classes.productTitle} variant='h4'>
+            {labelProduct}
+          </Typography>
         </div>
-      );
-    }
-  );
+        <FunctionsByProducts
+          productFunctions={groupedFunctions}
+          labelProduct={labelProduct}
+          color={color}
+        />
+      </div>
+    );
+  });
 };
 
 const useStyles = makeStyles()((theme) => ({
