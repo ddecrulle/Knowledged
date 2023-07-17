@@ -7,13 +7,13 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import { TreeFilter } from 'ui/components/shared/treeFilter/treeFilter';
 import { ProductContentBloc } from 'ui/components/pages/tools/productContentBloc/productContentBloc';
+import { ScrollRestoration } from 'react-router-dom';
 
 export const Tools = () => {
   const { classes } = useStyles();
   const [searchParams, updateParams] = useTreeUrlParams();
   const [products, setProducts] = useState([]);
 
-  //const { selected, filtered } = searchParams;
   const { getProducts } = useContext(CoreApiContext);
 
   useEffect(() => {
@@ -21,6 +21,7 @@ export const Tools = () => {
   }, [getProducts]);
   return (
     <div className={classes.wrapper}>
+      <ScrollRestoration />
       <div className={classes.container}>
         <Box className={classes.row} justifyContent='center'>
           <Grid container spacing={2}>

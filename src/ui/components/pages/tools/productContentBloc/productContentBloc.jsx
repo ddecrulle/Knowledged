@@ -12,7 +12,7 @@ export const ProductContentBloc = ({ products }) => {
   return products.map((product) => {
     const { id, iconUrl, label: labelProduct, color, description } = product;
     return (
-      <div key={id} className={classes.productFunctions}>
+      <div key={id} id={id} className={classes.productFunctions}>
         <div className={classes.title}>
           <div>
             <img src={iconUrl} alt='' height='50px' width='50px' />
@@ -21,7 +21,7 @@ export const ProductContentBloc = ({ products }) => {
               orientation='vertical'
               className={cx(
                 css({
-                  backgroundColor: color,
+                  borderColor: color,
                 }),
                 classes.titleDivider
               )}
@@ -45,7 +45,7 @@ const useStyles = makeStyles()((theme) => ({
     display: 'inline-flex',
   },
   titleDivider: {
-    width: theme.spacing(6),
+    width: '50px',
     height: theme.spacing(0.5),
     borderWidth: '3px',
     borderRadius: '10px',
