@@ -14,25 +14,25 @@ export const ProductContentBloc = ({ products }) => {
     return (
       <div key={id} id={id} className={classes.productFunctions}>
         <div className={classes.title}>
-          <div>
-            <img src={iconUrl} alt='' height='50px' width='50px' />
-            <Divider
-              component='div'
-              orientation='vertical'
-              className={cx(
-                css({
-                  borderColor: color,
-                }),
-                classes.titleDivider
-              )}
-            />
-          </div>
-          <Typography className={classes.productTitle} variant='h4'>
-            {labelProduct}
+          <img src={iconUrl} alt='' height='50px' width='50px' />
+          <div className={classes.productTitle}>
+            <Typography variant='h4'>
+              {labelProduct}
+              <Divider
+                component='div'
+                orientation='vertical'
+                className={cx(
+                  css({
+                    borderColor: color,
+                  }),
+                  classes.titleDivider
+                )}
+              />
+            </Typography>
             <Typography textTransform='none' variant='body1' color='gray'>
               {description}
             </Typography>
-          </Typography>
+          </div>
         </div>
         <ProductTools product={product} color={color} />
       </div>
@@ -49,6 +49,7 @@ const useStyles = makeStyles()((theme) => ({
     height: theme.spacing(0.5),
     borderWidth: '3px',
     borderRadius: '10px',
+    marginBottom: theme.spacing(1),
   },
   productTitle: {
     fontWeight: 500,

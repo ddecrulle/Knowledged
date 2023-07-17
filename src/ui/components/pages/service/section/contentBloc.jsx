@@ -24,8 +24,9 @@ export const ContentBloc = ({ functions, products }) => {
       return (
         <div key={idProduct} className={classes.productFunctions}>
           <div className={classes.title}>
-            <div>
-              <img src={iconUrl} alt='' height='50px' width='50px' />
+            <img src={iconUrl} alt='' height='50px' width='50px' />
+            <div className={classes.productTitle}>
+              <Typography variant='h4'>{labelProduct}</Typography>
               <Divider
                 component='div'
                 orientation='vertical'
@@ -35,12 +36,8 @@ export const ContentBloc = ({ functions, products }) => {
                   }),
                   classes.titleDivider
                 )}
-                light={true}
               />
             </div>
-            <Typography className={classes.productTitle} variant='h4'>
-              {labelProduct}
-            </Typography>
           </div>
           <FunctionsByProducts
             productFunctions={groupedFunctions}
