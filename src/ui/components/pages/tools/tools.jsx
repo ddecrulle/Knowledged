@@ -10,7 +10,7 @@ import { ProductContentBloc } from 'ui/components/pages/tools/productContentBloc
 import { ScrollRestoration } from 'react-router-dom';
 
 export const Tools = () => {
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
   const [searchParams, updateParams] = useTreeUrlParams();
   const [products, setProducts] = useState([]);
 
@@ -27,7 +27,7 @@ export const Tools = () => {
           <Grid container spacing={2}>
             <Grid item md={4} xs={12}>
               <Box className={classes.box}>
-                <Card className={classes.card}>
+                <Card className={cx(classes.card, classes.sticky)}>
                   <TreeFilter
                     treeState={searchParams}
                     setTreeState={updateParams}
@@ -128,6 +128,10 @@ const useStyles = makeStyles()((theme) => {
     image: {
       maxWidth: '100%',
       verticalAlign: 'middle',
+    },
+    sticky: {
+      position: 'sticky',
+      top: theme.spacing(2),
     },
   };
 });

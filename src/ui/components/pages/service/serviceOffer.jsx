@@ -10,7 +10,7 @@ import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
 import { TreeFilter } from 'ui/components/shared/treeFilter/treeFilter';
 
 export const ServiceOffer = () => {
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
   const [searchParams, updateParams] = useTreeUrlParams();
   const [functions, setFunctions] = useState([]);
   const [products, setProducts] = useState([]);
@@ -38,7 +38,7 @@ export const ServiceOffer = () => {
           <Grid container spacing={2}>
             <Grid item md={4} xs={12}>
               <Box className={classes.box}>
-                <Card className={classes.card}>
+                <Card className={cx(classes.card, classes.sticky)}>
                   <TreeFilter
                     treeState={searchParams}
                     setTreeState={updateParams}
@@ -145,6 +145,10 @@ const useStyles = makeStyles()((theme) => {
     image: {
       maxWidth: '100%',
       verticalAlign: 'middle',
+    },
+    sticky: {
+      position: 'sticky',
+      top: theme.spacing(2),
     },
   };
 });
