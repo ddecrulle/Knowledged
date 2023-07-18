@@ -1,7 +1,7 @@
 export const homePage = {
   headSection: {
     title: 'Knowledge',
-    text: 'Bibliothèque de connaissances de l’offre de services du système d’information de collecte de enquêtes ménages et entreprises de l’Insee',
+    text: "Bibliothèque de présentation de l'offre de services de la filière d'enquête",
     buttonServiceOffer: 'Visite de la bibliothèque',
   },
   informationSystemSection: {

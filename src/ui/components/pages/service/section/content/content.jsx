@@ -18,14 +18,18 @@ export const Content = ({ content, color }) => {
       <ul className={classes.ulAppli}>
         {content.products.map((p) => (
           <li key={p.id}>
-            <Typography
-              textTransform='uppercase'
-              variant='body2'
-              color='GrayText'
-            >
-              {p.label}
-            </Typography>
-            {getDispoFiled(dispo)}
+            <div className={classes.tools}>
+              <Typography
+                textTransform='uppercase'
+                variant='body2'
+                component='span'
+                color='gray'
+                className={classes.toolLabel}
+              >
+                {p.label}
+              </Typography>
+              {getDispoFiled(dispo)}
+            </div>
           </li>
         ))}
       </ul>
@@ -48,5 +52,15 @@ const useStyles = makeStyles()((theme, { color }) => ({
   ulAppli: {
     listStyleType: 'disclosure-closed',
     color: color,
+    paddingLeft: theme.spacing(2),
+    marginTop: theme.spacing(1),
+  },
+  tools: {
+    display: 'flex',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+  },
+  toolLabel: {
+    marginRight: theme.spacing(1),
   },
 }));
