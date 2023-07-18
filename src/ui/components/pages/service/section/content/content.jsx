@@ -11,13 +11,7 @@ export const Content = ({ content, color }) => {
   const { classes } = useStyles({ color });
   return (
     <li className={classes.li}>
-      <Typography
-        variant='subtitle1'
-        textTransform='uppercase'
-        className={classes.fctLabel}
-      >
-        {label}
-      </Typography>
+      <Typography className={classes.fctLabel}>{label}</Typography>
       <Typography variant='body1' color='GrayText'>
         {description}
       </Typography>
@@ -40,8 +34,16 @@ export const Content = ({ content, color }) => {
 };
 
 const useStyles = makeStyles()((theme, { color }) => ({
+  fctLabel: {
+    textTransform: 'uppercase',
+    color: '#707176',
+    fontWeight: 'bold',
+  },
   li: {
     marginBottom: theme.spacing(1),
+    '::marker': {
+      color: color,
+    },
   },
   ulAppli: {
     listStyleType: 'disclosure-closed',

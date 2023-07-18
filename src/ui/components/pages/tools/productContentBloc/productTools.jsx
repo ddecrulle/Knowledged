@@ -6,7 +6,7 @@ export const ProductTools = ({ product, color }) => {
   return (
     <ul className={classes.ul}>
       {product.children.map((tools) => (
-        <li key={tools.id}>
+        <li key={tools.id} className={classes.li}>
           <Typography variant='inherit' color='GrayText'>
             {tools.label}
           </Typography>
@@ -19,9 +19,12 @@ export const ProductTools = ({ product, color }) => {
   );
 };
 
-const useStyles = makeStyles()((_theme, { color }) => ({
+const useStyles = makeStyles()((theme, { color }) => ({
   ul: {
     listStyleType: 'disclosure-closed',
     color: color,
+  },
+  li: {
+    marginBottom: theme.spacing(2),
   },
 }));
