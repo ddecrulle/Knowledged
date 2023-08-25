@@ -6,9 +6,14 @@ import TreeItem from '@mui/lab/TreeItem';
 import Autocomplete from '@mui/material/Autocomplete';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import { TypographyWithMarkdown } from '../typographyWithMarkdown';
 
 const renderTree = (nodes) => (
-  <TreeItem key={nodes.id} nodeId={nodes.id} label={nodes.label}>
+  <TreeItem
+    key={nodes.id}
+    nodeId={nodes.id}
+    label={<TypographyWithMarkdown>{nodes.label}</TypographyWithMarkdown>}
+  >
     {Array.isArray(nodes['children'])
       ? nodes['children'].map((node) => renderTree(node))
       : null}

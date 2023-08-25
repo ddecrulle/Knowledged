@@ -1,7 +1,7 @@
 import React from 'react';
 import { Content } from './content';
 import groupBy from 'lodash.groupby';
-import Typography from '@mui/material/Typography';
+import { TypographyWithMarkdown } from 'ui/components/shared/typographyWithMarkdown';
 
 export const FunctionsByProducts = ({ productFunctions, color }) => {
   return (
@@ -11,13 +11,13 @@ export const FunctionsByProducts = ({ productFunctions, color }) => {
           const { id, label } = gsbpmGroupedFct[0]['gsbpm'];
           return (
             <React.Fragment key={id}>
-              <Typography
+              <TypographyWithMarkdown
                 variant='subtitle1'
                 textTransform='uppercase'
                 color='grey'
               >
                 {label}
-              </Typography>
+              </TypographyWithMarkdown>
               <ul>
                 {gsbpmGroupedFct.map((fct) => (
                   <Content content={fct} key={fct.id} color={color} />

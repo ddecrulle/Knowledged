@@ -1,8 +1,9 @@
-import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import Divider from '@mui/material/Divider';
 import { ProductTools } from './productTools';
 import CircularProgress from '@mui/material/CircularProgress';
+import { TypographyWithMarkdown } from 'ui/components/shared/typographyWithMarkdown';
+import { Typography } from '@mui/material';
 
 export const ProductContentBloc = ({ products }) => {
   const { classes, cx, css } = useStyles();
@@ -29,9 +30,13 @@ export const ProductContentBloc = ({ products }) => {
                 )}
               />
             </Typography>
-            <Typography textTransform='none' variant='body1' color='gray'>
+            <TypographyWithMarkdown
+              textTransform='none'
+              variant='body1'
+              color='gray'
+            >
               {description}
-            </Typography>
+            </TypographyWithMarkdown>
           </div>
         </div>
         <ProductTools product={product} color={color} />

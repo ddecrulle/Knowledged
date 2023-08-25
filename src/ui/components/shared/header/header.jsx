@@ -24,8 +24,11 @@ import { Link as MaterialLink } from '@mui/material';
 export const Header = () => {
   const location = useLocation();
 
-  const [open, setOpen] = useState(false);
   const { classes } = useStyles();
+
+  const [open, setOpen] = useState(false);
+  const openModal = () => setOpen(true);
+  const closeModal = () => setOpen(false);
 
   return (
     <AppBar position='static' color='default' className={classes.appBar}>
@@ -42,11 +45,11 @@ export const Header = () => {
             </div>
             <>
               <div className={classes.productLogo}>
-                <Typography>Métallica</Typography>
+                <Typography>{"Filière d'enquête"}</Typography>
               </div>
               <Box className={classes.iconContainer}>
                 <IconButton
-                  onClick={() => setOpen(true)}
+                  onClick={openModal}
                   className={classes.iconButton}
                   color='inherit'
                   aria-label='Menu'
@@ -58,8 +61,8 @@ export const Header = () => {
                 <SwipeableDrawer
                   anchor='right'
                   open={open}
-                  onClose={() => setOpen(false)}
-                  onOpen={() => setOpen(true)}
+                  onClose={closeModal}
+                  onOpen={openModal}
                 >
                   <AppBar title='Menu' />
                   <List className={classes.swipeableList}>
@@ -68,7 +71,7 @@ export const Header = () => {
                         component={item.external ? MaterialLink : Link}
                         href={item.external ? item.pathname : null}
                         to={item.external ? null : item.pathname}
-                        onClick={() => setOpen(false)}
+                        onClick={closeModal}
                         disabled={item.disabled}
                         key={item.label}
                       >

@@ -1,7 +1,7 @@
-import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import { TypographyWithMarkdown } from 'ui/components/shared/typographyWithMarkdown';
 
 const getDispoFiled = (dispo) =>
   dispo ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />;
@@ -11,23 +11,23 @@ export const Content = ({ content, color }) => {
   const { classes } = useStyles({ color });
   return (
     <li className={classes.li}>
-      <Typography className={classes.fctLabel}>{label}</Typography>
-      <Typography variant='body1' color='GrayText'>
+      <TypographyWithMarkdown className={classes.fctLabel}>
+        {label}
+      </TypographyWithMarkdown>
+      <TypographyWithMarkdown variant='body1' color='GrayText'>
         {description}
-      </Typography>
+      </TypographyWithMarkdown>
       <ul className={classes.ulAppli}>
         {content.products.map((p) => (
           <li key={p.id}>
             <div className={classes.tools}>
-              <Typography
-                textTransform='uppercase'
+              <TypographyWithMarkdown
                 variant='body2'
                 component='span'
-                color='gray'
                 className={classes.toolLabel}
               >
                 {p.label}
-              </Typography>
+              </TypographyWithMarkdown>
               {getDispoFiled(dispo)}
             </div>
           </li>
@@ -61,6 +61,8 @@ const useStyles = makeStyles()((theme, { color }) => ({
     flexWrap: 'wrap',
   },
   toolLabel: {
+    textTransform: 'uppercase',
+    color: 'gray',
     marginRight: theme.spacing(1),
   },
 }));

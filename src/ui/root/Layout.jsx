@@ -5,9 +5,14 @@ import { makeStyles } from 'tss-react/mui';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
+import AOS from 'aos/dist/aos';
+import 'aos/dist/aos.css';
+
+AOS.init({ once: true });
 
 export const Layout = () => {
   const { classes } = useStyles();
+
   const showScrollButton = useScrollTrigger({ disableHysteresis: true });
 
   const handleScrollToTop = () => {

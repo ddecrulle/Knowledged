@@ -1,18 +1,18 @@
-import Typography from '@mui/material/Typography';
 import { makeStyles } from 'tss-react/mui';
+import { TypographyWithMarkdown } from 'ui/components/shared/typographyWithMarkdown';
 
 export const ProductTools = ({ product, color }) => {
   const { classes } = useStyles({ color });
   return (
     <ul className={classes.ul}>
       {product.children.map((tools) => (
-        <li key={tools.id} className={classes.li}>
-          <Typography variant='inherit' color='GrayText'>
+        <li key={tools.id} id={tools.id} className={classes.li}>
+          <TypographyWithMarkdown className={classes.label}>
             {tools.label}
-          </Typography>
-          <Typography variant='body2' color='black'>
+          </TypographyWithMarkdown>
+          <TypographyWithMarkdown variant='body1' color='GrayText'>
             {tools.description}
-          </Typography>
+          </TypographyWithMarkdown>
         </li>
       ))}
     </ul>
@@ -20,11 +20,16 @@ export const ProductTools = ({ product, color }) => {
 };
 
 const useStyles = makeStyles()((theme, { color }) => ({
+  label: {
+    color: '#707176',
+    fontWeight: 'bold',
+  },
   ul: {
+    marginTop: 0,
     listStyleType: 'disclosure-closed',
     color: color,
   },
   li: {
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(1),
   },
 }));
