@@ -17,7 +17,9 @@ export const ServiceOffer = () => {
   const scrollToTop = () => {
     //If user is not at the top
     if (trigger) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
     }
   };
 
