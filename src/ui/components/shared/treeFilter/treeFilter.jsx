@@ -20,7 +20,13 @@ const renderTree = (nodes) => (
   </TreeItem>
 );
 
-export const TreeFilter = ({ treeState, setTreeState, tree, autoComplete }) => {
+export const TreeFilter = ({
+  treeState,
+  setTreeState,
+  tree,
+  autoComplete,
+  onSelect = () => null,
+}) => {
   const { classes } = useStyles();
 
   const handleAutocomplete = (_, newValue) => {
@@ -32,7 +38,9 @@ export const TreeFilter = ({ treeState, setTreeState, tree, autoComplete }) => {
   };
 
   const handleSelect = (_, nodeIds) => {
+    console.log('handleSelect');
     setTreeState('selected', nodeIds);
+    onSelect();
   };
 
   const handleCollapseClick = () => {

@@ -8,9 +8,19 @@ import { useTreeUrlParams } from 'ui/utils/hooks/searchParams';
 import { CoreApiContext } from 'ui/coreApi';
 import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
 import { TreeFilter } from 'ui/components/shared/treeFilter/treeFilter';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 export const ServiceOffer = () => {
   const { classes, cx } = useStyles();
+  const trigger = useScrollTrigger({ disableHysteresis: true });
+
+  const scrollToTop = () => {
+    //If user is not at the top
+    if (trigger) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const [searchParams, updateParams] = useTreeUrlParams();
   const [functions, setFunctions] = useState([]);
   const [products, setProducts] = useState([]);
@@ -47,6 +57,7 @@ export const ServiceOffer = () => {
                       isEnabled: true,
                       label: 'Produits, GSBPM, Jalons ...',
                     }}
+                    onSelect={scrollToTop}
                   />
                 </Card>
               </Box>
@@ -91,7 +102,6 @@ const useStyles = makeStyles()((theme) => {
       paddingLeft: theme.spacing(4),
       marginRight: 'auto',
       marginLeft: 'auto',
-      marginTop: theme.spacing(6),
       marginBottom: theme.spacing(6),
       [theme.breakpoints.down('md')]: {
         marginBottom: theme.spacing(9),

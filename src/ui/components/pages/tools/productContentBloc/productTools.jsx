@@ -10,7 +10,7 @@ export const ProductTools = ({ product, color }) => {
           <TypographyWithMarkdown className={classes.label}>
             {tools.label}
           </TypographyWithMarkdown>
-          <TypographyWithMarkdown variant='body1' color='GrayText'>
+          <TypographyWithMarkdown color='GrayText' component='div'>
             {tools.description}
           </TypographyWithMarkdown>
         </li>
