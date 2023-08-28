@@ -9,14 +9,16 @@ import { CoreApiContext } from 'ui/coreApi';
 import { getFunctionsFilterer } from 'ui/utils/getFilteredFunctions';
 import { TreeFilter } from 'ui/components/shared/treeFilter/treeFilter';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export const ServiceOffer = () => {
-  const { classes, cx } = useStyles();
+  const { classes, theme } = useStyles();
   const trigger = useScrollTrigger({ disableHysteresis: true });
+  const matchesMdBreackpoint = useMediaQuery(theme.breakpoints.up('md'));
 
   const scrollToTop = () => {
-    //If user is not at the top
-    if (trigger) {
+    //If user is not at the top and screen larger than "md"
+    if (trigger && matchesMdBreackpoint) {
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 100);
@@ -50,7 +52,7 @@ export const ServiceOffer = () => {
           <Grid container spacing={2}>
             <Grid item md={4} xs={12}>
               <Box className={classes.box}>
-                <Card className={cx(classes.card, classes.sticky)}>
+                <Card className={classes.card}>
                   <TreeFilter
                     treeState={searchParams}
                     setTreeState={updateParams}
@@ -157,10 +159,6 @@ const useStyles = makeStyles()((theme) => {
     image: {
       maxWidth: '100%',
       verticalAlign: 'middle',
-    },
-    sticky: {
-      position: 'sticky',
-      top: theme.spacing(2),
     },
   };
 });
