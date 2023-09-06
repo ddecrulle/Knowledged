@@ -2138,10 +2138,10 @@ eventemitter3@^5.0.1:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-5.0.1.tgz#53f5ffd0a492ac800721bb42c66b841de96423c4"
   integrity sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==
 
-evt@^2.4.22:
-  version "2.4.22"
-  resolved "https://registry.yarnpkg.com/evt/-/evt-2.4.22.tgz#1a87471bca6e71909b66a9f8da86929bd34c8736"
-  integrity sha512-lxC4XLMhKXD2jj1p5O6AZ3tTFTIOt2qhD2NjX5phXPTfK/oIZhWUsZsqsdtrifxUOXf7PZ9TZF4PtylK/S5QGw==
+evt@^2.4.23:
+  version "2.4.23"
+  resolved "https://registry.yarnpkg.com/evt/-/evt-2.4.23.tgz#207dc9ac6693ed47e65e65f577634fa669dce686"
+  integrity sha512-cvwEIS0xCu4OO5+kE6q6VlQDppNZW2rkywbaQ6R86iDutClkf3IbMjZ6WenNj8sxlHyLJVuasScx6n5pwni8gA==
   dependencies:
     minimal-polyfills "^2.2.3"
     run-exclusive "^2.2.19"
@@ -3691,11 +3691,11 @@ postcss@^8.4.27:
     source-map-js "^1.0.2"
 
 powerhooks@^0.27.0:
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/powerhooks/-/powerhooks-0.27.0.tgz#600e750fae6c42682639634e80e1b12f59cfea4d"
-  integrity sha512-oA5t6jFI5wqxs5PSJrp5Q3DK51Z8k4/htlD6Hdpqzstth25wT44MOuBlEJITZnNMpOVWLpEzQnakSC4vV0Eaew==
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/powerhooks/-/powerhooks-0.27.1.tgz#62ceac9304eb90ad6ac4b3026c4f9703e8c822d5"
+  integrity sha512-yVIX7cqPqRgrJDx792HNEaKyv16AzcxaOSFB2ysWhw60f/7cZofLRj8i6G7qGwwr0fMa4i/grUWJBwiE0zDxjg==
   dependencies:
-    evt "^2.4.22"
+    evt "^2.4.23"
     memoizee "^0.4.15"
     resize-observer-polyfill "^1.5.1"
     tsafe "^1.6.4"
