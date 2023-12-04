@@ -10,11 +10,8 @@ fs.readFile('.env', 'utf8')
       .filter((data) => data.length === 2)
       .map(
         ([key]) =>
-          `echo "window._env_['${key.replace(
-            'REACT_APP_',
-            ''
-          )}'] = '\$${key.replace(
-            'REACT_APP_',
+          `echo "window._env_['${key.replace('VITE_', '')}'] = '\$${key.replace(
+            'VITE_',
             ''
           )}';" >> /usr/share/nginx/html/env-config.js`
       );
