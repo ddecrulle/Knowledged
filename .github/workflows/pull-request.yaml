@@ -43,7 +43,6 @@ jobs:
         with:
           name: dist
           path: dist
-      - run: tar -cvf build.tar ./dist
       - name: Computing Docker image tags
         id: step1
         env:
