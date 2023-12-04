@@ -7,18 +7,24 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import { TreeFilter } from 'ui/components/shared/treeFilter/treeFilter';
 import { ProductContentBloc } from 'ui/components/pages/tools/productContentBloc/productContentBloc';
+import { scrollToElement } from 'ui/utils/scrollToElement';
 
 export const Tools = () => {
   const { classes, cx } = useStyles();
   const [searchParams, updateParams] = useTreeUrlParams();
+
+  // TODO -> Refactor using ref and no setTimeout
+
   const [products, setProducts] = useState([]);
 
   const { getProducts } = useContext(CoreApiContext);
 
   window.scrollTo();
+
   useEffect(() => {
     getProducts().then((r) => setProducts(r));
   }, [getProducts]);
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.container}>
@@ -32,6 +38,7 @@ export const Tools = () => {
                     setTreeState={updateParams}
                     tree={products['children'] ?? []}
                     autoComplete={{ isEnabled: false }}
+                    onSelect={scrollToElement}
                   />
                 </Card>
               </Box>
