@@ -21,10 +21,10 @@ RUN apk add --no-cache bash
 
 ## Copy .env file and shell script to container
 COPY --from=build /app/dist ./
-COPY --from=build /app/entrypoint.sh .
+COPY --from=build /app/entrypoint.sh /
 
 ## Make shell script executable and prevent windows encoding
-RUN sed -i -e 's/\r$//' entrypoint.sh && chmod +x entrypoint.sh
+RUN sed -i -e 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 
 # add non-root user
 RUN touch /var/run/nginx.pid
