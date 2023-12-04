@@ -1,8 +1,8 @@
 import { makeStyles } from 'tss-react/mui';
-import TreeView from '@mui/lab/TreeView';
+import { TreeView } from '@mui/x-tree-view/TreeView';
+import { TreeItem } from '@mui/x-tree-view';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import TreeItem from '@mui/lab/TreeItem';
 import Autocomplete from '@mui/material/Autocomplete';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -25,7 +25,8 @@ export const TreeFilter = ({
   setTreeState,
   tree,
   autoComplete,
-  onSelect = () => null,
+  // eslint-disable-next-line no-unused-vars
+  onSelect = (_nodeId) => null,
 }) => {
   const { classes } = useStyles();
 
@@ -38,9 +39,8 @@ export const TreeFilter = ({
   };
 
   const handleSelect = (_, nodeIds) => {
-    console.log('handleSelect');
     setTreeState('selected', nodeIds);
-    onSelect();
+    onSelect(nodeIds);
   };
 
   const handleCollapseClick = () => {
