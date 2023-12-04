@@ -16,7 +16,7 @@
     "@testing-library/user-event": "^14.5.1",
     "aos": "^2.3.4",
     "lodash.groupby": "^4.6.0",
-    "powerhooks": "^0.27.2",
+    "powerhooks": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^9.0.1",
