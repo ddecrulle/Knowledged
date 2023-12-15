@@ -27,7 +27,7 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "npm run generate-entrypoint && vite build",
+    "build": "tsc && npm run generate-entrypoint && vite build",
     "_format": "prettier '**/*.{js,jsx,json,md}'",
     "format": "npm run _format -- --write",
     "format:check": "npm run _format -- --list-different",
@@ -43,6 +43,10 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@vitejs/plugin-react": "^4.2.1",
@@ -53,6 +57,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.0",
+    "typescript": "^5.3.3",
     "vite": "^5.0.5",
     "vite-tsconfig-paths": "^4.2.1"
   }
